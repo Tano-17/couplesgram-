@@ -16,7 +16,6 @@
 <aside class="sidebar">
 <div class="sidebar-top">
 <a class="logo-link" href="#">
-
 <span class="logo-text"><span style="color:green">Pelumi</span> ❤️ <span style="color:lightpink">Ella</span></span>
 </a>
 </div>
@@ -100,7 +99,7 @@
 <li>
 <a href="#">
 <div class="profile-avatar-container">
-<img alt="Your Profile" class="sidebar-avatar" src="assets/IMG-20251118-WA0073.jpg"/>
+<img alt="Your Profile" class="sidebar-avatar" loading="lazy" src="assets/IMG-20251118-WA0073.jpg"/>
 </div>
 <span class="nav-label">Profile</span>
 </a>
@@ -134,34 +133,29 @@
 </div>
 </aside>
 <!-- REELS MAIN VIEWPORT -->
-<audio id="reels-audio" src="assets/John%20Legend%20-%20P.D.A.%20%28We%20Just%20Don%27t%20Care%29%20%28Official%20Video%29%20%5BZwbNesQeods%5D.mp3" loop></audio>
+<audio id="reels-audio" loop="" src="assets/John%20Legend%20-%20P.D.A.%20%28We%20Just%20Don%27t%20Care%29%20%28Official%20Video%29%20%5BZwbNesQeods%5D.mp3"></audio>
 <main class="main-content reels-view">
 <div class="reels-outer-wrapper">
 <!-- Center Snapping Container -->
 <div class="reels-container" id="reels-scroller">
-
 <div class="reel-wrapper" data-reel-id="1">
 <div class="reel-video-container">
-<div class="reel-carousel-track" style="display:flex; overflow-x:scroll; scroll-snap-type: x mandatory; scrollbar-width: none; -ms-overflow-style: none; width:100%; height:100%;" onscroll="updateReelPagination(this)">
-
-<img alt="Reel 1" class="reel-video" src="assets/IMG-20251118-WA0078.jpg" onerror="this.remove()" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
-<img alt="Reel 1" class="reel-video" src="assets/IMG-20251118-WA0081.jpg" onerror="this.remove()" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
-<img alt="Reel 1" class="reel-video" src="assets/IMG-20251208-WA0016.jpg" onerror="this.remove()" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
-<img alt="Reel 1" class="reel-video" src="assets/IMG-20251230-WA0019.jpg" onerror="this.remove()" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
-
+<div class="reel-carousel-track" onscroll="updateReelPagination(this)" style="display:flex; overflow-x:scroll; scroll-snap-type: x mandatory; scrollbar-width: none; -ms-overflow-style: none; width:100%; height:100%;">
+<img alt="Reel 1" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG-20251118-WA0078.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
+<img alt="Reel 1" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG-20251118-WA0081.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
+<img alt="Reel 1" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG-20251208-WA0016.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
+<img alt="Reel 1" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG-20251230-WA0019.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
 </div>
 <div class="reel-carousel-pagination" style="position:absolute; bottom:20px; left:50%; transform:translateX(-50%); display:flex; gap:6px; z-index:10;">
-
 <div class="carousel-dot" style="background:white; width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
 <div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
 <div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
 <div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
-
 </div>
 <!-- Bottom Left Overlay -->
 <div class="reel-overlay-left">
 <div class="reel-user-row">
-<img alt="avatar" class="reel-avatar" src="assets/IMG-20251118-WA0073.jpg" onerror="this.style.display='none'" />
+<img alt="avatar" class="reel-avatar" loading="lazy" onerror="this.style.display='none'" src="assets/IMG-20251118-WA0073.jpg"/>
 <span class="reel-username">lovebirds</span>
 <button class="reel-follow-btn">Follow</button>
 </div>
@@ -176,7 +170,6 @@
 </div>
 </div>
 </div> <!-- Close reel-video-container -->
-
 <!-- Right Action Buttons -->
 <div class="reel-actions-column">
 <button class="action-btn reel-like" onclick="toggleReelLike(this)">
@@ -211,38 +204,32 @@
 </div>
 </button>
 <div class="music-vinyl-container audio-toggle-btn" onclick="toggleReelsAudio()">
-<img alt="album cover" class="music-vinyl-thumbnail rotating" src="assets/IMG-20251118-WA0073.jpg" onerror="this.style.display='none'" />
+<img alt="album cover" class="music-vinyl-thumbnail rotating" loading="lazy" onerror="this.style.display='none'" src="assets/IMG-20251118-WA0073.jpg"/>
 <div class="audio-icon-overlay" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.5); border-radius:50%; padding:4px; display:flex;">
-  <svg class="mute-icon" width="16" height="16" fill="white" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
-  <svg class="unmute-icon" width="16" height="16" fill="white" viewBox="0 0 24 24" style="display:none;"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+<svg class="mute-icon" fill="white" height="16" viewbox="0 0 24 24" width="16"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"></path></svg>
+<svg class="unmute-icon" fill="white" height="16" style="display:none;" viewbox="0 0 24 24" width="16"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"></path></svg>
 </div>
 </div>
 </div>
 </div> <!-- Close reel-wrapper -->
-
-
 <div class="reel-wrapper" data-reel-id="2">
 <div class="reel-video-container">
-<div class="reel-carousel-track" style="display:flex; overflow-x:scroll; scroll-snap-type: x mandatory; scrollbar-width: none; -ms-overflow-style: none; width:100%; height:100%;" onscroll="updateReelPagination(this)">
-
-<img alt="Reel 2" class="reel-video" src="assets/IMG-20260220-WA0016.jpg" onerror="this.remove()" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
-<img alt="Reel 2" class="reel-video" src="assets/IMG-20260303-WA0001.jpg" onerror="this.remove()" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
-<img alt="Reel 2" class="reel-video" src="assets/IMG-20260303-WA0005.jpg" onerror="this.remove()" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
-<img alt="Reel 2" class="reel-video" src="assets/IMG-20260303-WA0007.jpg" onerror="this.remove()" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
-
+<div class="reel-carousel-track" onscroll="updateReelPagination(this)" style="display:flex; overflow-x:scroll; scroll-snap-type: x mandatory; scrollbar-width: none; -ms-overflow-style: none; width:100%; height:100%;">
+<img alt="Reel 2" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG-20260220-WA0016.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
+<img alt="Reel 2" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG-20260303-WA0001.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
+<img alt="Reel 2" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG-20260303-WA0005.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
+<img alt="Reel 2" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG-20260303-WA0007.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
 </div>
 <div class="reel-carousel-pagination" style="position:absolute; bottom:20px; left:50%; transform:translateX(-50%); display:flex; gap:6px; z-index:10;">
-
 <div class="carousel-dot" style="background:white; width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
 <div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
 <div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
 <div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
-
 </div>
 <!-- Bottom Left Overlay -->
 <div class="reel-overlay-left">
 <div class="reel-user-row">
-<img alt="avatar" class="reel-avatar" src="assets/IMG-20251118-WA0073.jpg" onerror="this.style.display='none'" />
+<img alt="avatar" class="reel-avatar" loading="lazy" onerror="this.style.display='none'" src="assets/IMG-20251118-WA0073.jpg"/>
 <span class="reel-username">lovebirds</span>
 <button class="reel-follow-btn">Follow</button>
 </div>
@@ -257,7 +244,6 @@
 </div>
 </div>
 </div> <!-- Close reel-video-container -->
-
 <!-- Right Action Buttons -->
 <div class="reel-actions-column">
 <button class="action-btn reel-like" onclick="toggleReelLike(this)">
@@ -292,38 +278,32 @@
 </div>
 </button>
 <div class="music-vinyl-container audio-toggle-btn" onclick="toggleReelsAudio()">
-<img alt="album cover" class="music-vinyl-thumbnail rotating" src="assets/IMG-20251118-WA0073.jpg" onerror="this.style.display='none'" />
+<img alt="album cover" class="music-vinyl-thumbnail rotating" loading="lazy" onerror="this.style.display='none'" src="assets/IMG-20251118-WA0073.jpg"/>
 <div class="audio-icon-overlay" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.5); border-radius:50%; padding:4px; display:flex;">
-  <svg class="mute-icon" width="16" height="16" fill="white" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
-  <svg class="unmute-icon" width="16" height="16" fill="white" viewBox="0 0 24 24" style="display:none;"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+<svg class="mute-icon" fill="white" height="16" viewbox="0 0 24 24" width="16"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"></path></svg>
+<svg class="unmute-icon" fill="white" height="16" style="display:none;" viewbox="0 0 24 24" width="16"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"></path></svg>
 </div>
 </div>
 </div>
 </div> <!-- Close reel-wrapper -->
-
-
 <div class="reel-wrapper" data-reel-id="3">
 <div class="reel-video-container">
-<div class="reel-carousel-track" style="display:flex; overflow-x:scroll; scroll-snap-type: x mandatory; scrollbar-width: none; -ms-overflow-style: none; width:100%; height:100%;" onscroll="updateReelPagination(this)">
-
-<img alt="Reel 3" class="reel-video" src="assets/IMG-20260305-WA0011.jpg" onerror="this.remove()" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
-<img alt="Reel 3" class="reel-video" src="assets/IMG-20260305-WA0012.jpg" onerror="this.remove()" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
-<img alt="Reel 3" class="reel-video" src="assets/IMG-20260305-WA0013.jpg" onerror="this.remove()" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
-<img alt="Reel 3" class="reel-video" src="assets/IMG-20260423-WA0091.jpg" onerror="this.remove()" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
-
+<div class="reel-carousel-track" onscroll="updateReelPagination(this)" style="display:flex; overflow-x:scroll; scroll-snap-type: x mandatory; scrollbar-width: none; -ms-overflow-style: none; width:100%; height:100%;">
+<img alt="Reel 3" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG-20260305-WA0011.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
+<img alt="Reel 3" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG-20260305-WA0012.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
+<img alt="Reel 3" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG-20260305-WA0013.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
+<img alt="Reel 3" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG-20260423-WA0091.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
 </div>
 <div class="reel-carousel-pagination" style="position:absolute; bottom:20px; left:50%; transform:translateX(-50%); display:flex; gap:6px; z-index:10;">
-
 <div class="carousel-dot" style="background:white; width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
 <div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
 <div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
 <div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
-
 </div>
 <!-- Bottom Left Overlay -->
 <div class="reel-overlay-left">
 <div class="reel-user-row">
-<img alt="avatar" class="reel-avatar" src="assets/IMG-20251118-WA0073.jpg" onerror="this.style.display='none'" />
+<img alt="avatar" class="reel-avatar" loading="lazy" onerror="this.style.display='none'" src="assets/IMG-20251118-WA0073.jpg"/>
 <span class="reel-username">lovebirds</span>
 <button class="reel-follow-btn">Follow</button>
 </div>
@@ -338,7 +318,6 @@
 </div>
 </div>
 </div> <!-- Close reel-video-container -->
-
 <!-- Right Action Buttons -->
 <div class="reel-actions-column">
 <button class="action-btn reel-like" onclick="toggleReelLike(this)">
@@ -373,38 +352,32 @@
 </div>
 </button>
 <div class="music-vinyl-container audio-toggle-btn" onclick="toggleReelsAudio()">
-<img alt="album cover" class="music-vinyl-thumbnail rotating" src="assets/IMG-20251118-WA0073.jpg" onerror="this.style.display='none'" />
+<img alt="album cover" class="music-vinyl-thumbnail rotating" loading="lazy" onerror="this.style.display='none'" src="assets/IMG-20251118-WA0073.jpg"/>
 <div class="audio-icon-overlay" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.5); border-radius:50%; padding:4px; display:flex;">
-  <svg class="mute-icon" width="16" height="16" fill="white" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
-  <svg class="unmute-icon" width="16" height="16" fill="white" viewBox="0 0 24 24" style="display:none;"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+<svg class="mute-icon" fill="white" height="16" viewbox="0 0 24 24" width="16"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"></path></svg>
+<svg class="unmute-icon" fill="white" height="16" style="display:none;" viewbox="0 0 24 24" width="16"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"></path></svg>
 </div>
 </div>
 </div>
 </div> <!-- Close reel-wrapper -->
-
-
 <div class="reel-wrapper" data-reel-id="4">
 <div class="reel-video-container">
-<div class="reel-carousel-track" style="display:flex; overflow-x:scroll; scroll-snap-type: x mandatory; scrollbar-width: none; -ms-overflow-style: none; width:100%; height:100%;" onscroll="updateReelPagination(this)">
-
-<img alt="Reel 4" class="reel-video" src="assets/IMG-20260423-WA0092.jpg" onerror="this.remove()" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
-<img alt="Reel 4" class="reel-video" src="assets/IMG-20260505-WA0118.jpg" onerror="this.remove()" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
-<img alt="Reel 4" class="reel-video" src="assets/IMG-20260505-WA0150.jpg" onerror="this.remove()" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
-<img alt="Reel 4" class="reel-video" src="assets/IMG-20260505-WA0243.jpg" onerror="this.remove()" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
-
+<div class="reel-carousel-track" onscroll="updateReelPagination(this)" style="display:flex; overflow-x:scroll; scroll-snap-type: x mandatory; scrollbar-width: none; -ms-overflow-style: none; width:100%; height:100%;">
+<img alt="Reel 4" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG-20260423-WA0092.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
+<img alt="Reel 4" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG-20260505-WA0118.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
+<img alt="Reel 4" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG-20260505-WA0150.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
+<img alt="Reel 4" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG-20260505-WA0243.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
 </div>
 <div class="reel-carousel-pagination" style="position:absolute; bottom:20px; left:50%; transform:translateX(-50%); display:flex; gap:6px; z-index:10;">
-
 <div class="carousel-dot" style="background:white; width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
 <div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
 <div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
 <div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
-
 </div>
 <!-- Bottom Left Overlay -->
 <div class="reel-overlay-left">
 <div class="reel-user-row">
-<img alt="avatar" class="reel-avatar" src="assets/IMG-20251118-WA0073.jpg" onerror="this.style.display='none'" />
+<img alt="avatar" class="reel-avatar" loading="lazy" onerror="this.style.display='none'" src="assets/IMG-20251118-WA0073.jpg"/>
 <span class="reel-username">lovebirds</span>
 <button class="reel-follow-btn">Follow</button>
 </div>
@@ -419,7 +392,6 @@
 </div>
 </div>
 </div> <!-- Close reel-video-container -->
-
 <!-- Right Action Buttons -->
 <div class="reel-actions-column">
 <button class="action-btn reel-like" onclick="toggleReelLike(this)">
@@ -454,38 +426,32 @@
 </div>
 </button>
 <div class="music-vinyl-container audio-toggle-btn" onclick="toggleReelsAudio()">
-<img alt="album cover" class="music-vinyl-thumbnail rotating" src="assets/IMG-20251118-WA0073.jpg" onerror="this.style.display='none'" />
+<img alt="album cover" class="music-vinyl-thumbnail rotating" loading="lazy" onerror="this.style.display='none'" src="assets/IMG-20251118-WA0073.jpg"/>
 <div class="audio-icon-overlay" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.5); border-radius:50%; padding:4px; display:flex;">
-  <svg class="mute-icon" width="16" height="16" fill="white" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
-  <svg class="unmute-icon" width="16" height="16" fill="white" viewBox="0 0 24 24" style="display:none;"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+<svg class="mute-icon" fill="white" height="16" viewbox="0 0 24 24" width="16"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"></path></svg>
+<svg class="unmute-icon" fill="white" height="16" style="display:none;" viewbox="0 0 24 24" width="16"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"></path></svg>
 </div>
 </div>
 </div>
 </div> <!-- Close reel-wrapper -->
-
-
 <div class="reel-wrapper" data-reel-id="5">
 <div class="reel-video-container">
-<div class="reel-carousel-track" style="display:flex; overflow-x:scroll; scroll-snap-type: x mandatory; scrollbar-width: none; -ms-overflow-style: none; width:100%; height:100%;" onscroll="updateReelPagination(this)">
-
-<img alt="Reel 5" class="reel-video" src="assets/IMG-20260505-WA0250.jpg" onerror="this.remove()" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
-<img alt="Reel 5" class="reel-video" src="assets/IMG-20260505-WA0254.jpg" onerror="this.remove()" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
-<img alt="Reel 5" class="reel-video" src="assets/IMG-20260505-WA0258.jpg" onerror="this.remove()" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
-<img alt="Reel 5" class="reel-video" src="assets/IMG-20260505-WA0260.jpg" onerror="this.remove()" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
-
+<div class="reel-carousel-track" onscroll="updateReelPagination(this)" style="display:flex; overflow-x:scroll; scroll-snap-type: x mandatory; scrollbar-width: none; -ms-overflow-style: none; width:100%; height:100%;">
+<img alt="Reel 5" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG-20260505-WA0250.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
+<img alt="Reel 5" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG-20260505-WA0254.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
+<img alt="Reel 5" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG-20260505-WA0258.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
+<img alt="Reel 5" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG-20260505-WA0260.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
 </div>
 <div class="reel-carousel-pagination" style="position:absolute; bottom:20px; left:50%; transform:translateX(-50%); display:flex; gap:6px; z-index:10;">
-
 <div class="carousel-dot" style="background:white; width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
 <div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
 <div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
 <div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
-
 </div>
 <!-- Bottom Left Overlay -->
 <div class="reel-overlay-left">
 <div class="reel-user-row">
-<img alt="avatar" class="reel-avatar" src="assets/IMG-20251118-WA0073.jpg" onerror="this.style.display='none'" />
+<img alt="avatar" class="reel-avatar" loading="lazy" onerror="this.style.display='none'" src="assets/IMG-20251118-WA0073.jpg"/>
 <span class="reel-username">lovebirds</span>
 <button class="reel-follow-btn">Follow</button>
 </div>
@@ -500,7 +466,6 @@
 </div>
 </div>
 </div> <!-- Close reel-video-container -->
-
 <!-- Right Action Buttons -->
 <div class="reel-actions-column">
 <button class="action-btn reel-like" onclick="toggleReelLike(this)">
@@ -535,38 +500,32 @@
 </div>
 </button>
 <div class="music-vinyl-container audio-toggle-btn" onclick="toggleReelsAudio()">
-<img alt="album cover" class="music-vinyl-thumbnail rotating" src="assets/IMG-20251118-WA0073.jpg" onerror="this.style.display='none'" />
+<img alt="album cover" class="music-vinyl-thumbnail rotating" loading="lazy" onerror="this.style.display='none'" src="assets/IMG-20251118-WA0073.jpg"/>
 <div class="audio-icon-overlay" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.5); border-radius:50%; padding:4px; display:flex;">
-  <svg class="mute-icon" width="16" height="16" fill="white" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
-  <svg class="unmute-icon" width="16" height="16" fill="white" viewBox="0 0 24 24" style="display:none;"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+<svg class="mute-icon" fill="white" height="16" viewbox="0 0 24 24" width="16"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"></path></svg>
+<svg class="unmute-icon" fill="white" height="16" style="display:none;" viewbox="0 0 24 24" width="16"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"></path></svg>
 </div>
 </div>
 </div>
 </div> <!-- Close reel-wrapper -->
-
-
 <div class="reel-wrapper" data-reel-id="6">
 <div class="reel-video-container">
-<div class="reel-carousel-track" style="display:flex; overflow-x:scroll; scroll-snap-type: x mandatory; scrollbar-width: none; -ms-overflow-style: none; width:100%; height:100%;" onscroll="updateReelPagination(this)">
-
-<img alt="Reel 6" class="reel-video" src="assets/IMG-20260602-WA0005.jpg" onerror="this.remove()" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
-<img alt="Reel 6" class="reel-video" src="assets/IMG-20260731-WA0151.jpg" onerror="this.remove()" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
-<img alt="Reel 6" class="reel-video" src="assets/IMG-20260731-WA0152.jpg" onerror="this.remove()" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
-<img alt="Reel 6" class="reel-video" src="assets/IMG-20260731-WA0156.jpg" onerror="this.remove()" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
-
+<div class="reel-carousel-track" onscroll="updateReelPagination(this)" style="display:flex; overflow-x:scroll; scroll-snap-type: x mandatory; scrollbar-width: none; -ms-overflow-style: none; width:100%; height:100%;">
+<img alt="Reel 6" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG-20260602-WA0005.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
+<img alt="Reel 6" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG-20260731-WA0151.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
+<img alt="Reel 6" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG-20260731-WA0152.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
+<img alt="Reel 6" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG-20260731-WA0156.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
 </div>
 <div class="reel-carousel-pagination" style="position:absolute; bottom:20px; left:50%; transform:translateX(-50%); display:flex; gap:6px; z-index:10;">
-
 <div class="carousel-dot" style="background:white; width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
 <div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
 <div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
 <div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
-
 </div>
 <!-- Bottom Left Overlay -->
 <div class="reel-overlay-left">
 <div class="reel-user-row">
-<img alt="avatar" class="reel-avatar" src="assets/IMG-20251118-WA0073.jpg" onerror="this.style.display='none'" />
+<img alt="avatar" class="reel-avatar" loading="lazy" onerror="this.style.display='none'" src="assets/IMG-20251118-WA0073.jpg"/>
 <span class="reel-username">lovebirds</span>
 <button class="reel-follow-btn">Follow</button>
 </div>
@@ -581,7 +540,6 @@
 </div>
 </div>
 </div> <!-- Close reel-video-container -->
-
 <!-- Right Action Buttons -->
 <div class="reel-actions-column">
 <button class="action-btn reel-like" onclick="toggleReelLike(this)">
@@ -616,38 +574,32 @@
 </div>
 </button>
 <div class="music-vinyl-container audio-toggle-btn" onclick="toggleReelsAudio()">
-<img alt="album cover" class="music-vinyl-thumbnail rotating" src="assets/IMG-20251118-WA0073.jpg" onerror="this.style.display='none'" />
+<img alt="album cover" class="music-vinyl-thumbnail rotating" loading="lazy" onerror="this.style.display='none'" src="assets/IMG-20251118-WA0073.jpg"/>
 <div class="audio-icon-overlay" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.5); border-radius:50%; padding:4px; display:flex;">
-  <svg class="mute-icon" width="16" height="16" fill="white" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
-  <svg class="unmute-icon" width="16" height="16" fill="white" viewBox="0 0 24 24" style="display:none;"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+<svg class="mute-icon" fill="white" height="16" viewbox="0 0 24 24" width="16"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"></path></svg>
+<svg class="unmute-icon" fill="white" height="16" style="display:none;" viewbox="0 0 24 24" width="16"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"></path></svg>
 </div>
 </div>
 </div>
 </div> <!-- Close reel-wrapper -->
-
-
 <div class="reel-wrapper" data-reel-id="7">
 <div class="reel-video-container">
-<div class="reel-carousel-track" style="display:flex; overflow-x:scroll; scroll-snap-type: x mandatory; scrollbar-width: none; -ms-overflow-style: none; width:100%; height:100%;" onscroll="updateReelPagination(this)">
-
-<img alt="Reel 7" class="reel-video" src="assets/IMG_20250414_185437.jpg" onerror="this.remove()" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
-<img alt="Reel 7" class="reel-video" src="assets/IMG_20250414_185439.jpg" onerror="this.remove()" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
-<img alt="Reel 7" class="reel-video" src="assets/IMG_20251115_172733.jpg" onerror="this.remove()" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
-<img alt="Reel 7" class="reel-video" src="assets/IMG_20251115_172756.jpg" onerror="this.remove()" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
-
+<div class="reel-carousel-track" onscroll="updateReelPagination(this)" style="display:flex; overflow-x:scroll; scroll-snap-type: x mandatory; scrollbar-width: none; -ms-overflow-style: none; width:100%; height:100%;">
+<img alt="Reel 7" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG_20250414_185437.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
+<img alt="Reel 7" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG_20250414_185439.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
+<img alt="Reel 7" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG_20251115_172733.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
+<img alt="Reel 7" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG_20251115_172756.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
 </div>
 <div class="reel-carousel-pagination" style="position:absolute; bottom:20px; left:50%; transform:translateX(-50%); display:flex; gap:6px; z-index:10;">
-
 <div class="carousel-dot" style="background:white; width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
 <div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
 <div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
 <div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
-
 </div>
 <!-- Bottom Left Overlay -->
 <div class="reel-overlay-left">
 <div class="reel-user-row">
-<img alt="avatar" class="reel-avatar" src="assets/IMG-20251118-WA0073.jpg" onerror="this.style.display='none'" />
+<img alt="avatar" class="reel-avatar" loading="lazy" onerror="this.style.display='none'" src="assets/IMG-20251118-WA0073.jpg"/>
 <span class="reel-username">lovebirds</span>
 <button class="reel-follow-btn">Follow</button>
 </div>
@@ -662,7 +614,6 @@
 </div>
 </div>
 </div> <!-- Close reel-video-container -->
-
 <!-- Right Action Buttons -->
 <div class="reel-actions-column">
 <button class="action-btn reel-like" onclick="toggleReelLike(this)">
@@ -697,38 +648,32 @@
 </div>
 </button>
 <div class="music-vinyl-container audio-toggle-btn" onclick="toggleReelsAudio()">
-<img alt="album cover" class="music-vinyl-thumbnail rotating" src="assets/IMG-20251118-WA0073.jpg" onerror="this.style.display='none'" />
+<img alt="album cover" class="music-vinyl-thumbnail rotating" loading="lazy" onerror="this.style.display='none'" src="assets/IMG-20251118-WA0073.jpg"/>
 <div class="audio-icon-overlay" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.5); border-radius:50%; padding:4px; display:flex;">
-  <svg class="mute-icon" width="16" height="16" fill="white" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
-  <svg class="unmute-icon" width="16" height="16" fill="white" viewBox="0 0 24 24" style="display:none;"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+<svg class="mute-icon" fill="white" height="16" viewbox="0 0 24 24" width="16"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"></path></svg>
+<svg class="unmute-icon" fill="white" height="16" style="display:none;" viewbox="0 0 24 24" width="16"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"></path></svg>
 </div>
 </div>
 </div>
 </div> <!-- Close reel-wrapper -->
-
-
 <div class="reel-wrapper" data-reel-id="8">
 <div class="reel-video-container">
-<div class="reel-carousel-track" style="display:flex; overflow-x:scroll; scroll-snap-type: x mandatory; scrollbar-width: none; -ms-overflow-style: none; width:100%; height:100%;" onscroll="updateReelPagination(this)">
-
-<img alt="Reel 8" class="reel-video" src="assets/IMG_20251115_172800.jpg" onerror="this.remove()" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
-<img alt="Reel 8" class="reel-video" src="assets/IMG_20251115_172802.jpg" onerror="this.remove()" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
-<img alt="Reel 8" class="reel-video" src="assets/IMG_20251115_172816.jpg" onerror="this.remove()" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
-<img alt="Reel 8" class="reel-video" src="assets/IMG_20251207_201541.jpg" onerror="this.remove()" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
-
+<div class="reel-carousel-track" onscroll="updateReelPagination(this)" style="display:flex; overflow-x:scroll; scroll-snap-type: x mandatory; scrollbar-width: none; -ms-overflow-style: none; width:100%; height:100%;">
+<img alt="Reel 8" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG_20251115_172800.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
+<img alt="Reel 8" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG_20251115_172802.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
+<img alt="Reel 8" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG_20251115_172816.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
+<img alt="Reel 8" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG_20251207_201541.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
 </div>
 <div class="reel-carousel-pagination" style="position:absolute; bottom:20px; left:50%; transform:translateX(-50%); display:flex; gap:6px; z-index:10;">
-
 <div class="carousel-dot" style="background:white; width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
 <div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
 <div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
 <div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
-
 </div>
 <!-- Bottom Left Overlay -->
 <div class="reel-overlay-left">
 <div class="reel-user-row">
-<img alt="avatar" class="reel-avatar" src="assets/IMG-20251118-WA0073.jpg" onerror="this.style.display='none'" />
+<img alt="avatar" class="reel-avatar" loading="lazy" onerror="this.style.display='none'" src="assets/IMG-20251118-WA0073.jpg"/>
 <span class="reel-username">lovebirds</span>
 <button class="reel-follow-btn">Follow</button>
 </div>
@@ -743,7 +688,6 @@
 </div>
 </div>
 </div> <!-- Close reel-video-container -->
-
 <!-- Right Action Buttons -->
 <div class="reel-actions-column">
 <button class="action-btn reel-like" onclick="toggleReelLike(this)">
@@ -778,38 +722,32 @@
 </div>
 </button>
 <div class="music-vinyl-container audio-toggle-btn" onclick="toggleReelsAudio()">
-<img alt="album cover" class="music-vinyl-thumbnail rotating" src="assets/IMG-20251118-WA0073.jpg" onerror="this.style.display='none'" />
+<img alt="album cover" class="music-vinyl-thumbnail rotating" loading="lazy" onerror="this.style.display='none'" src="assets/IMG-20251118-WA0073.jpg"/>
 <div class="audio-icon-overlay" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.5); border-radius:50%; padding:4px; display:flex;">
-  <svg class="mute-icon" width="16" height="16" fill="white" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
-  <svg class="unmute-icon" width="16" height="16" fill="white" viewBox="0 0 24 24" style="display:none;"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+<svg class="mute-icon" fill="white" height="16" viewbox="0 0 24 24" width="16"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"></path></svg>
+<svg class="unmute-icon" fill="white" height="16" style="display:none;" viewbox="0 0 24 24" width="16"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"></path></svg>
 </div>
 </div>
 </div>
 </div> <!-- Close reel-wrapper -->
-
-
 <div class="reel-wrapper" data-reel-id="9">
 <div class="reel-video-container">
-<div class="reel-carousel-track" style="display:flex; overflow-x:scroll; scroll-snap-type: x mandatory; scrollbar-width: none; -ms-overflow-style: none; width:100%; height:100%;" onscroll="updateReelPagination(this)">
-
-<img alt="Reel 9" class="reel-video" src="assets/IMG_20251207_201549.jpg" onerror="this.remove()" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
-<img alt="Reel 9" class="reel-video" src="assets/IMG_20251225_172321.jpg" onerror="this.remove()" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
-<img alt="Reel 9" class="reel-video" src="assets/IMG_20251225_172325.jpg" onerror="this.remove()" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
-<img alt="Reel 9" class="reel-video" src="assets/IMG_20251225_172329.jpg" onerror="this.remove()" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
-
+<div class="reel-carousel-track" onscroll="updateReelPagination(this)" style="display:flex; overflow-x:scroll; scroll-snap-type: x mandatory; scrollbar-width: none; -ms-overflow-style: none; width:100%; height:100%;">
+<img alt="Reel 9" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG_20251207_201549.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
+<img alt="Reel 9" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG_20251225_172321.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
+<img alt="Reel 9" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG_20251225_172325.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
+<img alt="Reel 9" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG_20251225_172329.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
 </div>
 <div class="reel-carousel-pagination" style="position:absolute; bottom:20px; left:50%; transform:translateX(-50%); display:flex; gap:6px; z-index:10;">
-
 <div class="carousel-dot" style="background:white; width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
 <div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
 <div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
 <div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
-
 </div>
 <!-- Bottom Left Overlay -->
 <div class="reel-overlay-left">
 <div class="reel-user-row">
-<img alt="avatar" class="reel-avatar" src="assets/IMG-20251118-WA0073.jpg" onerror="this.style.display='none'" />
+<img alt="avatar" class="reel-avatar" loading="lazy" onerror="this.style.display='none'" src="assets/IMG-20251118-WA0073.jpg"/>
 <span class="reel-username">lovebirds</span>
 <button class="reel-follow-btn">Follow</button>
 </div>
@@ -824,7 +762,6 @@
 </div>
 </div>
 </div> <!-- Close reel-video-container -->
-
 <!-- Right Action Buttons -->
 <div class="reel-actions-column">
 <button class="action-btn reel-like" onclick="toggleReelLike(this)">
@@ -859,38 +796,32 @@
 </div>
 </button>
 <div class="music-vinyl-container audio-toggle-btn" onclick="toggleReelsAudio()">
-<img alt="album cover" class="music-vinyl-thumbnail rotating" src="assets/IMG-20251118-WA0073.jpg" onerror="this.style.display='none'" />
+<img alt="album cover" class="music-vinyl-thumbnail rotating" loading="lazy" onerror="this.style.display='none'" src="assets/IMG-20251118-WA0073.jpg"/>
 <div class="audio-icon-overlay" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.5); border-radius:50%; padding:4px; display:flex;">
-  <svg class="mute-icon" width="16" height="16" fill="white" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
-  <svg class="unmute-icon" width="16" height="16" fill="white" viewBox="0 0 24 24" style="display:none;"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+<svg class="mute-icon" fill="white" height="16" viewbox="0 0 24 24" width="16"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"></path></svg>
+<svg class="unmute-icon" fill="white" height="16" style="display:none;" viewbox="0 0 24 24" width="16"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"></path></svg>
 </div>
 </div>
 </div>
 </div> <!-- Close reel-wrapper -->
-
-
 <div class="reel-wrapper" data-reel-id="10">
 <div class="reel-video-container">
-<div class="reel-carousel-track" style="display:flex; overflow-x:scroll; scroll-snap-type: x mandatory; scrollbar-width: none; -ms-overflow-style: none; width:100%; height:100%;" onscroll="updateReelPagination(this)">
-
-<img alt="Reel 10" class="reel-video" src="assets/IMG_20251225_173249.jpg" onerror="this.remove()" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
-<img alt="Reel 10" class="reel-video" src="assets/IMG_20251225_173335.jpg" onerror="this.remove()" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
-<img alt="Reel 10" class="reel-video" src="assets/Snapchat-1682205913.jpg" onerror="this.remove()" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
-<img alt="Reel 10" class="reel-video" src="assets/Snapchat-352071190.jpg" onerror="this.remove()" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
-
+<div class="reel-carousel-track" onscroll="updateReelPagination(this)" style="display:flex; overflow-x:scroll; scroll-snap-type: x mandatory; scrollbar-width: none; -ms-overflow-style: none; width:100%; height:100%;">
+<img alt="Reel 10" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG_20251225_173249.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
+<img alt="Reel 10" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG_20251225_173335.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
+<img alt="Reel 10" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/Snapchat-1682205913.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
+<img alt="Reel 10" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/Snapchat-352071190.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
 </div>
 <div class="reel-carousel-pagination" style="position:absolute; bottom:20px; left:50%; transform:translateX(-50%); display:flex; gap:6px; z-index:10;">
-
 <div class="carousel-dot" style="background:white; width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
 <div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
 <div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
 <div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
-
 </div>
 <!-- Bottom Left Overlay -->
 <div class="reel-overlay-left">
 <div class="reel-user-row">
-<img alt="avatar" class="reel-avatar" src="assets/IMG-20251118-WA0073.jpg" onerror="this.style.display='none'" />
+<img alt="avatar" class="reel-avatar" loading="lazy" onerror="this.style.display='none'" src="assets/IMG-20251118-WA0073.jpg"/>
 <span class="reel-username">lovebirds</span>
 <button class="reel-follow-btn">Follow</button>
 </div>
@@ -905,7 +836,6 @@
 </div>
 </div>
 </div> <!-- Close reel-video-container -->
-
 <!-- Right Action Buttons -->
 <div class="reel-actions-column">
 <button class="action-btn reel-like" onclick="toggleReelLike(this)">
@@ -940,32 +870,26 @@
 </div>
 </button>
 <div class="music-vinyl-container audio-toggle-btn" onclick="toggleReelsAudio()">
-<img alt="album cover" class="music-vinyl-thumbnail rotating" src="assets/IMG-20251118-WA0073.jpg" onerror="this.style.display='none'" />
+<img alt="album cover" class="music-vinyl-thumbnail rotating" loading="lazy" onerror="this.style.display='none'" src="assets/IMG-20251118-WA0073.jpg"/>
 <div class="audio-icon-overlay" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.5); border-radius:50%; padding:4px; display:flex;">
-  <svg class="mute-icon" width="16" height="16" fill="white" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
-  <svg class="unmute-icon" width="16" height="16" fill="white" viewBox="0 0 24 24" style="display:none;"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+<svg class="mute-icon" fill="white" height="16" viewbox="0 0 24 24" width="16"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"></path></svg>
+<svg class="unmute-icon" fill="white" height="16" style="display:none;" viewbox="0 0 24 24" width="16"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"></path></svg>
 </div>
 </div>
 </div>
 </div> <!-- Close reel-wrapper -->
-
-
 <div class="reel-wrapper" data-reel-id="11">
 <div class="reel-video-container">
-<div class="reel-carousel-track" style="display:flex; overflow-x:scroll; scroll-snap-type: x mandatory; scrollbar-width: none; -ms-overflow-style: none; width:100%; height:100%;" onscroll="updateReelPagination(this)">
-
-<img alt="Reel 11" class="reel-video" src="assets/Snapchat-603721540.jpg" onerror="this.remove()" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
-
+<div class="reel-carousel-track" onscroll="updateReelPagination(this)" style="display:flex; overflow-x:scroll; scroll-snap-type: x mandatory; scrollbar-width: none; -ms-overflow-style: none; width:100%; height:100%;">
+<img alt="Reel 11" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/Snapchat-603721540.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
 </div>
 <div class="reel-carousel-pagination" style="position:absolute; bottom:20px; left:50%; transform:translateX(-50%); display:flex; gap:6px; z-index:10;">
-
 <div class="carousel-dot" style="background:white; width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
-
 </div>
 <!-- Bottom Left Overlay -->
 <div class="reel-overlay-left">
 <div class="reel-user-row">
-<img alt="avatar" class="reel-avatar" src="assets/IMG-20251118-WA0073.jpg" onerror="this.style.display='none'" />
+<img alt="avatar" class="reel-avatar" loading="lazy" onerror="this.style.display='none'" src="assets/IMG-20251118-WA0073.jpg"/>
 <span class="reel-username">lovebirds</span>
 <button class="reel-follow-btn">Follow</button>
 </div>
@@ -980,7 +904,6 @@
 </div>
 </div>
 </div> <!-- Close reel-video-container -->
-
 <!-- Right Action Buttons -->
 <div class="reel-actions-column">
 <button class="action-btn reel-like" onclick="toggleReelLike(this)">
@@ -1015,17 +938,15 @@
 </div>
 </button>
 <div class="music-vinyl-container audio-toggle-btn" onclick="toggleReelsAudio()">
-<img alt="album cover" class="music-vinyl-thumbnail rotating" src="assets/IMG-20251118-WA0073.jpg" onerror="this.style.display='none'" />
+<img alt="album cover" class="music-vinyl-thumbnail rotating" loading="lazy" onerror="this.style.display='none'" src="assets/IMG-20251118-WA0073.jpg"/>
 <div class="audio-icon-overlay" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.5); border-radius:50%; padding:4px; display:flex;">
-  <svg class="mute-icon" width="16" height="16" fill="white" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
-  <svg class="unmute-icon" width="16" height="16" fill="white" viewBox="0 0 24 24" style="display:none;"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+<svg class="mute-icon" fill="white" height="16" viewbox="0 0 24 24" width="16"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"></path></svg>
+<svg class="unmute-icon" fill="white" height="16" style="display:none;" viewbox="0 0 24 24" width="16"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"></path></svg>
 </div>
 </div>
 </div>
 </div> <!-- Close reel-wrapper -->
-
 </div> <!-- /reels-container -->
-
 </div> <!-- /reels-outer-wrapper -->
 <!-- Floating Vertical Snap Navigation Buttons (Prev/Next) -->
 <div class="reels-nav-buttons">
