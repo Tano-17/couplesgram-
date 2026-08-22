@@ -314,9 +314,12 @@ body {
 }
 
 .story-username {
-  font-size: 12px;
+  font-size: 16px;
   color: var(--text-primary);
-  text-align: center;
+  text-align: center !important;
+  text-transform: uppercase !important;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
