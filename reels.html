@@ -1,969 +1,1388 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Couplesgram • Reels</title>
-<link href="style.css" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;family=Great+Vibes&amp;display=swap" rel="stylesheet"/>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Couplesgram • Reels</title>
+  <link href="style.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;family=Great+Vibes&amp;display=swap"
+    rel="stylesheet" />
 </head>
+
 <body class="reels-body">
-<div class="app-container">
-<!-- LEFT SIDEBAR -->
-<aside class="sidebar">
-<div class="sidebar-top">
-<a class="logo-link" href="#">
-<span class="logo-text"><span style="color:green">Pelumi</span> ❤️ <span style="color:lightpink">Ella</span></span>
-</a>
-</div>
-<nav class="sidebar-nav">
-<ul>
-<li>
-<a href="index.html">
-<svg class="nav-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
-<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-<polyline points="9 22 9 12 15 12 15 22"></polyline>
-</svg>
-<span class="nav-label">Home</span>
-</a>
-</li>
-<li>
-<a href="#">
-<svg class="nav-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
-<circle cx="11" cy="11" r="8"></circle>
-<line x1="21" x2="16.65" y1="21" y2="16.65"></line>
-</svg>
-<span class="nav-label">Search</span>
-</a>
-</li>
-<li>
-<a href="explore.html">
-<svg class="nav-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
-<circle cx="12" cy="12" r="10"></circle>
-<polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
-</svg>
-<span class="nav-label">Explore</span>
-</a>
-</li>
-<li class="active">
-<a href="reels.html">
-<!-- Active Solid Reels Icon -->
-<svg class="nav-icon active-icon" fill="currentColor" viewbox="0 0 24 24">
-<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"></path>
-</svg>
-<span class="nav-label">Reels</span>
-</a>
-</li>
-<li>
-<a href="#">
-<div class="icon-badge-container">
-<svg class="nav-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
-<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-</svg>
-<span class="badge badge-red">9+</span>
-</div>
-<span class="nav-label">Messages</span>
-</a>
-</li>
-<li class="nav-item-notifications">
-<a href="#" id="nav-notifications">
-<svg class="nav-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
-<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-</svg>
-<span class="nav-label">Notifications</span>
-<div class="notif-bubble">
-<svg class="bubble-heart" fill="currentColor" viewbox="0 0 24 24">
-<path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
-</svg>
-<span>1</span>
-<svg class="bubble-person" fill="currentColor" viewbox="0 0 24 24">
-<path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path>
-</svg>
-<span>1</span>
-</div>
-</a>
-</li>
-<li>
-<a href="#">
-<svg class="nav-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
-<rect height="18" rx="2" ry="2" width="18" x="3" y="3"></rect>
-<line x1="12" x2="12" y1="8" y2="16"></line>
-<line x1="8" x2="16" y1="12" y2="12"></line>
-</svg>
-<span class="nav-label">Create</span>
-</a>
-</li>
-<li>
-<a href="#">
-<div class="profile-avatar-container">
-<img alt="Your Profile" class="sidebar-avatar" loading="lazy" src="assets/IMG-20251118-WA0073.jpg"/>
-</div>
-<span class="nav-label">Profile</span>
-</a>
-</li>
-</ul>
-</nav>
-<div class="sidebar-bottom">
-<ul>
-<li>
-<a href="#">
-<svg class="nav-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
-<line x1="3" x2="21" y1="12" y2="12"></line>
-<line x1="3" x2="21" y1="6" y2="6"></line>
-<line x1="3" x2="21" y1="18" y2="18"></line>
-</svg>
-<span class="nav-label">More</span>
-</a>
-</li>
-<li>
-<a href="#">
-<svg class="nav-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
-<rect height="7" width="7" x="3" y="3"></rect>
-<rect height="7" width="7" x="14" y="3"></rect>
-<rect height="7" width="7" x="14" y="14"></rect>
-<rect height="7" width="7" x="3" y="14"></rect>
-</svg>
-<span class="nav-label">Dashboard</span>
-</a>
-</li>
-</ul>
-</div>
-</aside>
-<!-- REELS MAIN VIEWPORT -->
-<audio id="reels-audio" loop="" src="assets/John%20Legend%20-%20P.D.A.%20%28We%20Just%20Don%27t%20Care%29%20%28Official%20Video%29%20%5BZwbNesQeods%5D.mp3"></audio>
-<main class="main-content reels-view">
-<div class="reels-outer-wrapper">
-<!-- Center Snapping Container -->
-<div class="reels-container" id="reels-scroller">
-<div class="reel-wrapper" data-reel-id="1">
-<div class="reel-video-container">
-<div class="reel-carousel-track" onscroll="updateReelPagination(this)" style="display:flex; overflow-x:scroll; scroll-snap-type: x mandatory; scrollbar-width: none; -ms-overflow-style: none; width:100%; height:100%;">
-<img alt="Reel 1" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG-20251118-WA0078.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
-<img alt="Reel 1" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG-20251118-WA0081.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
-<img alt="Reel 1" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG-20251208-WA0016.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
-<img alt="Reel 1" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG-20251230-WA0019.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
-</div>
-<div class="reel-carousel-pagination" style="position:absolute; bottom:20px; left:50%; transform:translateX(-50%); display:flex; gap:6px; z-index:10;">
-<div class="carousel-dot" style="background:white; width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
-<div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
-<div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
-<div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
-</div>
-<!-- Bottom Left Overlay -->
-<div class="reel-overlay-left">
-<div class="reel-user-row">
-<img alt="avatar" class="reel-avatar" loading="lazy" onerror="this.style.display='none'" src="assets/IMG-20251118-WA0073.jpg"/>
-<span class="reel-username">lovebirds</span>
-<button class="reel-follow-btn">Follow</button>
-</div>
-<div class="reel-caption">
-  Beautiful moments ❤️ #reels #viral #couplegoals
-</div>
-<div class="reel-music-row">
-<svg class="music-icon" fill="currentColor" viewbox="0 0 24 24">
-<path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"></path>
-</svg>
-<span class="music-name">John Legend - P.D.A.</span>
-</div>
-</div>
-<div class="reel-actions-column">
-<button class="action-btn reel-like" onclick="toggleReelLike(this)">
-<svg class="heart-outline" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
-<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-</svg>
-<svg class="heart-filled" fill="#ff3040" style="display:none;" viewbox="0 0 24 24">
-<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-</svg>
-<span class="action-text">32k</span>
-</button>
-<button class="action-btn reel-comment">
-<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
-<path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
-</svg>
-<span class="action-text">4,120</span>
-</button>
-<button class="action-btn reel-share">
-<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
-<line x1="22" x2="11" y1="2" y2="13"></line>
-<polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-</svg>
-<span class="action-text">Share</span>
-</button>
-<button class="action-btn reel-options">
-<div class="icon-circle">
-<svg fill="currentColor" height="24" viewbox="0 0 24 24" width="24">
-<circle cx="12" cy="12" r="1.5"></circle>
-<circle cx="6" cy="12" r="1.5"></circle>
-<circle cx="18" cy="12" r="1.5"></circle>
-</svg>
-</div>
-</button>
-<div class="music-vinyl-container audio-toggle-btn" onclick="toggleReelsAudio()">
-<img alt="album cover" class="music-vinyl-thumbnail rotating" loading="lazy" onerror="this.style.display='none'" src="assets/IMG-20251118-WA0073.jpg"/>
-<div class="audio-icon-overlay" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.5); border-radius:50%; padding:4px; display:flex;">
-<svg class="mute-icon" fill="white" height="16" viewbox="0 0 24 24" width="16"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"></path></svg>
-<svg class="unmute-icon" fill="white" height="16" style="display:none;" viewbox="0 0 24 24" width="16"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"></path></svg>
-</div>
-</div>
-</div></div> <!-- Close reel-video-container -->
-<!-- Right Action Buttons -->
+  <div class="app-container">
+    <!-- LEFT SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar-top">
+        <a class="logo-link" href="#">
+          <span class="logo-text"><span style="color:green">Pelumi</span> ❤️ <span
+              style="color:lightpink">Ella</span></span>
+        </a>
+      </div>
+      <nav class="sidebar-nav">
+        <ul>
+          <li>
+            <a href="index.html">
+              <svg class="nav-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2" viewbox="0 0 24 24">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+              </svg>
+              <span class="nav-label">Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg class="nav-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2" viewbox="0 0 24 24">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" x2="16.65" y1="21" y2="16.65"></line>
+              </svg>
+              <span class="nav-label">Search</span>
+            </a>
+          </li>
+          <li>
+            <a href="explore.html">
+              <svg class="nav-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2" viewbox="0 0 24 24">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+              </svg>
+              <span class="nav-label">Explore</span>
+            </a>
+          </li>
+          <li class="active">
+            <a href="reels.html">
+              <!-- Active Solid Reels Icon -->
+              <svg class="nav-icon active-icon" fill="currentColor" viewbox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z">
+                </path>
+              </svg>
+              <span class="nav-label">Reels</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="icon-badge-container">
+                <svg class="nav-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                  stroke-width="2" viewbox="0 0 24 24">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+                <span class="badge badge-red">9+</span>
+              </div>
+              <span class="nav-label">Messages</span>
+            </a>
+          </li>
+          <li class="nav-item-notifications">
+            <a href="#" id="nav-notifications">
+              <svg class="nav-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2" viewbox="0 0 24 24">
+                <path
+                  d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                </path>
+              </svg>
+              <span class="nav-label">Notifications</span>
+              <div class="notif-bubble">
+                <svg class="bubble-heart" fill="currentColor" viewbox="0 0 24 24">
+                  <path
+                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z">
+                  </path>
+                </svg>
+                <span>1</span>
+                <svg class="bubble-person" fill="currentColor" viewbox="0 0 24 24">
+                  <path
+                    d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z">
+                  </path>
+                </svg>
+                <span>1</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg class="nav-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2" viewbox="0 0 24 24">
+                <rect height="18" rx="2" ry="2" width="18" x="3" y="3"></rect>
+                <line x1="12" x2="12" y1="8" y2="16"></line>
+                <line x1="8" x2="16" y1="12" y2="12"></line>
+              </svg>
+              <span class="nav-label">Create</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="profile-avatar-container">
+                <img alt="Your Profile" class="sidebar-avatar" loading="lazy" src="assets/IMG-20251118-WA0073.jpg" />
+              </div>
+              <span class="nav-label">Mon Coeur</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="sidebar-bottom">
+        <ul>
+          <li>
+            <a href="#">
+              <svg class="nav-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2" viewbox="0 0 24 24">
+                <line x1="3" x2="21" y1="12" y2="12"></line>
+                <line x1="3" x2="21" y1="6" y2="6"></line>
+                <line x1="3" x2="21" y1="18" y2="18"></line>
+              </svg>
+              <span class="nav-label">More</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg class="nav-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2" viewbox="0 0 24 24">
+                <rect height="7" width="7" x="3" y="3"></rect>
+                <rect height="7" width="7" x="14" y="3"></rect>
+                <rect height="7" width="7" x="14" y="14"></rect>
+                <rect height="7" width="7" x="3" y="14"></rect>
+              </svg>
+              <span class="nav-label">Dashboard</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <!-- REELS MAIN VIEWPORT -->
+    <audio id="reels-audio" loop=""
+      src="assets/John%20Legend%20-%20P.D.A.%20%28We%20Just%20Don%27t%20Care%29%20%28Official%20Video%29%20%5BZwbNesQeods%5D.mp3"></audio>
+    <main class="main-content reels-view">
+      <div class="reels-outer-wrapper">
+        <!-- Center Snapping Container -->
+        <div class="reels-container" id="reels-scroller">
+          <div class="reel-wrapper" data-reel-id="1">
+            <div class="reel-video-container">
+              <div class="reel-carousel-track" onscroll="updateReelPagination(this)"
+                style="display:flex; overflow-x:scroll; scroll-snap-type: x mandatory; scrollbar-width: none; -ms-overflow-style: none; width:100%; height:100%;">
+                <img alt="Reel 1" class="reel-video" loading="lazy" onerror="this.remove()"
+                  src="assets/IMG-20251118-WA0078.jpg"
+                  style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
+                <img alt="Reel 1" class="reel-video" loading="lazy" onerror="this.remove()"
+                  src="assets/IMG-20251118-WA0081.jpg"
+                  style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
+                <img alt="Reel 1" class="reel-video" loading="lazy" onerror="this.remove()"
+                  src="assets/IMG-20251208-WA0016.jpg"
+                  style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
+                <img alt="Reel 1" class="reel-video" loading="lazy" onerror="this.remove()"
+                  src="assets/IMG-20251230-WA0019.jpg"
+                  style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
+              </div>
+              <div class="reel-carousel-pagination"
+                style="position:absolute; bottom:20px; left:50%; transform:translateX(-50%); display:flex; gap:6px; z-index:10;">
+                <div class="carousel-dot"
+                  style="background:white; width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
+                <div class="carousel-dot"
+                  style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;">
+                </div>
+                <div class="carousel-dot"
+                  style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;">
+                </div>
+                <div class="carousel-dot"
+                  style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;">
+                </div>
+              </div>
+              <!-- Bottom Left Overlay -->
+              <div class="reel-overlay-left">
+                <div class="reel-user-row">
+                  <img alt="avatar" class="reel-avatar" loading="lazy" onerror="this.style.display='none'"
+                    src="assets/IMG-20251118-WA0073.jpg" />
+                  <span class="reel-username">lovebirds</span>
+                  <button class="reel-follow-btn">Follow</button>
+                </div>
+                <div class="reel-caption">
+                  Beautiful moments ❤️ #reels #viral #couplegoals
+                </div>
+                <div class="reel-music-row">
+                  <svg class="music-icon" fill="currentColor" viewbox="0 0 24 24">
+                    <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z">
+                    </path>
+                  </svg>
+                  <span class="music-name">John Legend - P.D.A.</span>
+                </div>
+              </div>
+              <div class="reel-actions-column">
+                <button class="action-btn reel-like" onclick="toggleReelLike(this)">
+                  <svg class="heart-outline" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+                    <path
+                      d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                    </path>
+                  </svg>
+                  <svg class="heart-filled" fill="#ff3040" style="display:none;" viewbox="0 0 24 24">
+                    <path
+                      d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                    </path>
+                  </svg>
+                  <span class="action-text">32k</span>
+                </button>
+                <button class="action-btn reel-comment">
+                  <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+                    <path
+                      d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                    </path>
+                  </svg>
+                  <span class="action-text">4,120</span>
+                </button>
+                <button class="action-btn reel-share">
+                  <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+                    <line x1="22" x2="11" y1="2" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                  <span class="action-text">Share</span>
+                </button>
+                <button class="action-btn reel-options">
+                  <div class="icon-circle">
+                    <svg fill="currentColor" height="24" viewbox="0 0 24 24" width="24">
+                      <circle cx="12" cy="12" r="1.5"></circle>
+                      <circle cx="6" cy="12" r="1.5"></circle>
+                      <circle cx="18" cy="12" r="1.5"></circle>
+                    </svg>
+                  </div>
+                </button>
+                <div class="music-vinyl-container audio-toggle-btn" onclick="toggleReelsAudio()">
+                  <img alt="album cover" class="music-vinyl-thumbnail rotating" loading="lazy"
+                    onerror="this.style.display='none'" src="assets/IMG-20251118-WA0073.jpg" />
+                  <div class="audio-icon-overlay"
+                    style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.5); border-radius:50%; padding:4px; display:flex;">
+                    <svg class="mute-icon" fill="white" height="16" viewbox="0 0 24 24" width="16">
+                      <path
+                        d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z">
+                      </path>
+                    </svg>
+                    <svg class="unmute-icon" fill="white" height="16" style="display:none;" viewbox="0 0 24 24"
+                      width="16">
+                      <path
+                        d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- Close reel-video-container -->
+            <!-- Right Action Buttons -->
 
-</div> <!-- Close reel-wrapper -->
-<div class="reel-wrapper" data-reel-id="2">
-<div class="reel-video-container">
-<div class="reel-carousel-track" onscroll="updateReelPagination(this)" style="display:flex; overflow-x:scroll; scroll-snap-type: x mandatory; scrollbar-width: none; -ms-overflow-style: none; width:100%; height:100%;">
-<img alt="Reel 2" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG-20260220-WA0016.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
-<img alt="Reel 2" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG-20260303-WA0001.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
-<img alt="Reel 2" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG-20260303-WA0005.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
-<img alt="Reel 2" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG-20260303-WA0007.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
-</div>
-<div class="reel-carousel-pagination" style="position:absolute; bottom:20px; left:50%; transform:translateX(-50%); display:flex; gap:6px; z-index:10;">
-<div class="carousel-dot" style="background:white; width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
-<div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
-<div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
-<div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
-</div>
-<!-- Bottom Left Overlay -->
-<div class="reel-overlay-left">
-<div class="reel-user-row">
-<img alt="avatar" class="reel-avatar" loading="lazy" onerror="this.style.display='none'" src="assets/IMG-20251118-WA0073.jpg"/>
-<span class="reel-username">lovebirds</span>
-<button class="reel-follow-btn">Follow</button>
-</div>
-<div class="reel-caption">
-  Beautiful moments ❤️ #reels #viral #couplegoals
-</div>
-<div class="reel-music-row">
-<svg class="music-icon" fill="currentColor" viewbox="0 0 24 24">
-<path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"></path>
-</svg>
-<span class="music-name">John Legend - P.D.A.</span>
-</div>
-</div>
-<div class="reel-actions-column">
-<button class="action-btn reel-like" onclick="toggleReelLike(this)">
-<svg class="heart-outline" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
-<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-</svg>
-<svg class="heart-filled" fill="#ff3040" style="display:none;" viewbox="0 0 24 24">
-<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-</svg>
-<span class="action-text">32k</span>
-</button>
-<button class="action-btn reel-comment">
-<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
-<path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
-</svg>
-<span class="action-text">4,120</span>
-</button>
-<button class="action-btn reel-share">
-<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
-<line x1="22" x2="11" y1="2" y2="13"></line>
-<polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-</svg>
-<span class="action-text">Share</span>
-</button>
-<button class="action-btn reel-options">
-<div class="icon-circle">
-<svg fill="currentColor" height="24" viewbox="0 0 24 24" width="24">
-<circle cx="12" cy="12" r="1.5"></circle>
-<circle cx="6" cy="12" r="1.5"></circle>
-<circle cx="18" cy="12" r="1.5"></circle>
-</svg>
-</div>
-</button>
-<div class="music-vinyl-container audio-toggle-btn" onclick="toggleReelsAudio()">
-<img alt="album cover" class="music-vinyl-thumbnail rotating" loading="lazy" onerror="this.style.display='none'" src="assets/IMG-20251118-WA0073.jpg"/>
-<div class="audio-icon-overlay" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.5); border-radius:50%; padding:4px; display:flex;">
-<svg class="mute-icon" fill="white" height="16" viewbox="0 0 24 24" width="16"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"></path></svg>
-<svg class="unmute-icon" fill="white" height="16" style="display:none;" viewbox="0 0 24 24" width="16"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"></path></svg>
-</div>
-</div>
-</div></div> <!-- Close reel-video-container -->
-<!-- Right Action Buttons -->
+          </div> <!-- Close reel-wrapper -->
+          <div class="reel-wrapper" data-reel-id="2">
+            <div class="reel-video-container">
+              <div class="reel-carousel-track" onscroll="updateReelPagination(this)"
+                style="display:flex; overflow-x:scroll; scroll-snap-type: x mandatory; scrollbar-width: none; -ms-overflow-style: none; width:100%; height:100%;">
+                <img alt="Reel 2" class="reel-video" loading="lazy" onerror="this.remove()"
+                  src="assets/IMG-20260220-WA0016.jpg"
+                  style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
+                <img alt="Reel 2" class="reel-video" loading="lazy" onerror="this.remove()"
+                  src="assets/IMG-20260303-WA0001.jpg"
+                  style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
+                <img alt="Reel 2" class="reel-video" loading="lazy" onerror="this.remove()"
+                  src="assets/IMG-20260303-WA0005.jpg"
+                  style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
+                <img alt="Reel 2" class="reel-video" loading="lazy" onerror="this.remove()"
+                  src="assets/IMG-20260303-WA0007.jpg"
+                  style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
+              </div>
+              <div class="reel-carousel-pagination"
+                style="position:absolute; bottom:20px; left:50%; transform:translateX(-50%); display:flex; gap:6px; z-index:10;">
+                <div class="carousel-dot"
+                  style="background:white; width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
+                <div class="carousel-dot"
+                  style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;">
+                </div>
+                <div class="carousel-dot"
+                  style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;">
+                </div>
+                <div class="carousel-dot"
+                  style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;">
+                </div>
+              </div>
+              <!-- Bottom Left Overlay -->
+              <div class="reel-overlay-left">
+                <div class="reel-user-row">
+                  <img alt="avatar" class="reel-avatar" loading="lazy" onerror="this.style.display='none'"
+                    src="assets/IMG-20251118-WA0073.jpg" />
+                  <span class="reel-username">lovebirds</span>
+                  <button class="reel-follow-btn">Follow</button>
+                </div>
+                <div class="reel-caption">
+                  Beautiful moments ❤️ #reels #viral #couplegoals
+                </div>
+                <div class="reel-music-row">
+                  <svg class="music-icon" fill="currentColor" viewbox="0 0 24 24">
+                    <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z">
+                    </path>
+                  </svg>
+                  <span class="music-name">John Legend - P.D.A.</span>
+                </div>
+              </div>
+              <div class="reel-actions-column">
+                <button class="action-btn reel-like" onclick="toggleReelLike(this)">
+                  <svg class="heart-outline" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+                    <path
+                      d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                    </path>
+                  </svg>
+                  <svg class="heart-filled" fill="#ff3040" style="display:none;" viewbox="0 0 24 24">
+                    <path
+                      d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                    </path>
+                  </svg>
+                  <span class="action-text">32k</span>
+                </button>
+                <button class="action-btn reel-comment">
+                  <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+                    <path
+                      d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                    </path>
+                  </svg>
+                  <span class="action-text">4,120</span>
+                </button>
+                <button class="action-btn reel-share">
+                  <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+                    <line x1="22" x2="11" y1="2" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                  <span class="action-text">Share</span>
+                </button>
+                <button class="action-btn reel-options">
+                  <div class="icon-circle">
+                    <svg fill="currentColor" height="24" viewbox="0 0 24 24" width="24">
+                      <circle cx="12" cy="12" r="1.5"></circle>
+                      <circle cx="6" cy="12" r="1.5"></circle>
+                      <circle cx="18" cy="12" r="1.5"></circle>
+                    </svg>
+                  </div>
+                </button>
+                <div class="music-vinyl-container audio-toggle-btn" onclick="toggleReelsAudio()">
+                  <img alt="album cover" class="music-vinyl-thumbnail rotating" loading="lazy"
+                    onerror="this.style.display='none'" src="assets/IMG-20251118-WA0073.jpg" />
+                  <div class="audio-icon-overlay"
+                    style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.5); border-radius:50%; padding:4px; display:flex;">
+                    <svg class="mute-icon" fill="white" height="16" viewbox="0 0 24 24" width="16">
+                      <path
+                        d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z">
+                      </path>
+                    </svg>
+                    <svg class="unmute-icon" fill="white" height="16" style="display:none;" viewbox="0 0 24 24"
+                      width="16">
+                      <path
+                        d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- Close reel-video-container -->
+            <!-- Right Action Buttons -->
 
-</div> <!-- Close reel-wrapper -->
-<div class="reel-wrapper" data-reel-id="3">
-<div class="reel-video-container">
-<div class="reel-carousel-track" onscroll="updateReelPagination(this)" style="display:flex; overflow-x:scroll; scroll-snap-type: x mandatory; scrollbar-width: none; -ms-overflow-style: none; width:100%; height:100%;">
-<img alt="Reel 3" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG-20260305-WA0011.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
-<img alt="Reel 3" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG-20260305-WA0012.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
-<img alt="Reel 3" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG-20260305-WA0013.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
-<img alt="Reel 3" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG-20260423-WA0091.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
-</div>
-<div class="reel-carousel-pagination" style="position:absolute; bottom:20px; left:50%; transform:translateX(-50%); display:flex; gap:6px; z-index:10;">
-<div class="carousel-dot" style="background:white; width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
-<div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
-<div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
-<div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
-</div>
-<!-- Bottom Left Overlay -->
-<div class="reel-overlay-left">
-<div class="reel-user-row">
-<img alt="avatar" class="reel-avatar" loading="lazy" onerror="this.style.display='none'" src="assets/IMG-20251118-WA0073.jpg"/>
-<span class="reel-username">lovebirds</span>
-<button class="reel-follow-btn">Follow</button>
-</div>
-<div class="reel-caption">
-  Beautiful moments ❤️ #reels #viral #couplegoals
-</div>
-<div class="reel-music-row">
-<svg class="music-icon" fill="currentColor" viewbox="0 0 24 24">
-<path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"></path>
-</svg>
-<span class="music-name">John Legend - P.D.A.</span>
-</div>
-</div>
-<div class="reel-actions-column">
-<button class="action-btn reel-like" onclick="toggleReelLike(this)">
-<svg class="heart-outline" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
-<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-</svg>
-<svg class="heart-filled" fill="#ff3040" style="display:none;" viewbox="0 0 24 24">
-<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-</svg>
-<span class="action-text">32k</span>
-</button>
-<button class="action-btn reel-comment">
-<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
-<path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
-</svg>
-<span class="action-text">4,120</span>
-</button>
-<button class="action-btn reel-share">
-<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
-<line x1="22" x2="11" y1="2" y2="13"></line>
-<polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-</svg>
-<span class="action-text">Share</span>
-</button>
-<button class="action-btn reel-options">
-<div class="icon-circle">
-<svg fill="currentColor" height="24" viewbox="0 0 24 24" width="24">
-<circle cx="12" cy="12" r="1.5"></circle>
-<circle cx="6" cy="12" r="1.5"></circle>
-<circle cx="18" cy="12" r="1.5"></circle>
-</svg>
-</div>
-</button>
-<div class="music-vinyl-container audio-toggle-btn" onclick="toggleReelsAudio()">
-<img alt="album cover" class="music-vinyl-thumbnail rotating" loading="lazy" onerror="this.style.display='none'" src="assets/IMG-20251118-WA0073.jpg"/>
-<div class="audio-icon-overlay" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.5); border-radius:50%; padding:4px; display:flex;">
-<svg class="mute-icon" fill="white" height="16" viewbox="0 0 24 24" width="16"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"></path></svg>
-<svg class="unmute-icon" fill="white" height="16" style="display:none;" viewbox="0 0 24 24" width="16"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"></path></svg>
-</div>
-</div>
-</div></div> <!-- Close reel-video-container -->
-<!-- Right Action Buttons -->
+          </div> <!-- Close reel-wrapper -->
+          <div class="reel-wrapper" data-reel-id="3">
+            <div class="reel-video-container">
+              <div class="reel-carousel-track" onscroll="updateReelPagination(this)"
+                style="display:flex; overflow-x:scroll; scroll-snap-type: x mandatory; scrollbar-width: none; -ms-overflow-style: none; width:100%; height:100%;">
+                <img alt="Reel 3" class="reel-video" loading="lazy" onerror="this.remove()"
+                  src="assets/IMG-20260305-WA0011.jpg"
+                  style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
+                <img alt="Reel 3" class="reel-video" loading="lazy" onerror="this.remove()"
+                  src="assets/IMG-20260305-WA0012.jpg"
+                  style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
+                <img alt="Reel 3" class="reel-video" loading="lazy" onerror="this.remove()"
+                  src="assets/IMG-20260305-WA0013.jpg"
+                  style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
+                <img alt="Reel 3" class="reel-video" loading="lazy" onerror="this.remove()"
+                  src="assets/IMG-20260423-WA0091.jpg"
+                  style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
+              </div>
+              <div class="reel-carousel-pagination"
+                style="position:absolute; bottom:20px; left:50%; transform:translateX(-50%); display:flex; gap:6px; z-index:10;">
+                <div class="carousel-dot"
+                  style="background:white; width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
+                <div class="carousel-dot"
+                  style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;">
+                </div>
+                <div class="carousel-dot"
+                  style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;">
+                </div>
+                <div class="carousel-dot"
+                  style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;">
+                </div>
+              </div>
+              <!-- Bottom Left Overlay -->
+              <div class="reel-overlay-left">
+                <div class="reel-user-row">
+                  <img alt="avatar" class="reel-avatar" loading="lazy" onerror="this.style.display='none'"
+                    src="assets/IMG-20251118-WA0073.jpg" />
+                  <span class="reel-username">lovebirds</span>
+                  <button class="reel-follow-btn">Follow</button>
+                </div>
+                <div class="reel-caption">
+                  Beautiful moments ❤️ #reels #viral #couplegoals
+                </div>
+                <div class="reel-music-row">
+                  <svg class="music-icon" fill="currentColor" viewbox="0 0 24 24">
+                    <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z">
+                    </path>
+                  </svg>
+                  <span class="music-name">John Legend - P.D.A.</span>
+                </div>
+              </div>
+              <div class="reel-actions-column">
+                <button class="action-btn reel-like" onclick="toggleReelLike(this)">
+                  <svg class="heart-outline" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+                    <path
+                      d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                    </path>
+                  </svg>
+                  <svg class="heart-filled" fill="#ff3040" style="display:none;" viewbox="0 0 24 24">
+                    <path
+                      d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                    </path>
+                  </svg>
+                  <span class="action-text">32k</span>
+                </button>
+                <button class="action-btn reel-comment">
+                  <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+                    <path
+                      d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                    </path>
+                  </svg>
+                  <span class="action-text">4,120</span>
+                </button>
+                <button class="action-btn reel-share">
+                  <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+                    <line x1="22" x2="11" y1="2" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                  <span class="action-text">Share</span>
+                </button>
+                <button class="action-btn reel-options">
+                  <div class="icon-circle">
+                    <svg fill="currentColor" height="24" viewbox="0 0 24 24" width="24">
+                      <circle cx="12" cy="12" r="1.5"></circle>
+                      <circle cx="6" cy="12" r="1.5"></circle>
+                      <circle cx="18" cy="12" r="1.5"></circle>
+                    </svg>
+                  </div>
+                </button>
+                <div class="music-vinyl-container audio-toggle-btn" onclick="toggleReelsAudio()">
+                  <img alt="album cover" class="music-vinyl-thumbnail rotating" loading="lazy"
+                    onerror="this.style.display='none'" src="assets/IMG-20251118-WA0073.jpg" />
+                  <div class="audio-icon-overlay"
+                    style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.5); border-radius:50%; padding:4px; display:flex;">
+                    <svg class="mute-icon" fill="white" height="16" viewbox="0 0 24 24" width="16">
+                      <path
+                        d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z">
+                      </path>
+                    </svg>
+                    <svg class="unmute-icon" fill="white" height="16" style="display:none;" viewbox="0 0 24 24"
+                      width="16">
+                      <path
+                        d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- Close reel-video-container -->
+            <!-- Right Action Buttons -->
 
-</div> <!-- Close reel-wrapper -->
-<div class="reel-wrapper" data-reel-id="4">
-<div class="reel-video-container">
-<div class="reel-carousel-track" onscroll="updateReelPagination(this)" style="display:flex; overflow-x:scroll; scroll-snap-type: x mandatory; scrollbar-width: none; -ms-overflow-style: none; width:100%; height:100%;">
-<img alt="Reel 4" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG-20260423-WA0092.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
-<img alt="Reel 4" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG-20260505-WA0118.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
-<img alt="Reel 4" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG-20260505-WA0150.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
-<img alt="Reel 4" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG-20260505-WA0243.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
-</div>
-<div class="reel-carousel-pagination" style="position:absolute; bottom:20px; left:50%; transform:translateX(-50%); display:flex; gap:6px; z-index:10;">
-<div class="carousel-dot" style="background:white; width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
-<div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
-<div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
-<div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
-</div>
-<!-- Bottom Left Overlay -->
-<div class="reel-overlay-left">
-<div class="reel-user-row">
-<img alt="avatar" class="reel-avatar" loading="lazy" onerror="this.style.display='none'" src="assets/IMG-20251118-WA0073.jpg"/>
-<span class="reel-username">lovebirds</span>
-<button class="reel-follow-btn">Follow</button>
-</div>
-<div class="reel-caption">
-  Beautiful moments ❤️ #reels #viral #couplegoals
-</div>
-<div class="reel-music-row">
-<svg class="music-icon" fill="currentColor" viewbox="0 0 24 24">
-<path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"></path>
-</svg>
-<span class="music-name">John Legend - P.D.A.</span>
-</div>
-</div>
-<div class="reel-actions-column">
-<button class="action-btn reel-like" onclick="toggleReelLike(this)">
-<svg class="heart-outline" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
-<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-</svg>
-<svg class="heart-filled" fill="#ff3040" style="display:none;" viewbox="0 0 24 24">
-<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-</svg>
-<span class="action-text">32k</span>
-</button>
-<button class="action-btn reel-comment">
-<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
-<path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
-</svg>
-<span class="action-text">4,120</span>
-</button>
-<button class="action-btn reel-share">
-<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
-<line x1="22" x2="11" y1="2" y2="13"></line>
-<polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-</svg>
-<span class="action-text">Share</span>
-</button>
-<button class="action-btn reel-options">
-<div class="icon-circle">
-<svg fill="currentColor" height="24" viewbox="0 0 24 24" width="24">
-<circle cx="12" cy="12" r="1.5"></circle>
-<circle cx="6" cy="12" r="1.5"></circle>
-<circle cx="18" cy="12" r="1.5"></circle>
-</svg>
-</div>
-</button>
-<div class="music-vinyl-container audio-toggle-btn" onclick="toggleReelsAudio()">
-<img alt="album cover" class="music-vinyl-thumbnail rotating" loading="lazy" onerror="this.style.display='none'" src="assets/IMG-20251118-WA0073.jpg"/>
-<div class="audio-icon-overlay" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.5); border-radius:50%; padding:4px; display:flex;">
-<svg class="mute-icon" fill="white" height="16" viewbox="0 0 24 24" width="16"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"></path></svg>
-<svg class="unmute-icon" fill="white" height="16" style="display:none;" viewbox="0 0 24 24" width="16"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"></path></svg>
-</div>
-</div>
-</div></div> <!-- Close reel-video-container -->
-<!-- Right Action Buttons -->
+          </div> <!-- Close reel-wrapper -->
+          <div class="reel-wrapper" data-reel-id="4">
+            <div class="reel-video-container">
+              <div class="reel-carousel-track" onscroll="updateReelPagination(this)"
+                style="display:flex; overflow-x:scroll; scroll-snap-type: x mandatory; scrollbar-width: none; -ms-overflow-style: none; width:100%; height:100%;">
+                <img alt="Reel 4" class="reel-video" loading="lazy" onerror="this.remove()"
+                  src="assets/IMG-20260423-WA0092.jpg"
+                  style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
+                <img alt="Reel 4" class="reel-video" loading="lazy" onerror="this.remove()"
+                  src="assets/IMG-20260505-WA0118.jpg"
+                  style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
+                <img alt="Reel 4" class="reel-video" loading="lazy" onerror="this.remove()"
+                  src="assets/IMG-20260505-WA0150.jpg"
+                  style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
+                <img alt="Reel 4" class="reel-video" loading="lazy" onerror="this.remove()"
+                  src="assets/IMG-20260505-WA0243.jpg"
+                  style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
+              </div>
+              <div class="reel-carousel-pagination"
+                style="position:absolute; bottom:20px; left:50%; transform:translateX(-50%); display:flex; gap:6px; z-index:10;">
+                <div class="carousel-dot"
+                  style="background:white; width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
+                <div class="carousel-dot"
+                  style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;">
+                </div>
+                <div class="carousel-dot"
+                  style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;">
+                </div>
+                <div class="carousel-dot"
+                  style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;">
+                </div>
+              </div>
+              <!-- Bottom Left Overlay -->
+              <div class="reel-overlay-left">
+                <div class="reel-user-row">
+                  <img alt="avatar" class="reel-avatar" loading="lazy" onerror="this.style.display='none'"
+                    src="assets/IMG-20251118-WA0073.jpg" />
+                  <span class="reel-username">lovebirds</span>
+                  <button class="reel-follow-btn">Follow</button>
+                </div>
+                <div class="reel-caption">
+                  Beautiful moments ❤️ #reels #viral #couplegoals
+                </div>
+                <div class="reel-music-row">
+                  <svg class="music-icon" fill="currentColor" viewbox="0 0 24 24">
+                    <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z">
+                    </path>
+                  </svg>
+                  <span class="music-name">John Legend - P.D.A.</span>
+                </div>
+              </div>
+              <div class="reel-actions-column">
+                <button class="action-btn reel-like" onclick="toggleReelLike(this)">
+                  <svg class="heart-outline" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+                    <path
+                      d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                    </path>
+                  </svg>
+                  <svg class="heart-filled" fill="#ff3040" style="display:none;" viewbox="0 0 24 24">
+                    <path
+                      d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                    </path>
+                  </svg>
+                  <span class="action-text">32k</span>
+                </button>
+                <button class="action-btn reel-comment">
+                  <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+                    <path
+                      d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                    </path>
+                  </svg>
+                  <span class="action-text">4,120</span>
+                </button>
+                <button class="action-btn reel-share">
+                  <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+                    <line x1="22" x2="11" y1="2" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                  <span class="action-text">Share</span>
+                </button>
+                <button class="action-btn reel-options">
+                  <div class="icon-circle">
+                    <svg fill="currentColor" height="24" viewbox="0 0 24 24" width="24">
+                      <circle cx="12" cy="12" r="1.5"></circle>
+                      <circle cx="6" cy="12" r="1.5"></circle>
+                      <circle cx="18" cy="12" r="1.5"></circle>
+                    </svg>
+                  </div>
+                </button>
+                <div class="music-vinyl-container audio-toggle-btn" onclick="toggleReelsAudio()">
+                  <img alt="album cover" class="music-vinyl-thumbnail rotating" loading="lazy"
+                    onerror="this.style.display='none'" src="assets/IMG-20251118-WA0073.jpg" />
+                  <div class="audio-icon-overlay"
+                    style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.5); border-radius:50%; padding:4px; display:flex;">
+                    <svg class="mute-icon" fill="white" height="16" viewbox="0 0 24 24" width="16">
+                      <path
+                        d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z">
+                      </path>
+                    </svg>
+                    <svg class="unmute-icon" fill="white" height="16" style="display:none;" viewbox="0 0 24 24"
+                      width="16">
+                      <path
+                        d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- Close reel-video-container -->
+            <!-- Right Action Buttons -->
 
-</div> <!-- Close reel-wrapper -->
-<div class="reel-wrapper" data-reel-id="5">
-<div class="reel-video-container">
-<div class="reel-carousel-track" onscroll="updateReelPagination(this)" style="display:flex; overflow-x:scroll; scroll-snap-type: x mandatory; scrollbar-width: none; -ms-overflow-style: none; width:100%; height:100%;">
-<img alt="Reel 5" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG-20260505-WA0250.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
-<img alt="Reel 5" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG-20260505-WA0254.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
-<img alt="Reel 5" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG-20260505-WA0258.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
-<img alt="Reel 5" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG-20260505-WA0260.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
-</div>
-<div class="reel-carousel-pagination" style="position:absolute; bottom:20px; left:50%; transform:translateX(-50%); display:flex; gap:6px; z-index:10;">
-<div class="carousel-dot" style="background:white; width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
-<div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
-<div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
-<div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
-</div>
-<!-- Bottom Left Overlay -->
-<div class="reel-overlay-left">
-<div class="reel-user-row">
-<img alt="avatar" class="reel-avatar" loading="lazy" onerror="this.style.display='none'" src="assets/IMG-20251118-WA0073.jpg"/>
-<span class="reel-username">lovebirds</span>
-<button class="reel-follow-btn">Follow</button>
-</div>
-<div class="reel-caption">
-  Beautiful moments ❤️ #reels #viral #couplegoals
-</div>
-<div class="reel-music-row">
-<svg class="music-icon" fill="currentColor" viewbox="0 0 24 24">
-<path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"></path>
-</svg>
-<span class="music-name">John Legend - P.D.A.</span>
-</div>
-</div>
-<div class="reel-actions-column">
-<button class="action-btn reel-like" onclick="toggleReelLike(this)">
-<svg class="heart-outline" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
-<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-</svg>
-<svg class="heart-filled" fill="#ff3040" style="display:none;" viewbox="0 0 24 24">
-<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-</svg>
-<span class="action-text">32k</span>
-</button>
-<button class="action-btn reel-comment">
-<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
-<path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
-</svg>
-<span class="action-text">4,120</span>
-</button>
-<button class="action-btn reel-share">
-<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
-<line x1="22" x2="11" y1="2" y2="13"></line>
-<polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-</svg>
-<span class="action-text">Share</span>
-</button>
-<button class="action-btn reel-options">
-<div class="icon-circle">
-<svg fill="currentColor" height="24" viewbox="0 0 24 24" width="24">
-<circle cx="12" cy="12" r="1.5"></circle>
-<circle cx="6" cy="12" r="1.5"></circle>
-<circle cx="18" cy="12" r="1.5"></circle>
-</svg>
-</div>
-</button>
-<div class="music-vinyl-container audio-toggle-btn" onclick="toggleReelsAudio()">
-<img alt="album cover" class="music-vinyl-thumbnail rotating" loading="lazy" onerror="this.style.display='none'" src="assets/IMG-20251118-WA0073.jpg"/>
-<div class="audio-icon-overlay" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.5); border-radius:50%; padding:4px; display:flex;">
-<svg class="mute-icon" fill="white" height="16" viewbox="0 0 24 24" width="16"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"></path></svg>
-<svg class="unmute-icon" fill="white" height="16" style="display:none;" viewbox="0 0 24 24" width="16"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"></path></svg>
-</div>
-</div>
-</div></div> <!-- Close reel-video-container -->
-<!-- Right Action Buttons -->
+          </div> <!-- Close reel-wrapper -->
+          <div class="reel-wrapper" data-reel-id="5">
+            <div class="reel-video-container">
+              <div class="reel-carousel-track" onscroll="updateReelPagination(this)"
+                style="display:flex; overflow-x:scroll; scroll-snap-type: x mandatory; scrollbar-width: none; -ms-overflow-style: none; width:100%; height:100%;">
+                <img alt="Reel 5" class="reel-video" loading="lazy" onerror="this.remove()"
+                  src="assets/IMG-20260505-WA0250.jpg"
+                  style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
+                <img alt="Reel 5" class="reel-video" loading="lazy" onerror="this.remove()"
+                  src="assets/IMG-20260505-WA0254.jpg"
+                  style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
+                <img alt="Reel 5" class="reel-video" loading="lazy" onerror="this.remove()"
+                  src="assets/IMG-20260505-WA0258.jpg"
+                  style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
+                <img alt="Reel 5" class="reel-video" loading="lazy" onerror="this.remove()"
+                  src="assets/IMG-20260505-WA0260.jpg"
+                  style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
+              </div>
+              <div class="reel-carousel-pagination"
+                style="position:absolute; bottom:20px; left:50%; transform:translateX(-50%); display:flex; gap:6px; z-index:10;">
+                <div class="carousel-dot"
+                  style="background:white; width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
+                <div class="carousel-dot"
+                  style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;">
+                </div>
+                <div class="carousel-dot"
+                  style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;">
+                </div>
+                <div class="carousel-dot"
+                  style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;">
+                </div>
+              </div>
+              <!-- Bottom Left Overlay -->
+              <div class="reel-overlay-left">
+                <div class="reel-user-row">
+                  <img alt="avatar" class="reel-avatar" loading="lazy" onerror="this.style.display='none'"
+                    src="assets/IMG-20251118-WA0073.jpg" />
+                  <span class="reel-username">lovebirds</span>
+                  <button class="reel-follow-btn">Follow</button>
+                </div>
+                <div class="reel-caption">
+                  Beautiful moments ❤️ #reels #viral #couplegoals
+                </div>
+                <div class="reel-music-row">
+                  <svg class="music-icon" fill="currentColor" viewbox="0 0 24 24">
+                    <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z">
+                    </path>
+                  </svg>
+                  <span class="music-name">John Legend - P.D.A.</span>
+                </div>
+              </div>
+              <div class="reel-actions-column">
+                <button class="action-btn reel-like" onclick="toggleReelLike(this)">
+                  <svg class="heart-outline" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+                    <path
+                      d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                    </path>
+                  </svg>
+                  <svg class="heart-filled" fill="#ff3040" style="display:none;" viewbox="0 0 24 24">
+                    <path
+                      d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                    </path>
+                  </svg>
+                  <span class="action-text">32k</span>
+                </button>
+                <button class="action-btn reel-comment">
+                  <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+                    <path
+                      d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                    </path>
+                  </svg>
+                  <span class="action-text">4,120</span>
+                </button>
+                <button class="action-btn reel-share">
+                  <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+                    <line x1="22" x2="11" y1="2" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                  <span class="action-text">Share</span>
+                </button>
+                <button class="action-btn reel-options">
+                  <div class="icon-circle">
+                    <svg fill="currentColor" height="24" viewbox="0 0 24 24" width="24">
+                      <circle cx="12" cy="12" r="1.5"></circle>
+                      <circle cx="6" cy="12" r="1.5"></circle>
+                      <circle cx="18" cy="12" r="1.5"></circle>
+                    </svg>
+                  </div>
+                </button>
+                <div class="music-vinyl-container audio-toggle-btn" onclick="toggleReelsAudio()">
+                  <img alt="album cover" class="music-vinyl-thumbnail rotating" loading="lazy"
+                    onerror="this.style.display='none'" src="assets/IMG-20251118-WA0073.jpg" />
+                  <div class="audio-icon-overlay"
+                    style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.5); border-radius:50%; padding:4px; display:flex;">
+                    <svg class="mute-icon" fill="white" height="16" viewbox="0 0 24 24" width="16">
+                      <path
+                        d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z">
+                      </path>
+                    </svg>
+                    <svg class="unmute-icon" fill="white" height="16" style="display:none;" viewbox="0 0 24 24"
+                      width="16">
+                      <path
+                        d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- Close reel-video-container -->
+            <!-- Right Action Buttons -->
 
-</div> <!-- Close reel-wrapper -->
-<div class="reel-wrapper" data-reel-id="6">
-<div class="reel-video-container">
-<div class="reel-carousel-track" onscroll="updateReelPagination(this)" style="display:flex; overflow-x:scroll; scroll-snap-type: x mandatory; scrollbar-width: none; -ms-overflow-style: none; width:100%; height:100%;">
-<img alt="Reel 6" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG-20260602-WA0005.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
-<img alt="Reel 6" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG-20260731-WA0151.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
-<img alt="Reel 6" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG-20260731-WA0152.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
-<img alt="Reel 6" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG-20260731-WA0156.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
-</div>
-<div class="reel-carousel-pagination" style="position:absolute; bottom:20px; left:50%; transform:translateX(-50%); display:flex; gap:6px; z-index:10;">
-<div class="carousel-dot" style="background:white; width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
-<div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
-<div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
-<div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
-</div>
-<!-- Bottom Left Overlay -->
-<div class="reel-overlay-left">
-<div class="reel-user-row">
-<img alt="avatar" class="reel-avatar" loading="lazy" onerror="this.style.display='none'" src="assets/IMG-20251118-WA0073.jpg"/>
-<span class="reel-username">lovebirds</span>
-<button class="reel-follow-btn">Follow</button>
-</div>
-<div class="reel-caption">
-  Beautiful moments ❤️ #reels #viral #couplegoals
-</div>
-<div class="reel-music-row">
-<svg class="music-icon" fill="currentColor" viewbox="0 0 24 24">
-<path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"></path>
-</svg>
-<span class="music-name">John Legend - P.D.A.</span>
-</div>
-</div>
-<div class="reel-actions-column">
-<button class="action-btn reel-like" onclick="toggleReelLike(this)">
-<svg class="heart-outline" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
-<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-</svg>
-<svg class="heart-filled" fill="#ff3040" style="display:none;" viewbox="0 0 24 24">
-<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-</svg>
-<span class="action-text">32k</span>
-</button>
-<button class="action-btn reel-comment">
-<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
-<path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
-</svg>
-<span class="action-text">4,120</span>
-</button>
-<button class="action-btn reel-share">
-<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
-<line x1="22" x2="11" y1="2" y2="13"></line>
-<polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-</svg>
-<span class="action-text">Share</span>
-</button>
-<button class="action-btn reel-options">
-<div class="icon-circle">
-<svg fill="currentColor" height="24" viewbox="0 0 24 24" width="24">
-<circle cx="12" cy="12" r="1.5"></circle>
-<circle cx="6" cy="12" r="1.5"></circle>
-<circle cx="18" cy="12" r="1.5"></circle>
-</svg>
-</div>
-</button>
-<div class="music-vinyl-container audio-toggle-btn" onclick="toggleReelsAudio()">
-<img alt="album cover" class="music-vinyl-thumbnail rotating" loading="lazy" onerror="this.style.display='none'" src="assets/IMG-20251118-WA0073.jpg"/>
-<div class="audio-icon-overlay" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.5); border-radius:50%; padding:4px; display:flex;">
-<svg class="mute-icon" fill="white" height="16" viewbox="0 0 24 24" width="16"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"></path></svg>
-<svg class="unmute-icon" fill="white" height="16" style="display:none;" viewbox="0 0 24 24" width="16"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"></path></svg>
-</div>
-</div>
-</div></div> <!-- Close reel-video-container -->
-<!-- Right Action Buttons -->
+          </div> <!-- Close reel-wrapper -->
+          <div class="reel-wrapper" data-reel-id="6">
+            <div class="reel-video-container">
+              <div class="reel-carousel-track" onscroll="updateReelPagination(this)"
+                style="display:flex; overflow-x:scroll; scroll-snap-type: x mandatory; scrollbar-width: none; -ms-overflow-style: none; width:100%; height:100%;">
+                <img alt="Reel 6" class="reel-video" loading="lazy" onerror="this.remove()"
+                  src="assets/IMG-20260602-WA0005.jpg"
+                  style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
+                <img alt="Reel 6" class="reel-video" loading="lazy" onerror="this.remove()"
+                  src="assets/IMG-20260731-WA0151.jpg"
+                  style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
+                <img alt="Reel 6" class="reel-video" loading="lazy" onerror="this.remove()"
+                  src="assets/IMG-20260731-WA0152.jpg"
+                  style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
+                <img alt="Reel 6" class="reel-video" loading="lazy" onerror="this.remove()"
+                  src="assets/IMG-20260731-WA0156.jpg"
+                  style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
+              </div>
+              <div class="reel-carousel-pagination"
+                style="position:absolute; bottom:20px; left:50%; transform:translateX(-50%); display:flex; gap:6px; z-index:10;">
+                <div class="carousel-dot"
+                  style="background:white; width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
+                <div class="carousel-dot"
+                  style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;">
+                </div>
+                <div class="carousel-dot"
+                  style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;">
+                </div>
+                <div class="carousel-dot"
+                  style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;">
+                </div>
+              </div>
+              <!-- Bottom Left Overlay -->
+              <div class="reel-overlay-left">
+                <div class="reel-user-row">
+                  <img alt="avatar" class="reel-avatar" loading="lazy" onerror="this.style.display='none'"
+                    src="assets/IMG-20251118-WA0073.jpg" />
+                  <span class="reel-username">lovebirds</span>
+                  <button class="reel-follow-btn">Follow</button>
+                </div>
+                <div class="reel-caption">
+                  Beautiful moments ❤️ #reels #viral #couplegoals
+                </div>
+                <div class="reel-music-row">
+                  <svg class="music-icon" fill="currentColor" viewbox="0 0 24 24">
+                    <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z">
+                    </path>
+                  </svg>
+                  <span class="music-name">John Legend - P.D.A.</span>
+                </div>
+              </div>
+              <div class="reel-actions-column">
+                <button class="action-btn reel-like" onclick="toggleReelLike(this)">
+                  <svg class="heart-outline" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+                    <path
+                      d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                    </path>
+                  </svg>
+                  <svg class="heart-filled" fill="#ff3040" style="display:none;" viewbox="0 0 24 24">
+                    <path
+                      d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                    </path>
+                  </svg>
+                  <span class="action-text">32k</span>
+                </button>
+                <button class="action-btn reel-comment">
+                  <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+                    <path
+                      d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                    </path>
+                  </svg>
+                  <span class="action-text">4,120</span>
+                </button>
+                <button class="action-btn reel-share">
+                  <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+                    <line x1="22" x2="11" y1="2" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                  <span class="action-text">Share</span>
+                </button>
+                <button class="action-btn reel-options">
+                  <div class="icon-circle">
+                    <svg fill="currentColor" height="24" viewbox="0 0 24 24" width="24">
+                      <circle cx="12" cy="12" r="1.5"></circle>
+                      <circle cx="6" cy="12" r="1.5"></circle>
+                      <circle cx="18" cy="12" r="1.5"></circle>
+                    </svg>
+                  </div>
+                </button>
+                <div class="music-vinyl-container audio-toggle-btn" onclick="toggleReelsAudio()">
+                  <img alt="album cover" class="music-vinyl-thumbnail rotating" loading="lazy"
+                    onerror="this.style.display='none'" src="assets/IMG-20251118-WA0073.jpg" />
+                  <div class="audio-icon-overlay"
+                    style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.5); border-radius:50%; padding:4px; display:flex;">
+                    <svg class="mute-icon" fill="white" height="16" viewbox="0 0 24 24" width="16">
+                      <path
+                        d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z">
+                      </path>
+                    </svg>
+                    <svg class="unmute-icon" fill="white" height="16" style="display:none;" viewbox="0 0 24 24"
+                      width="16">
+                      <path
+                        d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- Close reel-video-container -->
+            <!-- Right Action Buttons -->
 
-</div> <!-- Close reel-wrapper -->
-<div class="reel-wrapper" data-reel-id="7">
-<div class="reel-video-container">
-<div class="reel-carousel-track" onscroll="updateReelPagination(this)" style="display:flex; overflow-x:scroll; scroll-snap-type: x mandatory; scrollbar-width: none; -ms-overflow-style: none; width:100%; height:100%;">
-<img alt="Reel 7" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG_20250414_185437.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
-<img alt="Reel 7" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG_20250414_185439.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
-<img alt="Reel 7" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG_20251115_172733.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
-<img alt="Reel 7" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG_20251115_172756.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
-</div>
-<div class="reel-carousel-pagination" style="position:absolute; bottom:20px; left:50%; transform:translateX(-50%); display:flex; gap:6px; z-index:10;">
-<div class="carousel-dot" style="background:white; width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
-<div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
-<div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
-<div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
-</div>
-<!-- Bottom Left Overlay -->
-<div class="reel-overlay-left">
-<div class="reel-user-row">
-<img alt="avatar" class="reel-avatar" loading="lazy" onerror="this.style.display='none'" src="assets/IMG-20251118-WA0073.jpg"/>
-<span class="reel-username">lovebirds</span>
-<button class="reel-follow-btn">Follow</button>
-</div>
-<div class="reel-caption">
-  Beautiful moments ❤️ #reels #viral #couplegoals
-</div>
-<div class="reel-music-row">
-<svg class="music-icon" fill="currentColor" viewbox="0 0 24 24">
-<path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"></path>
-</svg>
-<span class="music-name">John Legend - P.D.A.</span>
-</div>
-</div>
-<div class="reel-actions-column">
-<button class="action-btn reel-like" onclick="toggleReelLike(this)">
-<svg class="heart-outline" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
-<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-</svg>
-<svg class="heart-filled" fill="#ff3040" style="display:none;" viewbox="0 0 24 24">
-<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-</svg>
-<span class="action-text">32k</span>
-</button>
-<button class="action-btn reel-comment">
-<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
-<path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
-</svg>
-<span class="action-text">4,120</span>
-</button>
-<button class="action-btn reel-share">
-<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
-<line x1="22" x2="11" y1="2" y2="13"></line>
-<polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-</svg>
-<span class="action-text">Share</span>
-</button>
-<button class="action-btn reel-options">
-<div class="icon-circle">
-<svg fill="currentColor" height="24" viewbox="0 0 24 24" width="24">
-<circle cx="12" cy="12" r="1.5"></circle>
-<circle cx="6" cy="12" r="1.5"></circle>
-<circle cx="18" cy="12" r="1.5"></circle>
-</svg>
-</div>
-</button>
-<div class="music-vinyl-container audio-toggle-btn" onclick="toggleReelsAudio()">
-<img alt="album cover" class="music-vinyl-thumbnail rotating" loading="lazy" onerror="this.style.display='none'" src="assets/IMG-20251118-WA0073.jpg"/>
-<div class="audio-icon-overlay" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.5); border-radius:50%; padding:4px; display:flex;">
-<svg class="mute-icon" fill="white" height="16" viewbox="0 0 24 24" width="16"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"></path></svg>
-<svg class="unmute-icon" fill="white" height="16" style="display:none;" viewbox="0 0 24 24" width="16"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"></path></svg>
-</div>
-</div>
-</div></div> <!-- Close reel-video-container -->
-<!-- Right Action Buttons -->
+          </div> <!-- Close reel-wrapper -->
+          <div class="reel-wrapper" data-reel-id="7">
+            <div class="reel-video-container">
+              <div class="reel-carousel-track" onscroll="updateReelPagination(this)"
+                style="display:flex; overflow-x:scroll; scroll-snap-type: x mandatory; scrollbar-width: none; -ms-overflow-style: none; width:100%; height:100%;">
+                <img alt="Reel 7" class="reel-video" loading="lazy" onerror="this.remove()"
+                  src="assets/IMG_20250414_185437.jpg"
+                  style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
+                <img alt="Reel 7" class="reel-video" loading="lazy" onerror="this.remove()"
+                  src="assets/IMG_20250414_185439.jpg"
+                  style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
+                <img alt="Reel 7" class="reel-video" loading="lazy" onerror="this.remove()"
+                  src="assets/IMG_20251115_172733.jpg"
+                  style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
+                <img alt="Reel 7" class="reel-video" loading="lazy" onerror="this.remove()"
+                  src="assets/IMG_20251115_172756.jpg"
+                  style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
+              </div>
+              <div class="reel-carousel-pagination"
+                style="position:absolute; bottom:20px; left:50%; transform:translateX(-50%); display:flex; gap:6px; z-index:10;">
+                <div class="carousel-dot"
+                  style="background:white; width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
+                <div class="carousel-dot"
+                  style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;">
+                </div>
+                <div class="carousel-dot"
+                  style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;">
+                </div>
+                <div class="carousel-dot"
+                  style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;">
+                </div>
+              </div>
+              <!-- Bottom Left Overlay -->
+              <div class="reel-overlay-left">
+                <div class="reel-user-row">
+                  <img alt="avatar" class="reel-avatar" loading="lazy" onerror="this.style.display='none'"
+                    src="assets/IMG-20251118-WA0073.jpg" />
+                  <span class="reel-username">lovebirds</span>
+                  <button class="reel-follow-btn">Follow</button>
+                </div>
+                <div class="reel-caption">
+                  Beautiful moments ❤️ #reels #viral #couplegoals
+                </div>
+                <div class="reel-music-row">
+                  <svg class="music-icon" fill="currentColor" viewbox="0 0 24 24">
+                    <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z">
+                    </path>
+                  </svg>
+                  <span class="music-name">John Legend - P.D.A.</span>
+                </div>
+              </div>
+              <div class="reel-actions-column">
+                <button class="action-btn reel-like" onclick="toggleReelLike(this)">
+                  <svg class="heart-outline" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+                    <path
+                      d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                    </path>
+                  </svg>
+                  <svg class="heart-filled" fill="#ff3040" style="display:none;" viewbox="0 0 24 24">
+                    <path
+                      d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                    </path>
+                  </svg>
+                  <span class="action-text">32k</span>
+                </button>
+                <button class="action-btn reel-comment">
+                  <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+                    <path
+                      d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                    </path>
+                  </svg>
+                  <span class="action-text">4,120</span>
+                </button>
+                <button class="action-btn reel-share">
+                  <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+                    <line x1="22" x2="11" y1="2" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                  <span class="action-text">Share</span>
+                </button>
+                <button class="action-btn reel-options">
+                  <div class="icon-circle">
+                    <svg fill="currentColor" height="24" viewbox="0 0 24 24" width="24">
+                      <circle cx="12" cy="12" r="1.5"></circle>
+                      <circle cx="6" cy="12" r="1.5"></circle>
+                      <circle cx="18" cy="12" r="1.5"></circle>
+                    </svg>
+                  </div>
+                </button>
+                <div class="music-vinyl-container audio-toggle-btn" onclick="toggleReelsAudio()">
+                  <img alt="album cover" class="music-vinyl-thumbnail rotating" loading="lazy"
+                    onerror="this.style.display='none'" src="assets/IMG-20251118-WA0073.jpg" />
+                  <div class="audio-icon-overlay"
+                    style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.5); border-radius:50%; padding:4px; display:flex;">
+                    <svg class="mute-icon" fill="white" height="16" viewbox="0 0 24 24" width="16">
+                      <path
+                        d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z">
+                      </path>
+                    </svg>
+                    <svg class="unmute-icon" fill="white" height="16" style="display:none;" viewbox="0 0 24 24"
+                      width="16">
+                      <path
+                        d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- Close reel-video-container -->
+            <!-- Right Action Buttons -->
 
-</div> <!-- Close reel-wrapper -->
-<div class="reel-wrapper" data-reel-id="8">
-<div class="reel-video-container">
-<div class="reel-carousel-track" onscroll="updateReelPagination(this)" style="display:flex; overflow-x:scroll; scroll-snap-type: x mandatory; scrollbar-width: none; -ms-overflow-style: none; width:100%; height:100%;">
-<img alt="Reel 8" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG_20251115_172800.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
-<img alt="Reel 8" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG_20251115_172802.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
-<img alt="Reel 8" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG_20251115_172816.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
-<img alt="Reel 8" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG_20251207_201541.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
-</div>
-<div class="reel-carousel-pagination" style="position:absolute; bottom:20px; left:50%; transform:translateX(-50%); display:flex; gap:6px; z-index:10;">
-<div class="carousel-dot" style="background:white; width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
-<div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
-<div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
-<div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
-</div>
-<!-- Bottom Left Overlay -->
-<div class="reel-overlay-left">
-<div class="reel-user-row">
-<img alt="avatar" class="reel-avatar" loading="lazy" onerror="this.style.display='none'" src="assets/IMG-20251118-WA0073.jpg"/>
-<span class="reel-username">lovebirds</span>
-<button class="reel-follow-btn">Follow</button>
-</div>
-<div class="reel-caption">
-  Beautiful moments ❤️ #reels #viral #couplegoals
-</div>
-<div class="reel-music-row">
-<svg class="music-icon" fill="currentColor" viewbox="0 0 24 24">
-<path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"></path>
-</svg>
-<span class="music-name">John Legend - P.D.A.</span>
-</div>
-</div>
-<div class="reel-actions-column">
-<button class="action-btn reel-like" onclick="toggleReelLike(this)">
-<svg class="heart-outline" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
-<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-</svg>
-<svg class="heart-filled" fill="#ff3040" style="display:none;" viewbox="0 0 24 24">
-<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-</svg>
-<span class="action-text">32k</span>
-</button>
-<button class="action-btn reel-comment">
-<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
-<path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
-</svg>
-<span class="action-text">4,120</span>
-</button>
-<button class="action-btn reel-share">
-<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
-<line x1="22" x2="11" y1="2" y2="13"></line>
-<polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-</svg>
-<span class="action-text">Share</span>
-</button>
-<button class="action-btn reel-options">
-<div class="icon-circle">
-<svg fill="currentColor" height="24" viewbox="0 0 24 24" width="24">
-<circle cx="12" cy="12" r="1.5"></circle>
-<circle cx="6" cy="12" r="1.5"></circle>
-<circle cx="18" cy="12" r="1.5"></circle>
-</svg>
-</div>
-</button>
-<div class="music-vinyl-container audio-toggle-btn" onclick="toggleReelsAudio()">
-<img alt="album cover" class="music-vinyl-thumbnail rotating" loading="lazy" onerror="this.style.display='none'" src="assets/IMG-20251118-WA0073.jpg"/>
-<div class="audio-icon-overlay" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.5); border-radius:50%; padding:4px; display:flex;">
-<svg class="mute-icon" fill="white" height="16" viewbox="0 0 24 24" width="16"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"></path></svg>
-<svg class="unmute-icon" fill="white" height="16" style="display:none;" viewbox="0 0 24 24" width="16"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"></path></svg>
-</div>
-</div>
-</div></div> <!-- Close reel-video-container -->
-<!-- Right Action Buttons -->
+          </div> <!-- Close reel-wrapper -->
+          <div class="reel-wrapper" data-reel-id="8">
+            <div class="reel-video-container">
+              <div class="reel-carousel-track" onscroll="updateReelPagination(this)"
+                style="display:flex; overflow-x:scroll; scroll-snap-type: x mandatory; scrollbar-width: none; -ms-overflow-style: none; width:100%; height:100%;">
+                <img alt="Reel 8" class="reel-video" loading="lazy" onerror="this.remove()"
+                  src="assets/IMG_20251115_172800.jpg"
+                  style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
+                <img alt="Reel 8" class="reel-video" loading="lazy" onerror="this.remove()"
+                  src="assets/IMG_20251115_172802.jpg"
+                  style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
+                <img alt="Reel 8" class="reel-video" loading="lazy" onerror="this.remove()"
+                  src="assets/IMG_20251115_172816.jpg"
+                  style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
+                <img alt="Reel 8" class="reel-video" loading="lazy" onerror="this.remove()"
+                  src="assets/IMG_20251207_201541.jpg"
+                  style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
+              </div>
+              <div class="reel-carousel-pagination"
+                style="position:absolute; bottom:20px; left:50%; transform:translateX(-50%); display:flex; gap:6px; z-index:10;">
+                <div class="carousel-dot"
+                  style="background:white; width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
+                <div class="carousel-dot"
+                  style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;">
+                </div>
+                <div class="carousel-dot"
+                  style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;">
+                </div>
+                <div class="carousel-dot"
+                  style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;">
+                </div>
+              </div>
+              <!-- Bottom Left Overlay -->
+              <div class="reel-overlay-left">
+                <div class="reel-user-row">
+                  <img alt="avatar" class="reel-avatar" loading="lazy" onerror="this.style.display='none'"
+                    src="assets/IMG-20251118-WA0073.jpg" />
+                  <span class="reel-username">lovebirds</span>
+                  <button class="reel-follow-btn">Follow</button>
+                </div>
+                <div class="reel-caption">
+                  Beautiful moments ❤️ #reels #viral #couplegoals
+                </div>
+                <div class="reel-music-row">
+                  <svg class="music-icon" fill="currentColor" viewbox="0 0 24 24">
+                    <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z">
+                    </path>
+                  </svg>
+                  <span class="music-name">John Legend - P.D.A.</span>
+                </div>
+              </div>
+              <div class="reel-actions-column">
+                <button class="action-btn reel-like" onclick="toggleReelLike(this)">
+                  <svg class="heart-outline" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+                    <path
+                      d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                    </path>
+                  </svg>
+                  <svg class="heart-filled" fill="#ff3040" style="display:none;" viewbox="0 0 24 24">
+                    <path
+                      d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                    </path>
+                  </svg>
+                  <span class="action-text">32k</span>
+                </button>
+                <button class="action-btn reel-comment">
+                  <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+                    <path
+                      d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                    </path>
+                  </svg>
+                  <span class="action-text">4,120</span>
+                </button>
+                <button class="action-btn reel-share">
+                  <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+                    <line x1="22" x2="11" y1="2" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                  <span class="action-text">Share</span>
+                </button>
+                <button class="action-btn reel-options">
+                  <div class="icon-circle">
+                    <svg fill="currentColor" height="24" viewbox="0 0 24 24" width="24">
+                      <circle cx="12" cy="12" r="1.5"></circle>
+                      <circle cx="6" cy="12" r="1.5"></circle>
+                      <circle cx="18" cy="12" r="1.5"></circle>
+                    </svg>
+                  </div>
+                </button>
+                <div class="music-vinyl-container audio-toggle-btn" onclick="toggleReelsAudio()">
+                  <img alt="album cover" class="music-vinyl-thumbnail rotating" loading="lazy"
+                    onerror="this.style.display='none'" src="assets/IMG-20251118-WA0073.jpg" />
+                  <div class="audio-icon-overlay"
+                    style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.5); border-radius:50%; padding:4px; display:flex;">
+                    <svg class="mute-icon" fill="white" height="16" viewbox="0 0 24 24" width="16">
+                      <path
+                        d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z">
+                      </path>
+                    </svg>
+                    <svg class="unmute-icon" fill="white" height="16" style="display:none;" viewbox="0 0 24 24"
+                      width="16">
+                      <path
+                        d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- Close reel-video-container -->
+            <!-- Right Action Buttons -->
 
-</div> <!-- Close reel-wrapper -->
-<div class="reel-wrapper" data-reel-id="9">
-<div class="reel-video-container">
-<div class="reel-carousel-track" onscroll="updateReelPagination(this)" style="display:flex; overflow-x:scroll; scroll-snap-type: x mandatory; scrollbar-width: none; -ms-overflow-style: none; width:100%; height:100%;">
-<img alt="Reel 9" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG_20251207_201549.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
-<img alt="Reel 9" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG_20251225_172321.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
-<img alt="Reel 9" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG_20251225_172325.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
-<img alt="Reel 9" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG_20251225_172329.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
-</div>
-<div class="reel-carousel-pagination" style="position:absolute; bottom:20px; left:50%; transform:translateX(-50%); display:flex; gap:6px; z-index:10;">
-<div class="carousel-dot" style="background:white; width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
-<div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
-<div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
-<div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
-</div>
-<!-- Bottom Left Overlay -->
-<div class="reel-overlay-left">
-<div class="reel-user-row">
-<img alt="avatar" class="reel-avatar" loading="lazy" onerror="this.style.display='none'" src="assets/IMG-20251118-WA0073.jpg"/>
-<span class="reel-username">lovebirds</span>
-<button class="reel-follow-btn">Follow</button>
-</div>
-<div class="reel-caption">
-  Beautiful moments ❤️ #reels #viral #couplegoals
-</div>
-<div class="reel-music-row">
-<svg class="music-icon" fill="currentColor" viewbox="0 0 24 24">
-<path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"></path>
-</svg>
-<span class="music-name">John Legend - P.D.A.</span>
-</div>
-</div>
-<div class="reel-actions-column">
-<button class="action-btn reel-like" onclick="toggleReelLike(this)">
-<svg class="heart-outline" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
-<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-</svg>
-<svg class="heart-filled" fill="#ff3040" style="display:none;" viewbox="0 0 24 24">
-<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-</svg>
-<span class="action-text">32k</span>
-</button>
-<button class="action-btn reel-comment">
-<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
-<path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
-</svg>
-<span class="action-text">4,120</span>
-</button>
-<button class="action-btn reel-share">
-<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
-<line x1="22" x2="11" y1="2" y2="13"></line>
-<polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-</svg>
-<span class="action-text">Share</span>
-</button>
-<button class="action-btn reel-options">
-<div class="icon-circle">
-<svg fill="currentColor" height="24" viewbox="0 0 24 24" width="24">
-<circle cx="12" cy="12" r="1.5"></circle>
-<circle cx="6" cy="12" r="1.5"></circle>
-<circle cx="18" cy="12" r="1.5"></circle>
-</svg>
-</div>
-</button>
-<div class="music-vinyl-container audio-toggle-btn" onclick="toggleReelsAudio()">
-<img alt="album cover" class="music-vinyl-thumbnail rotating" loading="lazy" onerror="this.style.display='none'" src="assets/IMG-20251118-WA0073.jpg"/>
-<div class="audio-icon-overlay" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.5); border-radius:50%; padding:4px; display:flex;">
-<svg class="mute-icon" fill="white" height="16" viewbox="0 0 24 24" width="16"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"></path></svg>
-<svg class="unmute-icon" fill="white" height="16" style="display:none;" viewbox="0 0 24 24" width="16"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"></path></svg>
-</div>
-</div>
-</div></div> <!-- Close reel-video-container -->
-<!-- Right Action Buttons -->
+          </div> <!-- Close reel-wrapper -->
+          <div class="reel-wrapper" data-reel-id="9">
+            <div class="reel-video-container">
+              <div class="reel-carousel-track" onscroll="updateReelPagination(this)"
+                style="display:flex; overflow-x:scroll; scroll-snap-type: x mandatory; scrollbar-width: none; -ms-overflow-style: none; width:100%; height:100%;">
+                <img alt="Reel 9" class="reel-video" loading="lazy" onerror="this.remove()"
+                  src="assets/IMG_20251207_201549.jpg"
+                  style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
+                <img alt="Reel 9" class="reel-video" loading="lazy" onerror="this.remove()"
+                  src="assets/IMG_20251225_172321.jpg"
+                  style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
+                <img alt="Reel 9" class="reel-video" loading="lazy" onerror="this.remove()"
+                  src="assets/IMG_20251225_172325.jpg"
+                  style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
+                <img alt="Reel 9" class="reel-video" loading="lazy" onerror="this.remove()"
+                  src="assets/IMG_20251225_172329.jpg"
+                  style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
+              </div>
+              <div class="reel-carousel-pagination"
+                style="position:absolute; bottom:20px; left:50%; transform:translateX(-50%); display:flex; gap:6px; z-index:10;">
+                <div class="carousel-dot"
+                  style="background:white; width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
+                <div class="carousel-dot"
+                  style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;">
+                </div>
+                <div class="carousel-dot"
+                  style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;">
+                </div>
+                <div class="carousel-dot"
+                  style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;">
+                </div>
+              </div>
+              <!-- Bottom Left Overlay -->
+              <div class="reel-overlay-left">
+                <div class="reel-user-row">
+                  <img alt="avatar" class="reel-avatar" loading="lazy" onerror="this.style.display='none'"
+                    src="assets/IMG-20251118-WA0073.jpg" />
+                  <span class="reel-username">lovebirds</span>
+                  <button class="reel-follow-btn">Follow</button>
+                </div>
+                <div class="reel-caption">
+                  Beautiful moments ❤️ #reels #viral #couplegoals
+                </div>
+                <div class="reel-music-row">
+                  <svg class="music-icon" fill="currentColor" viewbox="0 0 24 24">
+                    <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z">
+                    </path>
+                  </svg>
+                  <span class="music-name">John Legend - P.D.A.</span>
+                </div>
+              </div>
+              <div class="reel-actions-column">
+                <button class="action-btn reel-like" onclick="toggleReelLike(this)">
+                  <svg class="heart-outline" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+                    <path
+                      d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                    </path>
+                  </svg>
+                  <svg class="heart-filled" fill="#ff3040" style="display:none;" viewbox="0 0 24 24">
+                    <path
+                      d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                    </path>
+                  </svg>
+                  <span class="action-text">32k</span>
+                </button>
+                <button class="action-btn reel-comment">
+                  <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+                    <path
+                      d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                    </path>
+                  </svg>
+                  <span class="action-text">4,120</span>
+                </button>
+                <button class="action-btn reel-share">
+                  <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+                    <line x1="22" x2="11" y1="2" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                  <span class="action-text">Share</span>
+                </button>
+                <button class="action-btn reel-options">
+                  <div class="icon-circle">
+                    <svg fill="currentColor" height="24" viewbox="0 0 24 24" width="24">
+                      <circle cx="12" cy="12" r="1.5"></circle>
+                      <circle cx="6" cy="12" r="1.5"></circle>
+                      <circle cx="18" cy="12" r="1.5"></circle>
+                    </svg>
+                  </div>
+                </button>
+                <div class="music-vinyl-container audio-toggle-btn" onclick="toggleReelsAudio()">
+                  <img alt="album cover" class="music-vinyl-thumbnail rotating" loading="lazy"
+                    onerror="this.style.display='none'" src="assets/IMG-20251118-WA0073.jpg" />
+                  <div class="audio-icon-overlay"
+                    style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.5); border-radius:50%; padding:4px; display:flex;">
+                    <svg class="mute-icon" fill="white" height="16" viewbox="0 0 24 24" width="16">
+                      <path
+                        d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z">
+                      </path>
+                    </svg>
+                    <svg class="unmute-icon" fill="white" height="16" style="display:none;" viewbox="0 0 24 24"
+                      width="16">
+                      <path
+                        d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- Close reel-video-container -->
+            <!-- Right Action Buttons -->
 
-</div> <!-- Close reel-wrapper -->
-<div class="reel-wrapper" data-reel-id="10">
-<div class="reel-video-container">
-<div class="reel-carousel-track" onscroll="updateReelPagination(this)" style="display:flex; overflow-x:scroll; scroll-snap-type: x mandatory; scrollbar-width: none; -ms-overflow-style: none; width:100%; height:100%;">
-<img alt="Reel 10" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG_20251225_173249.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
-<img alt="Reel 10" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/IMG_20251225_173335.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
-<img alt="Reel 10" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/Snapchat-1682205913.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
-<img alt="Reel 10" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/Snapchat-352071190.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
-</div>
-<div class="reel-carousel-pagination" style="position:absolute; bottom:20px; left:50%; transform:translateX(-50%); display:flex; gap:6px; z-index:10;">
-<div class="carousel-dot" style="background:white; width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
-<div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
-<div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
-<div class="carousel-dot" style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
-</div>
-<!-- Bottom Left Overlay -->
-<div class="reel-overlay-left">
-<div class="reel-user-row">
-<img alt="avatar" class="reel-avatar" loading="lazy" onerror="this.style.display='none'" src="assets/IMG-20251118-WA0073.jpg"/>
-<span class="reel-username">lovebirds</span>
-<button class="reel-follow-btn">Follow</button>
-</div>
-<div class="reel-caption">
-  Beautiful moments ❤️ #reels #viral #couplegoals
-</div>
-<div class="reel-music-row">
-<svg class="music-icon" fill="currentColor" viewbox="0 0 24 24">
-<path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"></path>
-</svg>
-<span class="music-name">John Legend - P.D.A.</span>
-</div>
-</div>
-<div class="reel-actions-column">
-<button class="action-btn reel-like" onclick="toggleReelLike(this)">
-<svg class="heart-outline" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
-<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-</svg>
-<svg class="heart-filled" fill="#ff3040" style="display:none;" viewbox="0 0 24 24">
-<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-</svg>
-<span class="action-text">32k</span>
-</button>
-<button class="action-btn reel-comment">
-<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
-<path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
-</svg>
-<span class="action-text">4,120</span>
-</button>
-<button class="action-btn reel-share">
-<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
-<line x1="22" x2="11" y1="2" y2="13"></line>
-<polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-</svg>
-<span class="action-text">Share</span>
-</button>
-<button class="action-btn reel-options">
-<div class="icon-circle">
-<svg fill="currentColor" height="24" viewbox="0 0 24 24" width="24">
-<circle cx="12" cy="12" r="1.5"></circle>
-<circle cx="6" cy="12" r="1.5"></circle>
-<circle cx="18" cy="12" r="1.5"></circle>
-</svg>
-</div>
-</button>
-<div class="music-vinyl-container audio-toggle-btn" onclick="toggleReelsAudio()">
-<img alt="album cover" class="music-vinyl-thumbnail rotating" loading="lazy" onerror="this.style.display='none'" src="assets/IMG-20251118-WA0073.jpg"/>
-<div class="audio-icon-overlay" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.5); border-radius:50%; padding:4px; display:flex;">
-<svg class="mute-icon" fill="white" height="16" viewbox="0 0 24 24" width="16"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"></path></svg>
-<svg class="unmute-icon" fill="white" height="16" style="display:none;" viewbox="0 0 24 24" width="16"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"></path></svg>
-</div>
-</div>
-</div></div> <!-- Close reel-video-container -->
-<!-- Right Action Buttons -->
+          </div> <!-- Close reel-wrapper -->
+          <div class="reel-wrapper" data-reel-id="10">
+            <div class="reel-video-container">
+              <div class="reel-carousel-track" onscroll="updateReelPagination(this)"
+                style="display:flex; overflow-x:scroll; scroll-snap-type: x mandatory; scrollbar-width: none; -ms-overflow-style: none; width:100%; height:100%;">
+                <img alt="Reel 10" class="reel-video" loading="lazy" onerror="this.remove()"
+                  src="assets/IMG_20251225_173249.jpg"
+                  style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
+                <img alt="Reel 10" class="reel-video" loading="lazy" onerror="this.remove()"
+                  src="assets/IMG_20251225_173335.jpg"
+                  style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
+                <img alt="Reel 10" class="reel-video" loading="lazy" onerror="this.remove()"
+                  src="assets/Snapchat-1682205913.jpg"
+                  style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
+                <img alt="Reel 10" class="reel-video" loading="lazy" onerror="this.remove()"
+                  src="assets/Snapchat-352071190.jpg"
+                  style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
+              </div>
+              <div class="reel-carousel-pagination"
+                style="position:absolute; bottom:20px; left:50%; transform:translateX(-50%); display:flex; gap:6px; z-index:10;">
+                <div class="carousel-dot"
+                  style="background:white; width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
+                <div class="carousel-dot"
+                  style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;">
+                </div>
+                <div class="carousel-dot"
+                  style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;">
+                </div>
+                <div class="carousel-dot"
+                  style="background:rgba(255,255,255,0.5); width:8px; height:8px; border-radius:50%; transition: 0.3s;">
+                </div>
+              </div>
+              <!-- Bottom Left Overlay -->
+              <div class="reel-overlay-left">
+                <div class="reel-user-row">
+                  <img alt="avatar" class="reel-avatar" loading="lazy" onerror="this.style.display='none'"
+                    src="assets/IMG-20251118-WA0073.jpg" />
+                  <span class="reel-username">lovebirds</span>
+                  <button class="reel-follow-btn">Follow</button>
+                </div>
+                <div class="reel-caption">
+                  Beautiful moments ❤️ #reels #viral #couplegoals
+                </div>
+                <div class="reel-music-row">
+                  <svg class="music-icon" fill="currentColor" viewbox="0 0 24 24">
+                    <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z">
+                    </path>
+                  </svg>
+                  <span class="music-name">John Legend - P.D.A.</span>
+                </div>
+              </div>
+              <div class="reel-actions-column">
+                <button class="action-btn reel-like" onclick="toggleReelLike(this)">
+                  <svg class="heart-outline" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+                    <path
+                      d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                    </path>
+                  </svg>
+                  <svg class="heart-filled" fill="#ff3040" style="display:none;" viewbox="0 0 24 24">
+                    <path
+                      d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                    </path>
+                  </svg>
+                  <span class="action-text">32k</span>
+                </button>
+                <button class="action-btn reel-comment">
+                  <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+                    <path
+                      d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                    </path>
+                  </svg>
+                  <span class="action-text">4,120</span>
+                </button>
+                <button class="action-btn reel-share">
+                  <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+                    <line x1="22" x2="11" y1="2" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                  <span class="action-text">Share</span>
+                </button>
+                <button class="action-btn reel-options">
+                  <div class="icon-circle">
+                    <svg fill="currentColor" height="24" viewbox="0 0 24 24" width="24">
+                      <circle cx="12" cy="12" r="1.5"></circle>
+                      <circle cx="6" cy="12" r="1.5"></circle>
+                      <circle cx="18" cy="12" r="1.5"></circle>
+                    </svg>
+                  </div>
+                </button>
+                <div class="music-vinyl-container audio-toggle-btn" onclick="toggleReelsAudio()">
+                  <img alt="album cover" class="music-vinyl-thumbnail rotating" loading="lazy"
+                    onerror="this.style.display='none'" src="assets/IMG-20251118-WA0073.jpg" />
+                  <div class="audio-icon-overlay"
+                    style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.5); border-radius:50%; padding:4px; display:flex;">
+                    <svg class="mute-icon" fill="white" height="16" viewbox="0 0 24 24" width="16">
+                      <path
+                        d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z">
+                      </path>
+                    </svg>
+                    <svg class="unmute-icon" fill="white" height="16" style="display:none;" viewbox="0 0 24 24"
+                      width="16">
+                      <path
+                        d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- Close reel-video-container -->
+            <!-- Right Action Buttons -->
 
-</div> <!-- Close reel-wrapper -->
-<div class="reel-wrapper" data-reel-id="11">
-<div class="reel-video-container">
-<div class="reel-carousel-track" onscroll="updateReelPagination(this)" style="display:flex; overflow-x:scroll; scroll-snap-type: x mandatory; scrollbar-width: none; -ms-overflow-style: none; width:100%; height:100%;">
-<img alt="Reel 11" class="reel-video" loading="lazy" onerror="this.remove()" src="assets/Snapchat-603721540.jpg" style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;"/>
-</div>
-<div class="reel-carousel-pagination" style="position:absolute; bottom:20px; left:50%; transform:translateX(-50%); display:flex; gap:6px; z-index:10;">
-<div class="carousel-dot" style="background:white; width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
-</div>
-<!-- Bottom Left Overlay -->
-<div class="reel-overlay-left">
-<div class="reel-user-row">
-<img alt="avatar" class="reel-avatar" loading="lazy" onerror="this.style.display='none'" src="assets/IMG-20251118-WA0073.jpg"/>
-<span class="reel-username">lovebirds</span>
-<button class="reel-follow-btn">Follow</button>
-</div>
-<div class="reel-caption">
-  Beautiful moments ❤️ #reels #viral #couplegoals
-</div>
-<div class="reel-music-row">
-<svg class="music-icon" fill="currentColor" viewbox="0 0 24 24">
-<path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"></path>
-</svg>
-<span class="music-name">John Legend - P.D.A.</span>
-</div>
-</div>
-<div class="reel-actions-column">
-<button class="action-btn reel-like" onclick="toggleReelLike(this)">
-<svg class="heart-outline" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
-<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-</svg>
-<svg class="heart-filled" fill="#ff3040" style="display:none;" viewbox="0 0 24 24">
-<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-</svg>
-<span class="action-text">32k</span>
-</button>
-<button class="action-btn reel-comment">
-<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
-<path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
-</svg>
-<span class="action-text">4,120</span>
-</button>
-<button class="action-btn reel-share">
-<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
-<line x1="22" x2="11" y1="2" y2="13"></line>
-<polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-</svg>
-<span class="action-text">Share</span>
-</button>
-<button class="action-btn reel-options">
-<div class="icon-circle">
-<svg fill="currentColor" height="24" viewbox="0 0 24 24" width="24">
-<circle cx="12" cy="12" r="1.5"></circle>
-<circle cx="6" cy="12" r="1.5"></circle>
-<circle cx="18" cy="12" r="1.5"></circle>
-</svg>
-</div>
-</button>
-<div class="music-vinyl-container audio-toggle-btn" onclick="toggleReelsAudio()">
-<img alt="album cover" class="music-vinyl-thumbnail rotating" loading="lazy" onerror="this.style.display='none'" src="assets/IMG-20251118-WA0073.jpg"/>
-<div class="audio-icon-overlay" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.5); border-radius:50%; padding:4px; display:flex;">
-<svg class="mute-icon" fill="white" height="16" viewbox="0 0 24 24" width="16"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"></path></svg>
-<svg class="unmute-icon" fill="white" height="16" style="display:none;" viewbox="0 0 24 24" width="16"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"></path></svg>
-</div>
-</div>
-</div></div> <!-- Close reel-video-container -->
-<!-- Right Action Buttons -->
+          </div> <!-- Close reel-wrapper -->
+          <div class="reel-wrapper" data-reel-id="11">
+            <div class="reel-video-container">
+              <div class="reel-carousel-track" onscroll="updateReelPagination(this)"
+                style="display:flex; overflow-x:scroll; scroll-snap-type: x mandatory; scrollbar-width: none; -ms-overflow-style: none; width:100%; height:100%;">
+                <img alt="Reel 11" class="reel-video" loading="lazy" onerror="this.remove()"
+                  src="assets/Snapchat-603721540.jpg"
+                  style="object-fit: cover !important; width: 100% !important; height: 100% !important; border-radius: 16px; background-color: #000 !important; flex: 0 0 100%; scroll-snap-align: center;" />
+              </div>
+              <div class="reel-carousel-pagination"
+                style="position:absolute; bottom:20px; left:50%; transform:translateX(-50%); display:flex; gap:6px; z-index:10;">
+                <div class="carousel-dot"
+                  style="background:white; width:8px; height:8px; border-radius:50%; transition: 0.3s;"></div>
+              </div>
+              <!-- Bottom Left Overlay -->
+              <div class="reel-overlay-left">
+                <div class="reel-user-row">
+                  <img alt="avatar" class="reel-avatar" loading="lazy" onerror="this.style.display='none'"
+                    src="assets/IMG-20251118-WA0073.jpg" />
+                  <span class="reel-username">lovebirds</span>
+                  <button class="reel-follow-btn">Follow</button>
+                </div>
+                <div class="reel-caption">
+                  Beautiful moments ❤️ #reels #viral #couplegoals
+                </div>
+                <div class="reel-music-row">
+                  <svg class="music-icon" fill="currentColor" viewbox="0 0 24 24">
+                    <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z">
+                    </path>
+                  </svg>
+                  <span class="music-name">John Legend - P.D.A.</span>
+                </div>
+              </div>
+              <div class="reel-actions-column">
+                <button class="action-btn reel-like" onclick="toggleReelLike(this)">
+                  <svg class="heart-outline" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+                    <path
+                      d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                    </path>
+                  </svg>
+                  <svg class="heart-filled" fill="#ff3040" style="display:none;" viewbox="0 0 24 24">
+                    <path
+                      d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                    </path>
+                  </svg>
+                  <span class="action-text">32k</span>
+                </button>
+                <button class="action-btn reel-comment">
+                  <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+                    <path
+                      d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                    </path>
+                  </svg>
+                  <span class="action-text">4,120</span>
+                </button>
+                <button class="action-btn reel-share">
+                  <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+                    <line x1="22" x2="11" y1="2" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                  <span class="action-text">Share</span>
+                </button>
+                <button class="action-btn reel-options">
+                  <div class="icon-circle">
+                    <svg fill="currentColor" height="24" viewbox="0 0 24 24" width="24">
+                      <circle cx="12" cy="12" r="1.5"></circle>
+                      <circle cx="6" cy="12" r="1.5"></circle>
+                      <circle cx="18" cy="12" r="1.5"></circle>
+                    </svg>
+                  </div>
+                </button>
+                <div class="music-vinyl-container audio-toggle-btn" onclick="toggleReelsAudio()">
+                  <img alt="album cover" class="music-vinyl-thumbnail rotating" loading="lazy"
+                    onerror="this.style.display='none'" src="assets/IMG-20251118-WA0073.jpg" />
+                  <div class="audio-icon-overlay"
+                    style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.5); border-radius:50%; padding:4px; display:flex;">
+                    <svg class="mute-icon" fill="white" height="16" viewbox="0 0 24 24" width="16">
+                      <path
+                        d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z">
+                      </path>
+                    </svg>
+                    <svg class="unmute-icon" fill="white" height="16" style="display:none;" viewbox="0 0 24 24"
+                      width="16">
+                      <path
+                        d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- Close reel-video-container -->
+            <!-- Right Action Buttons -->
 
-</div> <!-- Close reel-wrapper -->
-</div> <!-- /reels-container -->
-</div> <!-- /reels-outer-wrapper -->
-<!-- Floating Vertical Snap Navigation Buttons (Prev/Next) -->
-<div class="reels-nav-buttons">
-<button class="reels-nav-arrow prev-btn" id="reel-prev-btn" title="Previous Reel">
-<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" viewbox="0 0 24 24">
-<polyline points="18 15 12 9 6 15"></polyline>
-</svg>
-</button>
-<button class="reels-nav-arrow next-btn" id="reel-next-btn" title="Next Reel">
-<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" viewbox="0 0 24 24">
-<polyline points="6 9 12 15 18 9"></polyline>
-</svg>
-</button>
-</div> <!-- /reels-nav-buttons -->
-</main>
-</div>
-<script src="hearts.js"></script>
-<script src="reels.js"></script>
+          </div> <!-- Close reel-wrapper -->
+        </div> <!-- /reels-container -->
+      </div> <!-- /reels-outer-wrapper -->
+      <!-- Floating Vertical Snap Navigation Buttons (Prev/Next) -->
+      <div class="reels-nav-buttons">
+        <button class="reels-nav-arrow prev-btn" id="reel-prev-btn" title="Previous Reel">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+            viewbox="0 0 24 24">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </button>
+        <button class="reels-nav-arrow next-btn" id="reel-next-btn" title="Next Reel">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+            viewbox="0 0 24 24">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+      </div> <!-- /reels-nav-buttons -->
+    </main>
+  </div>
+  <script src="hearts.js"></script>
+  <script src="reels.js"></script>
 </body>
+
 </html>

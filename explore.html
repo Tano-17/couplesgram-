@@ -1,393 +1,518 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Couplesgram • Explore</title>
-<link href="style.css" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;family=Great+Vibes&amp;display=swap" rel="stylesheet"/>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Couplesgram • Explore</title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;family=Great+Vibes&amp;display=swap"
+        rel="stylesheet" />
 </head>
+
 <body>
-<div class="app-container">
-<!-- LEFT SIDEBAR -->
-<aside class="sidebar">
-<div class="sidebar-top">
-<a class="logo-link" href="index.html">
-<span class="logo-text"><span style="color:green">Pelumi</span> ❤️ <span style="color:lightpink">Ella</span></span>
-</a>
-</div>
-<nav class="sidebar-nav">
-<ul>
-<li>
-<a href="index.html">
-<svg class="nav-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
-<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-<polyline points="9 22 9 12 15 12 15 22"></polyline>
-</svg>
-<span class="nav-label">Home</span>
-</a>
-</li>
-<li>
-<a href="#">
-<svg class="nav-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
-<circle cx="11" cy="11" r="8"></circle>
-<line x1="21" x2="16.65" y1="21" y2="16.65"></line>
-</svg>
-<span class="nav-label">Search</span>
-</a>
-</li>
-<li class="active">
-<a href="explore.html">
-<!-- Active Compass Icon -->
-<svg class="nav-icon active-icon" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
-<circle cx="12" cy="12" r="10"></circle>
-<polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
-</svg>
-<span class="nav-label">Explore</span>
-</a>
-</li>
-<li>
-<a href="reels.html">
-<svg class="nav-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
-<rect height="20" rx="5" ry="5" width="20" x="2" y="2"></rect>
-<polygon points="10 8 16 12 10 16 10 8"></polygon>
-</svg>
-<span class="nav-label">Reels</span>
-</a>
-</li>
-<li>
-<a href="#">
-<div class="icon-badge-container">
-<svg class="nav-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
-<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-</svg>
-<span class="badge badge-red">9+</span>
-</div>
-<span class="nav-label">Messages</span>
-</a>
-</li>
-<li class="nav-item-notifications">
-<a href="#" id="nav-notifications">
-<svg class="nav-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
-<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-</svg>
-<span class="nav-label">Notifications</span>
-<div class="notif-bubble">
-<svg class="bubble-heart" fill="currentColor" viewbox="0 0 24 24">
-<path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
-</svg>
-<span>1</span>
-<svg class="bubble-person" fill="currentColor" viewbox="0 0 24 24">
-<path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path>
-</svg>
-<span>1</span>
-</div>
-</a>
-</li>
-<li>
-<a href="#">
-<svg class="nav-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
-<rect height="18" rx="2" ry="2" width="18" x="3" y="3"></rect>
-<line x1="12" x2="12" y1="8" y2="16"></line>
-<line x1="8" x2="16" y1="12" y2="12"></line>
-</svg>
-<span class="nav-label">Create</span>
-</a>
-</li>
-<li>
-<a href="#">
-<div class="profile-avatar-container">
-<img alt="Your Profile" class="sidebar-avatar" loading="lazy" src="assets/IMG_20251115_172756.jpg"/>
-</div>
-<span class="nav-label">Profile</span>
-</a>
-</li>
-</ul>
-</nav>
-<div class="sidebar-bottom">
-<ul>
-<li>
-<a href="#">
-<svg class="nav-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
-<line x1="3" x2="21" y1="12" y2="12"></line>
-<line x1="3" x2="21" y1="6" y2="6"></line>
-<line x1="3" x2="21" y1="18" y2="18"></line>
-</svg>
-<span class="nav-label">More</span>
-</a>
-</li>
-</ul>
-</div>
-</aside>
-<!-- EXPLORE CONTENT -->
-<main class="main-content explore-view">
-<div class="explore-grid-container">
-<!-- Masonry Grid -->
-<div class="explore-grid">
-<div class="explore-item">
-<img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()" src="assets/IMG-20251118-WA0078.jpg"/>
-<div class="explore-overlay">
-<span class="explore-stats" style="font-weight: 600; font-style: italic; font-size: 16px;">Prettiest girl I know</span>
-</div>
-</div>
-<div class="explore-item">
-<img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()" src="assets/IMG-20251118-WA0081.jpg"/>
-<div class="explore-overlay">
-<span class="explore-stats" style="font-weight: 600; font-style: italic; font-size: 16px;">Stars in her eyes</span>
-</div>
-</div>
-<div class="explore-item">
-<img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()" src="assets/IMG-20251208-WA0016.jpg"/>
-<div class="explore-overlay">
-<span class="explore-stats" style="font-weight: 600; font-style: italic; font-size: 16px;">Handpicked from the skies</span>
-</div>
-</div>
-<div class="explore-item">
-<img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()" src="assets/IMG-20251230-WA0019.jpg"/>
-<div class="explore-overlay">
-<span class="explore-stats" style="font-weight: 600; font-style: italic; font-size: 16px;">Beautiful soul</span>
-</div>
-</div>
-<div class="explore-item">
-<img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()" src="assets/IMG-20260220-WA0016.jpg"/>
-<div class="explore-overlay">
-<span class="explore-stats" style="font-weight: 600; font-style: italic; font-size: 16px;">Perfection is the only word</span>
-</div>
-</div>
-<div class="explore-item">
-<img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()" src="assets/IMG-20260303-WA0001.jpg"/>
-<div class="explore-overlay">
-<span class="explore-stats" style="font-weight: 600; font-style: italic; font-size: 16px;">My world</span>
-</div>
-</div>
-<div class="explore-item">
-<img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()" src="assets/IMG-20260303-WA0005.jpg"/>
-<div class="explore-overlay">
-<span class="explore-stats" style="font-weight: 600; font-style: italic; font-size: 16px;">My Queen</span>
-</div>
-</div>
-<div class="explore-item">
-<img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()" src="assets/IMG-20260303-WA0007.jpg"/>
-<div class="explore-overlay">
-<span class="explore-stats" style="font-weight: 600; font-style: italic; font-size: 16px;">i ❤️ you</span>
-</div>
-</div>
-<div class="explore-item">
-<img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()" src="assets/IMG-20260305-WA0011.jpg"/>
-<div class="explore-overlay">
-<span class="explore-stats" style="font-weight: 600; font-style: italic; font-size: 16px;">always and forever</span>
-</div>
-</div>
-<div class="explore-item">
-<img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()" src="assets/IMG-20260305-WA0012.jpg"/>
-<div class="explore-overlay">
-<span class="explore-stats" style="font-weight: 600; font-style: italic; font-size: 16px;">Happy Anniversary❤️</span>
-</div>
-</div>
-<div class="explore-item">
-<img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()" src="assets/IMG-20260305-WA0013.jpg"/>
-<div class="explore-overlay">
-<span class="explore-stats" style="font-weight: 600; font-style: italic; font-size: 16px;">Prettiest girl I know</span>
-</div>
-</div>
-<div class="explore-item">
-<img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()" src="assets/IMG-20260423-WA0091.jpg"/>
-<div class="explore-overlay">
-<span class="explore-stats" style="font-weight: 600; font-style: italic; font-size: 16px;">Stars in her eyes</span>
-</div>
-</div>
-<div class="explore-item">
-<img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()" src="assets/IMG-20260423-WA0092.jpg"/>
-<div class="explore-overlay">
-<span class="explore-stats" style="font-weight: 600; font-style: italic; font-size: 16px;">Handpicked from the skies</span>
-</div>
-</div>
-<div class="explore-item">
-<img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()" src="assets/IMG-20260505-WA0118.jpg"/>
-<div class="explore-overlay">
-<span class="explore-stats" style="font-weight: 600; font-style: italic; font-size: 16px;">Beautiful soul</span>
-</div>
-</div>
-<div class="explore-item">
-<img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()" src="assets/IMG-20260505-WA0150.jpg"/>
-<div class="explore-overlay">
-<span class="explore-stats" style="font-weight: 600; font-style: italic; font-size: 16px;">Perfection is the only word</span>
-</div>
-</div>
-<div class="explore-item">
-<img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()" src="assets/IMG-20260505-WA0243.jpg"/>
-<div class="explore-overlay">
-<span class="explore-stats" style="font-weight: 600; font-style: italic; font-size: 16px;">My world</span>
-</div>
-</div>
-<div class="explore-item">
-<img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()" src="assets/IMG-20260505-WA0250.jpg"/>
-<div class="explore-overlay">
-<span class="explore-stats" style="font-weight: 600; font-style: italic; font-size: 16px;">My Queen</span>
-</div>
-</div>
-<div class="explore-item">
-<img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()" src="assets/IMG-20260505-WA0254.jpg"/>
-<div class="explore-overlay">
-<span class="explore-stats" style="font-weight: 600; font-style: italic; font-size: 16px;">i ❤️ you</span>
-</div>
-</div>
-<div class="explore-item">
-<img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()" src="assets/IMG-20260505-WA0258.jpg"/>
-<div class="explore-overlay">
-<span class="explore-stats" style="font-weight: 600; font-style: italic; font-size: 16px;">always and forever</span>
-</div>
-</div>
-<div class="explore-item">
-<img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()" src="assets/IMG-20260505-WA0260.jpg"/>
-<div class="explore-overlay">
-<span class="explore-stats" style="font-weight: 600; font-style: italic; font-size: 16px;">Happy Anniversary❤️</span>
-</div>
-</div>
-<div class="explore-item">
-<img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()" src="assets/IMG-20260602-WA0005.jpg"/>
-<div class="explore-overlay">
-<span class="explore-stats" style="font-weight: 600; font-style: italic; font-size: 16px;">Prettiest girl I know</span>
-</div>
-</div>
-<div class="explore-item">
-<img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()" src="assets/IMG-20260731-WA0151.jpg"/>
-<div class="explore-overlay">
-<span class="explore-stats" style="font-weight: 600; font-style: italic; font-size: 16px;">Stars in her eyes</span>
-</div>
-</div>
-<div class="explore-item">
-<img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()" src="assets/IMG-20260731-WA0152.jpg"/>
-<div class="explore-overlay">
-<span class="explore-stats" style="font-weight: 600; font-style: italic; font-size: 16px;">Handpicked from the skies</span>
-</div>
-</div>
-<div class="explore-item">
-<img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()" src="assets/IMG-20260731-WA0156.jpg"/>
-<div class="explore-overlay">
-<span class="explore-stats" style="font-weight: 600; font-style: italic; font-size: 16px;">Beautiful soul</span>
-</div>
-</div>
-<div class="explore-item">
-<img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()" src="assets/IMG_20250414_185437.jpg"/>
-<div class="explore-overlay">
-<span class="explore-stats" style="font-weight: 600; font-style: italic; font-size: 16px;">Perfection is the only word</span>
-</div>
-</div>
-<div class="explore-item">
-<img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()" src="assets/IMG_20250414_185439.jpg"/>
-<div class="explore-overlay">
-<span class="explore-stats" style="font-weight: 600; font-style: italic; font-size: 16px;">My world</span>
-</div>
-</div>
-<div class="explore-item">
-<img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()" src="assets/IMG_20251115_172733.jpg"/>
-<div class="explore-overlay">
-<span class="explore-stats" style="font-weight: 600; font-style: italic; font-size: 16px;">My Queen</span>
-</div>
-</div>
-<div class="explore-item">
-<img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()" src="assets/IMG_20251115_172756.jpg"/>
-<div class="explore-overlay">
-<span class="explore-stats" style="font-weight: 600; font-style: italic; font-size: 16px;">i ❤️ you</span>
-</div>
-</div>
-<div class="explore-item">
-<img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()" src="assets/IMG_20251115_172800.jpg"/>
-<div class="explore-overlay">
-<span class="explore-stats" style="font-weight: 600; font-style: italic; font-size: 16px;">always and forever</span>
-</div>
-</div>
-<div class="explore-item">
-<img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()" src="assets/IMG_20251115_172802.jpg"/>
-<div class="explore-overlay">
-<span class="explore-stats" style="font-weight: 600; font-style: italic; font-size: 16px;">Happy Anniversary❤️</span>
-</div>
-</div>
-<div class="explore-item">
-<img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()" src="assets/IMG_20251115_172816.jpg"/>
-<div class="explore-overlay">
-<span class="explore-stats" style="font-weight: 600; font-style: italic; font-size: 16px;">Prettiest girl I know</span>
-</div>
-</div>
-<div class="explore-item">
-<img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()" src="assets/IMG_20251207_201541.jpg"/>
-<div class="explore-overlay">
-<span class="explore-stats" style="font-weight: 600; font-style: italic; font-size: 16px;">Stars in her eyes</span>
-</div>
-</div>
-<div class="explore-item">
-<img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()" src="assets/IMG_20251207_201549.jpg"/>
-<div class="explore-overlay">
-<span class="explore-stats" style="font-weight: 600; font-style: italic; font-size: 16px;">Handpicked from the skies</span>
-</div>
-</div>
-<div class="explore-item">
-<img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()" src="assets/IMG_20251225_172321.jpg"/>
-<div class="explore-overlay">
-<span class="explore-stats" style="font-weight: 600; font-style: italic; font-size: 16px;">Beautiful soul</span>
-</div>
-</div>
-<div class="explore-item">
-<img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()" src="assets/IMG_20251225_172325.jpg"/>
-<div class="explore-overlay">
-<span class="explore-stats" style="font-weight: 600; font-style: italic; font-size: 16px;">Perfection is the only word</span>
-</div>
-</div>
-<div class="explore-item">
-<img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()" src="assets/IMG_20251225_172329.jpg"/>
-<div class="explore-overlay">
-<span class="explore-stats" style="font-weight: 600; font-style: italic; font-size: 16px;">My world</span>
-</div>
-</div>
-<div class="explore-item">
-<img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()" src="assets/IMG_20251225_173249.jpg"/>
-<div class="explore-overlay">
-<span class="explore-stats" style="font-weight: 600; font-style: italic; font-size: 16px;">My Queen</span>
-</div>
-</div>
-<div class="explore-item">
-<img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()" src="assets/IMG_20251225_173335.jpg"/>
-<div class="explore-overlay">
-<span class="explore-stats" style="font-weight: 600; font-style: italic; font-size: 16px;">i ❤️ you</span>
-</div>
-</div>
-<div class="explore-item">
-<img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()" src="assets/Snapchat-1682205913.jpg"/>
-<div class="explore-overlay">
-<span class="explore-stats" style="font-weight: 600; font-style: italic; font-size: 16px;">always and forever</span>
-</div>
-</div>
-<div class="explore-item">
-<img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()" src="assets/Snapchat-352071190.jpg"/>
-<div class="explore-overlay">
-<span class="explore-stats" style="font-weight: 600; font-style: italic; font-size: 16px;">Happy Anniversary❤️</span>
-</div>
-</div>
-<div class="explore-item">
-<img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()" src="assets/Snapchat-603721540.jpg"/>
-<div class="explore-overlay">
-<span class="explore-stats" style="font-weight: 600; font-style: italic; font-size: 16px;">Prettiest girl I know</span>
-</div>
-</div>
-<div class="explore-item tall">
-<video autoplay="" class="explore-media" loop="" muted="" playsinline="" src="assets/VID_20251207_195347.mp4"></video>
-<div class="reel-icon-overlay">
-<svg fill="currentColor" viewbox="0 0 24 24"><rect height="20" rx="5" ry="5" width="20" x="2" y="2"></rect><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
-</div>
-<div class="explore-overlay">
-<span class="explore-stats" style="font-weight: 600; font-style: italic; font-size: 16px;">Stars in her eyes</span>
-</div>
-</div>
-</div>
-</div>
-</main>
-</div>
-<!-- Minimal JS for notifications hover is handled in CSS, basic logic in app.js can be imported -->
-<script src="hearts.js"></script>
-<script src="app.js"></script>
+    <div class="app-container">
+        <!-- LEFT SIDEBAR -->
+        <aside class="sidebar">
+            <div class="sidebar-top">
+                <a class="logo-link" href="index.html">
+                    <span class="logo-text"><span style="color:green">Pelumi</span> ❤️ <span
+                            style="color:lightpink">Ella</span></span>
+                </a>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <svg class="nav-icon" fill="none" stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                            </svg>
+                            <span class="nav-label">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg class="nav-icon" fill="none" stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" x2="16.65" y1="21" y2="16.65"></line>
+                            </svg>
+                            <span class="nav-label">Search</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="explore.html">
+                            <!-- Active Compass Icon -->
+                            <svg class="nav-icon active-icon" fill="currentColor" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                            </svg>
+                            <span class="nav-label">Explore</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="reels.html">
+                            <svg class="nav-icon" fill="none" stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+                                <rect height="20" rx="5" ry="5" width="20" x="2" y="2"></rect>
+                                <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                            </svg>
+                            <span class="nav-label">Reels</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon-badge-container">
+                                <svg class="nav-icon" fill="none" stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                </svg>
+                                <span class="badge badge-red">9+</span>
+                            </div>
+                            <span class="nav-label">Messages</span>
+                        </a>
+                    </li>
+                    <li class="nav-item-notifications">
+                        <a href="#" id="nav-notifications">
+                            <svg class="nav-icon" fill="none" stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+                                <path
+                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                </path>
+                            </svg>
+                            <span class="nav-label">Notifications</span>
+                            <div class="notif-bubble">
+                                <svg class="bubble-heart" fill="currentColor" viewbox="0 0 24 24">
+                                    <path
+                                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z">
+                                    </path>
+                                </svg>
+                                <span>1</span>
+                                <svg class="bubble-person" fill="currentColor" viewbox="0 0 24 24">
+                                    <path
+                                        d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z">
+                                    </path>
+                                </svg>
+                                <span>1</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg class="nav-icon" fill="none" stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+                                <rect height="18" rx="2" ry="2" width="18" x="3" y="3"></rect>
+                                <line x1="12" x2="12" y1="8" y2="16"></line>
+                                <line x1="8" x2="16" y1="12" y2="12"></line>
+                            </svg>
+                            <span class="nav-label">Create</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="profile-avatar-container">
+                                <img alt="Your Profile" class="sidebar-avatar" loading="lazy"
+                                    src="assets/IMG_20251115_172756.jpg" />
+                            </div>
+                            <span class="nav-label">Mon Coeur</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sidebar-bottom">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <svg class="nav-icon" fill="none" stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+                                <line x1="3" x2="21" y1="12" y2="12"></line>
+                                <line x1="3" x2="21" y1="6" y2="6"></line>
+                                <line x1="3" x2="21" y1="18" y2="18"></line>
+                            </svg>
+                            <span class="nav-label">More</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <!-- EXPLORE CONTENT -->
+        <main class="main-content explore-view">
+            <div class="explore-grid-container">
+                <!-- Masonry Grid -->
+                <div class="explore-grid">
+                    <div class="explore-item">
+                        <img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()"
+                            src="assets/IMG-20251118-WA0078.jpg" />
+                        <div class="explore-overlay">
+                            <span class="explore-stats"
+                                style="font-weight: 600; font-style: italic; font-size: 16px;">Prettiest girl I
+                                know</span>
+                        </div>
+                    </div>
+                    <div class="explore-item">
+                        <img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()"
+                            src="assets/IMG-20251118-WA0081.jpg" />
+                        <div class="explore-overlay">
+                            <span class="explore-stats"
+                                style="font-weight: 600; font-style: italic; font-size: 16px;">Stars in her eyes</span>
+                        </div>
+                    </div>
+                    <div class="explore-item">
+                        <img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()"
+                            src="assets/IMG-20251208-WA0016.jpg" />
+                        <div class="explore-overlay">
+                            <span class="explore-stats"
+                                style="font-weight: 600; font-style: italic; font-size: 16px;">Handpicked from the
+                                skies</span>
+                        </div>
+                    </div>
+                    <div class="explore-item">
+                        <img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()"
+                            src="assets/IMG-20251230-WA0019.jpg" />
+                        <div class="explore-overlay">
+                            <span class="explore-stats"
+                                style="font-weight: 600; font-style: italic; font-size: 16px;">Beautiful soul</span>
+                        </div>
+                    </div>
+                    <div class="explore-item">
+                        <img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()"
+                            src="assets/IMG-20260220-WA0016.jpg" />
+                        <div class="explore-overlay">
+                            <span class="explore-stats"
+                                style="font-weight: 600; font-style: italic; font-size: 16px;">Perfection is the only
+                                word</span>
+                        </div>
+                    </div>
+                    <div class="explore-item">
+                        <img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()"
+                            src="assets/IMG-20260303-WA0001.jpg" />
+                        <div class="explore-overlay">
+                            <span class="explore-stats"
+                                style="font-weight: 600; font-style: italic; font-size: 16px;">My world</span>
+                        </div>
+                    </div>
+                    <div class="explore-item">
+                        <img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()"
+                            src="assets/IMG-20260303-WA0005.jpg" />
+                        <div class="explore-overlay">
+                            <span class="explore-stats"
+                                style="font-weight: 600; font-style: italic; font-size: 16px;">My Queen</span>
+                        </div>
+                    </div>
+                    <div class="explore-item">
+                        <img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()"
+                            src="assets/IMG-20260303-WA0007.jpg" />
+                        <div class="explore-overlay">
+                            <span class="explore-stats" style="font-weight: 600; font-style: italic; font-size: 16px;">i
+                                ❤️ you</span>
+                        </div>
+                    </div>
+                    <div class="explore-item">
+                        <img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()"
+                            src="assets/IMG-20260305-WA0011.jpg" />
+                        <div class="explore-overlay">
+                            <span class="explore-stats"
+                                style="font-weight: 600; font-style: italic; font-size: 16px;">always and forever</span>
+                        </div>
+                    </div>
+                    <div class="explore-item">
+                        <img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()"
+                            src="assets/IMG-20260305-WA0012.jpg" />
+                        <div class="explore-overlay">
+                            <span class="explore-stats"
+                                style="font-weight: 600; font-style: italic; font-size: 16px;">Happy
+                                Anniversary❤️</span>
+                        </div>
+                    </div>
+                    <div class="explore-item">
+                        <img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()"
+                            src="assets/IMG-20260305-WA0013.jpg" />
+                        <div class="explore-overlay">
+                            <span class="explore-stats"
+                                style="font-weight: 600; font-style: italic; font-size: 16px;">Prettiest girl I
+                                know</span>
+                        </div>
+                    </div>
+                    <div class="explore-item">
+                        <img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()"
+                            src="assets/IMG-20260423-WA0091.jpg" />
+                        <div class="explore-overlay">
+                            <span class="explore-stats"
+                                style="font-weight: 600; font-style: italic; font-size: 16px;">Stars in her eyes</span>
+                        </div>
+                    </div>
+                    <div class="explore-item">
+                        <img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()"
+                            src="assets/IMG-20260423-WA0092.jpg" />
+                        <div class="explore-overlay">
+                            <span class="explore-stats"
+                                style="font-weight: 600; font-style: italic; font-size: 16px;">Handpicked from the
+                                skies</span>
+                        </div>
+                    </div>
+                    <div class="explore-item">
+                        <img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()"
+                            src="assets/IMG-20260505-WA0118.jpg" />
+                        <div class="explore-overlay">
+                            <span class="explore-stats"
+                                style="font-weight: 600; font-style: italic; font-size: 16px;">Beautiful soul</span>
+                        </div>
+                    </div>
+                    <div class="explore-item">
+                        <img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()"
+                            src="assets/IMG-20260505-WA0150.jpg" />
+                        <div class="explore-overlay">
+                            <span class="explore-stats"
+                                style="font-weight: 600; font-style: italic; font-size: 16px;">Perfection is the only
+                                word</span>
+                        </div>
+                    </div>
+                    <div class="explore-item">
+                        <img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()"
+                            src="assets/IMG-20260505-WA0243.jpg" />
+                        <div class="explore-overlay">
+                            <span class="explore-stats"
+                                style="font-weight: 600; font-style: italic; font-size: 16px;">My world</span>
+                        </div>
+                    </div>
+                    <div class="explore-item">
+                        <img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()"
+                            src="assets/IMG-20260505-WA0250.jpg" />
+                        <div class="explore-overlay">
+                            <span class="explore-stats"
+                                style="font-weight: 600; font-style: italic; font-size: 16px;">My Queen</span>
+                        </div>
+                    </div>
+                    <div class="explore-item">
+                        <img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()"
+                            src="assets/IMG-20260505-WA0254.jpg" />
+                        <div class="explore-overlay">
+                            <span class="explore-stats" style="font-weight: 600; font-style: italic; font-size: 16px;">i
+                                ❤️ you</span>
+                        </div>
+                    </div>
+                    <div class="explore-item">
+                        <img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()"
+                            src="assets/IMG-20260505-WA0258.jpg" />
+                        <div class="explore-overlay">
+                            <span class="explore-stats"
+                                style="font-weight: 600; font-style: italic; font-size: 16px;">always and forever</span>
+                        </div>
+                    </div>
+                    <div class="explore-item">
+                        <img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()"
+                            src="assets/IMG-20260505-WA0260.jpg" />
+                        <div class="explore-overlay">
+                            <span class="explore-stats"
+                                style="font-weight: 600; font-style: italic; font-size: 16px;">Happy
+                                Anniversary❤️</span>
+                        </div>
+                    </div>
+                    <div class="explore-item">
+                        <img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()"
+                            src="assets/IMG-20260602-WA0005.jpg" />
+                        <div class="explore-overlay">
+                            <span class="explore-stats"
+                                style="font-weight: 600; font-style: italic; font-size: 16px;">Prettiest girl I
+                                know</span>
+                        </div>
+                    </div>
+                    <div class="explore-item">
+                        <img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()"
+                            src="assets/IMG-20260731-WA0151.jpg" />
+                        <div class="explore-overlay">
+                            <span class="explore-stats"
+                                style="font-weight: 600; font-style: italic; font-size: 16px;">Stars in her eyes</span>
+                        </div>
+                    </div>
+                    <div class="explore-item">
+                        <img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()"
+                            src="assets/IMG-20260731-WA0152.jpg" />
+                        <div class="explore-overlay">
+                            <span class="explore-stats"
+                                style="font-weight: 600; font-style: italic; font-size: 16px;">Handpicked from the
+                                skies</span>
+                        </div>
+                    </div>
+                    <div class="explore-item">
+                        <img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()"
+                            src="assets/IMG-20260731-WA0156.jpg" />
+                        <div class="explore-overlay">
+                            <span class="explore-stats"
+                                style="font-weight: 600; font-style: italic; font-size: 16px;">Beautiful soul</span>
+                        </div>
+                    </div>
+                    <div class="explore-item">
+                        <img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()"
+                            src="assets/IMG_20250414_185437.jpg" />
+                        <div class="explore-overlay">
+                            <span class="explore-stats"
+                                style="font-weight: 600; font-style: italic; font-size: 16px;">Perfection is the only
+                                word</span>
+                        </div>
+                    </div>
+                    <div class="explore-item">
+                        <img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()"
+                            src="assets/IMG_20250414_185439.jpg" />
+                        <div class="explore-overlay">
+                            <span class="explore-stats"
+                                style="font-weight: 600; font-style: italic; font-size: 16px;">My world</span>
+                        </div>
+                    </div>
+                    <div class="explore-item">
+                        <img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()"
+                            src="assets/IMG_20251115_172733.jpg" />
+                        <div class="explore-overlay">
+                            <span class="explore-stats"
+                                style="font-weight: 600; font-style: italic; font-size: 16px;">My Queen</span>
+                        </div>
+                    </div>
+                    <div class="explore-item">
+                        <img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()"
+                            src="assets/IMG_20251115_172756.jpg" />
+                        <div class="explore-overlay">
+                            <span class="explore-stats" style="font-weight: 600; font-style: italic; font-size: 16px;">i
+                                ❤️ you</span>
+                        </div>
+                    </div>
+                    <div class="explore-item">
+                        <img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()"
+                            src="assets/IMG_20251115_172800.jpg" />
+                        <div class="explore-overlay">
+                            <span class="explore-stats"
+                                style="font-weight: 600; font-style: italic; font-size: 16px;">always and forever</span>
+                        </div>
+                    </div>
+                    <div class="explore-item">
+                        <img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()"
+                            src="assets/IMG_20251115_172802.jpg" />
+                        <div class="explore-overlay">
+                            <span class="explore-stats"
+                                style="font-weight: 600; font-style: italic; font-size: 16px;">Happy
+                                Anniversary❤️</span>
+                        </div>
+                    </div>
+                    <div class="explore-item">
+                        <img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()"
+                            src="assets/IMG_20251115_172816.jpg" />
+                        <div class="explore-overlay">
+                            <span class="explore-stats"
+                                style="font-weight: 600; font-style: italic; font-size: 16px;">Prettiest girl I
+                                know</span>
+                        </div>
+                    </div>
+                    <div class="explore-item">
+                        <img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()"
+                            src="assets/IMG_20251207_201541.jpg" />
+                        <div class="explore-overlay">
+                            <span class="explore-stats"
+                                style="font-weight: 600; font-style: italic; font-size: 16px;">Stars in her eyes</span>
+                        </div>
+                    </div>
+                    <div class="explore-item">
+                        <img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()"
+                            src="assets/IMG_20251207_201549.jpg" />
+                        <div class="explore-overlay">
+                            <span class="explore-stats"
+                                style="font-weight: 600; font-style: italic; font-size: 16px;">Handpicked from the
+                                skies</span>
+                        </div>
+                    </div>
+                    <div class="explore-item">
+                        <img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()"
+                            src="assets/IMG_20251225_172321.jpg" />
+                        <div class="explore-overlay">
+                            <span class="explore-stats"
+                                style="font-weight: 600; font-style: italic; font-size: 16px;">Beautiful soul</span>
+                        </div>
+                    </div>
+                    <div class="explore-item">
+                        <img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()"
+                            src="assets/IMG_20251225_172325.jpg" />
+                        <div class="explore-overlay">
+                            <span class="explore-stats"
+                                style="font-weight: 600; font-style: italic; font-size: 16px;">Perfection is the only
+                                word</span>
+                        </div>
+                    </div>
+                    <div class="explore-item">
+                        <img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()"
+                            src="assets/IMG_20251225_172329.jpg" />
+                        <div class="explore-overlay">
+                            <span class="explore-stats"
+                                style="font-weight: 600; font-style: italic; font-size: 16px;">My world</span>
+                        </div>
+                    </div>
+                    <div class="explore-item">
+                        <img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()"
+                            src="assets/IMG_20251225_173249.jpg" />
+                        <div class="explore-overlay">
+                            <span class="explore-stats"
+                                style="font-weight: 600; font-style: italic; font-size: 16px;">My Queen</span>
+                        </div>
+                    </div>
+                    <div class="explore-item">
+                        <img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()"
+                            src="assets/IMG_20251225_173335.jpg" />
+                        <div class="explore-overlay">
+                            <span class="explore-stats" style="font-weight: 600; font-style: italic; font-size: 16px;">i
+                                ❤️ you</span>
+                        </div>
+                    </div>
+                    <div class="explore-item">
+                        <img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()"
+                            src="assets/Snapchat-1682205913.jpg" />
+                        <div class="explore-overlay">
+                            <span class="explore-stats"
+                                style="font-weight: 600; font-style: italic; font-size: 16px;">always and forever</span>
+                        </div>
+                    </div>
+                    <div class="explore-item">
+                        <img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()"
+                            src="assets/Snapchat-352071190.jpg" />
+                        <div class="explore-overlay">
+                            <span class="explore-stats"
+                                style="font-weight: 600; font-style: italic; font-size: 16px;">Happy
+                                Anniversary❤️</span>
+                        </div>
+                    </div>
+                    <div class="explore-item">
+                        <img alt="Explore Image" class="explore-media" loading="lazy" onerror="this.remove()"
+                            src="assets/Snapchat-603721540.jpg" />
+                        <div class="explore-overlay">
+                            <span class="explore-stats"
+                                style="font-weight: 600; font-style: italic; font-size: 16px;">Prettiest girl I
+                                know</span>
+                        </div>
+                    </div>
+                    <div class="explore-item tall">
+                        <video autoplay="" class="explore-media" loop="" muted="" playsinline=""
+                            src="assets/VID_20251207_195347.mp4"></video>
+                        <div class="reel-icon-overlay">
+                            <svg fill="currentColor" viewbox="0 0 24 24">
+                                <rect height="20" rx="5" ry="5" width="20" x="2" y="2"></rect>
+                                <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                            </svg>
+                        </div>
+                        <div class="explore-overlay">
+                            <span class="explore-stats"
+                                style="font-weight: 600; font-style: italic; font-size: 16px;">Stars in her eyes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- Minimal JS for notifications hover is handled in CSS, basic logic in app.js can be imported -->
+    <script src="hearts.js"></script>
+    <script src="app.js"></script>
 </body>
+
 </html>
