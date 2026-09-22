@@ -1491,3 +1491,11 @@ body.reels-body .main-content {
   .carousel__cell:nth-child(7) { transform: rotateY(270deg) translateZ(240px); }
   .carousel__cell:nth-child(8) { transform: rotateY(315deg) translateZ(240px); }
 }
+
+
+.custom-cursive-caption {
+    text-align: center !important;
+    font-family: 'Great Vibes', 'Dancing Script', cursive !important;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
