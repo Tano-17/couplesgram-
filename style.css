@@ -1394,3 +1394,100 @@ body.reels-body .main-content {
     gap: 2px;
   }
 }
+
+/* =========================================
+   CAROUSEL MODAL (3D SPINNING)
+   ========================================= */
+#carousel-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+}
+
+#carousel-modal.hidden {
+  display: none !important;
+}
+
+.carousel-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  color: white;
+  font-size: 32px;
+  cursor: pointer;
+  z-index: 10000;
+  font-family: sans-serif;
+  user-select: none;
+}
+
+.scene {
+  width: 250px;
+  height: 350px;
+  perspective: 1200px;
+}
+
+.carousel-3d {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: spin 20s linear infinite;
+}
+
+.carousel__cell {
+  position: absolute;
+  width: 250px;
+  height: 350px;
+  left: 0;
+  top: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.carousel__cell img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 8 images = 360 / 8 = 45deg increments. 
+   TranslateZ approx = (250 / 2) / tan(22.5deg) = 125 / 0.414 = ~301px. Let's use 320px for some gap. */
+.carousel__cell:nth-child(1) { transform: rotateY(  0deg) translateZ(320px); }
+.carousel__cell:nth-child(2) { transform: rotateY( 45deg) translateZ(320px); }
+.carousel__cell:nth-child(3) { transform: rotateY( 90deg) translateZ(320px); }
+.carousel__cell:nth-child(4) { transform: rotateY(135deg) translateZ(320px); }
+.carousel__cell:nth-child(5) { transform: rotateY(180deg) translateZ(320px); }
+.carousel__cell:nth-child(6) { transform: rotateY(225deg) translateZ(320px); }
+.carousel__cell:nth-child(7) { transform: rotateY(270deg) translateZ(320px); }
+.carousel__cell:nth-child(8) { transform: rotateY(315deg) translateZ(320px); }
+
+@keyframes spin {
+  0%   { transform: rotateY(0deg); }
+  100% { transform: rotateY(-360deg); }
+}
+
+@media (max-width: 768px) {
+  .scene {
+    width: 180px;
+    height: 250px;
+  }
+  .carousel__cell {
+    width: 180px;
+    height: 250px;
+  }
+  /* TranslateZ = 90 / 0.414 = ~217px. Use 240px. */
+  .carousel__cell:nth-child(1) { transform: rotateY(  0deg) translateZ(240px); }
+  .carousel__cell:nth-child(2) { transform: rotateY( 45deg) translateZ(240px); }
+  .carousel__cell:nth-child(3) { transform: rotateY( 90deg) translateZ(240px); }
+  .carousel__cell:nth-child(4) { transform: rotateY(135deg) translateZ(240px); }
+  .carousel__cell:nth-child(5) { transform: rotateY(180deg) translateZ(240px); }
+  .carousel__cell:nth-child(6) { transform: rotateY(225deg) translateZ(240px); }
+  .carousel__cell:nth-child(7) { transform: rotateY(270deg) translateZ(240px); }
+  .carousel__cell:nth-child(8) { transform: rotateY(315deg) translateZ(240px); }
+}

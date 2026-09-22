@@ -359,3 +359,32 @@ function submitComment(postId) {
   postBtn.classList.remove('active');
 }
 
+
+
+// CAROUSEL MODAL LOGIC
+document.addEventListener('DOMContentLoaded', () => {
+    const carouselBtn = document.getElementById('carousel-nav-btn');
+    const carouselModal = document.getElementById('carousel-modal');
+    const audio = document.getElementById('laufey-carousel-audio');
+
+    if (carouselBtn && carouselModal) {
+        carouselBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            carouselModal.classList.remove('hidden');
+            if (audio) {
+                audio.play().catch(err => console.warn('Audio autoplay prevented:', err));
+            }
+        });
+    }
+
+    // Expose close function to window
+    window.closeCarousel = function() {
+        if (carouselModal) {
+            carouselModal.classList.add('hidden');
+        }
+        if (audio) {
+            audio.pause();
+            audio.currentTime = 0;
+        }
+    };
+});
