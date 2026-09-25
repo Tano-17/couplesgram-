@@ -360,16 +360,10 @@ function submitComment(postId) {
 }
 
 
-
-
-// CAROUSEL MODAL LOGIC
-document.addEventListener('DOMContentLoaded', () => {
-    const carouselBtn = document.getElementById('carousel-nav-btn');
-    const carouselModal = document.getElementById('carousel-modal');
-    const audio = document.getElementById('laufey-carousel-audio');
-    const carousel3d = document.getElementById('carousel-3d-container');
-
-    // All images — paths use forward slashes for web compatibility
+// =====================================================
+// 3D CYLINDRICAL CAROUSEL — Merry-go-round ring
+// =====================================================
+(function() {
     const allImages = [
         "assets/IMG-20251118-WA0078.jpg", "assets/IMG-20251118-WA0081.jpg",
         "assets/IMG-20251208-WA0016.jpg", "assets/IMG-20251230-WA0019.jpg",
@@ -395,53 +389,69 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
     function initCarousel() {
-        if (!carousel3d) return;
-        carousel3d.innerHTML = '';
+        const spinner = document.getElementById('carousel-3d-container');
+        if (!spinner) return;
+        spinner.innerHTML = '';
 
-        // Shuffle a copy so original order is preserved for potential re-init
-        const shuffled = [...allImages].sort(() => Math.random() - 0.5);
+        // Shuffle a fresh copy on every open
+        const images = [...allImages].sort(() => Math.random() - 0.5);
+        const totalImages = images.length;
 
-        // Use ALL images — polygon math scales automatically
-        const N = shuffled.length;
-        const theta = 360 / N; // degrees between each image
-        // Radius formula: r = (cellWidth/2) / tan(PI/N)
-        const cellWidth = 220;
-        const radius = Math.round((cellWidth / 2) / Math.tan(Math.PI / N));
+        // translateZ controls how wide the ring is.
+        // With 41 images, a larger value spreads them further apart.
+        // Formula per spec: rotateY(index * (360 / totalImages)deg) translateZ(600px)
+        const translateZ = 600; // px — ring radius
 
-        shuffled.forEach((imgPath, idx) => {
-            const cell = document.createElement('div');
-            cell.className = 'carousel__cell';
-            cell.style.transform = `rotateY(${idx * theta}deg) translateZ(${radius}px)`;
+        images.forEach((imgPath, index) => {
+            const card = document.createElement('div');
+            card.className = 'carousel__cell';
 
-            const imgEl = document.createElement('img');
-            // imgPath already contains 'assets/' prefix — use directly
-            imgEl.src = imgPath;
-            imgEl.loading = 'lazy';
-            imgEl.alt = 'Memory';
+            // THE EXACT FORMULA FROM SPEC
+            card.style.transform = `rotateY(${index * (360 / totalImages)}deg) translateZ(${translateZ}px)`;
 
-            cell.appendChild(imgEl);
-            carousel3d.appendChild(cell);
+            const img = document.createElement('img');
+            img.src = imgPath;
+            img.alt = 'Memory';
+            img.loading = 'lazy';
+
+            card.appendChild(img);
+            spinner.appendChild(card);
         });
     }
 
-    if (carouselBtn && carouselModal) {
-        carouselBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            initCarousel();
-            carouselModal.classList.remove('hidden');
-            if (audio) {
-                audio.play().catch(err => console.warn('Audio autoplay prevented:', err));
-            }
-        });
+    function openCarousel() {
+        const modal = document.getElementById('carousel-modal');
+        const audio = document.getElementById('laufey-carousel-audio');
+        if (!modal) return;
+        initCarousel();
+        modal.classList.remove('hidden');
+        modal.style.display = 'flex';
+        if (audio) {
+            audio.play().catch(err => console.warn('Autoplay blocked:', err));
+        }
     }
 
     window.closeCarousel = function() {
-        if (carouselModal) {
-            carouselModal.classList.add('hidden');
+        const modal = document.getElementById('carousel-modal');
+        const audio = document.getElementById('laufey-carousel-audio');
+        if (modal) {
+            modal.classList.add('hidden');
+            modal.style.display = 'none';
         }
         if (audio) {
             audio.pause();
             audio.currentTime = 0;
         }
     };
-});
+
+    // Attach to button — works on ANY page that has #carousel-nav-btn
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById('carousel-nav-btn');
+        if (btn) {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                openCarousel();
+            });
+        }
+    });
+})();

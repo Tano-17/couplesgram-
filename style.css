@@ -1396,83 +1396,96 @@ body.reels-body .main-content {
 }
 
 /* =========================================
-   CAROUSEL MODAL (3D SPINNING)
+   CAROUSEL MODAL — 3D Cylindrical Ring
+   Spec: perspective:1000px, spinY keyframe,
+         300x400 spinner, cards absolute 100%x100%
    ========================================= */
+
+/* OUTER MODAL — full-screen dark overlay */
 #carousel-modal {
   position: fixed;
   inset: 0;
   z-index: 9999;
-  background: rgba(0, 0, 0, 0.95);
+  background: rgba(0, 0, 0, 0.93);
+  /* perspective:1000px on the container creates 3D depth per spec */
+  perspective: 1000px;
   display: flex;
   align-items: center;
   justify-content: center;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(8px);
 }
 
 #carousel-modal.hidden {
   display: none !important;
 }
 
+/* CLOSE BUTTON */
 .carousel-close {
   position: absolute;
   top: 24px;
-  right: 24px;
-  color: white;
-  font-size: 32px;
+  right: 28px;
+  color: rgba(255,255,255,0.85);
+  font-size: 36px;
   cursor: pointer;
   z-index: 10000;
   font-family: sans-serif;
   user-select: none;
+  line-height: 1;
+  transition: color 0.2s;
 }
+.carousel-close:hover { color: #fff; }
 
+/* SCENE — the direct child of modal; holds the spinner */
 .scene {
-  width: 220px;
-  height: 300px;
-  perspective: 1400px;
+  /* No width/height needed here; the spinner defines its own size */
+  position: relative;
 }
 
-.carousel-3d {
+/* THE SPINNER — 3D ring wrapper, exactly per spec */
+#carousel-3d-container {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 0 auto;
+  transform-style: preserve-3d;
+  animation: spinY 20s infinite linear;
+}
+
+/* EACH IMAGE CARD — position:absolute, fills entire spinner box */
+.carousel__cell {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  position: relative;
-  transform-style: preserve-3d;
-  animation: spin 40s linear infinite;
-}
-
-.carousel__cell {
-  /* transform is set inline by JS */
-  position: absolute;
-  width: 220px;
-  height: 300px;
-  left: 0;
-  top: 0;
-  border-radius: 14px;
+  border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.6);
-  border: 2px solid rgba(255,255,255,0.1);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.7);
+  border: 1.5px solid rgba(255,255,255,0.12);
 }
 
+/* Image fills the card */
 .carousel__cell img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 
-@keyframes spin {
-  0%   { transform: rotateY(0deg); }
-  100% { transform: rotateY(-360deg); }
+/* THE KEYFRAME — spin on vertical (Y) axis per spec */
+@keyframes spinY {
+  from { transform: rotateY(0deg); }
+  to   { transform: rotateY(360deg); }
 }
 
-@media (max-width: 768px) {
-  .scene {
-    width: 160px;
-    height: 220px;
-  }
-  .carousel__cell {
-    width: 160px;
-    height: 220px;
+/* MOBILE — shrink the spinner */
+@media (max-width: 600px) {
+  #carousel-3d-container {
+    width: 180px;
+    height: 240px;
   }
 }
+
 
 
 .custom-cursive-caption {
