@@ -360,48 +360,64 @@ function submitComment(postId) {
 // =====================================================
 // 3D CYLINDRICAL CAROUSEL — 8-Sided Dynamic Prism
 // =====================================================
-(function() {
-    const allImages = [
-        "assets/IMG-20251118-WA0078.jpg", "assets/IMG-20251118-WA0081.jpg",
-        "assets/IMG-20251208-WA0016.jpg", "assets/IMG-20251230-WA0019.jpg",
-        "assets/IMG-20260220-WA0016.jpg", "assets/IMG-20260303-WA0001.jpg",
-        "assets/IMG-20260303-WA0005.jpg", "assets/IMG-20260303-WA0007.jpg",
-        "assets/IMG-20260305-WA0011.jpg", "assets/IMG-20260305-WA0012.jpg",
-        "assets/IMG-20260305-WA0013.jpg", "assets/IMG-20260423-WA0091.jpg",
-        "assets/IMG-20260423-WA0092.jpg", "assets/IMG-20260505-WA0118.jpg",
-        "assets/IMG-20260505-WA0150.jpg", "assets/IMG-20260505-WA0243.jpg",
-        "assets/IMG-20260505-WA0250.jpg", "assets/IMG-20260505-WA0254.jpg",
-        "assets/IMG-20260505-WA0258.jpg", "assets/IMG-20260505-WA0260.jpg",
-        "assets/IMG-20260602-WA0005.jpg", "assets/IMG-20260731-WA0151.jpg",
-        "assets/IMG-20260731-WA0152.jpg", "assets/IMG-20260731-WA0156.jpg",
-        "assets/IMG_20250414_185437.jpg", "assets/IMG_20250414_185439.jpg",
-        "assets/IMG_20251115_172733.jpg", "assets/IMG_20251115_172756.jpg",
-        "assets/IMG_20251115_172800.jpg", "assets/IMG_20251115_172802.jpg",
-        "assets/IMG_20251115_172816.jpg", "assets/IMG_20251207_201541.jpg",
-        "assets/IMG_20251207_201549.jpg", "assets/IMG_20251225_172321.jpg",
-        "assets/IMG_20251225_172325.jpg", "assets/IMG_20251225_172329.jpg",
-        "assets/IMG_20251225_173249.jpg", "assets/IMG_20251225_173335.jpg",
-        "assets/Snapchat-1682205913.jpg", "assets/Snapchat-352071190.jpg",
-        "assets/Snapchat-603721540.jpg"
-    ];
 
-    let carouselInterval = null;
-    let images = [];
+const allCarouselImages = [
+    "assets/IMG-20251118-WA0078.jpg", "assets/IMG-20251118-WA0081.jpg",
+    "assets/IMG-20251208-WA0016.jpg", "assets/IMG-20251230-WA0019.jpg",
+    "assets/IMG-20260220-WA0016.jpg", "assets/IMG-20260303-WA0001.jpg",
+    "assets/IMG-20260303-WA0005.jpg", "assets/IMG-20260303-WA0007.jpg",
+    "assets/IMG-20260305-WA0011.jpg", "assets/IMG-20260305-WA0012.jpg",
+    "assets/IMG-20260305-WA0013.jpg", "assets/IMG-20260423-WA0091.jpg",
+    "assets/IMG-20260423-WA0092.jpg", "assets/IMG-20260505-WA0118.jpg",
+    "assets/IMG-20260505-WA0150.jpg", "assets/IMG-20260505-WA0243.jpg",
+    "assets/IMG-20260505-WA0250.jpg", "assets/IMG-20260505-WA0254.jpg",
+    "assets/IMG-20260505-WA0258.jpg", "assets/IMG-20260505-WA0260.jpg",
+    "assets/IMG-20260602-WA0005.jpg", "assets/IMG-20260731-WA0151.jpg",
+    "assets/IMG-20260731-WA0152.jpg", "assets/IMG-20260731-WA0156.jpg",
+    "assets/IMG_20250414_185437.jpg", "assets/IMG_20250414_185439.jpg",
+    "assets/IMG_20251115_172733.jpg", "assets/IMG_20251115_172756.jpg",
+    "assets/IMG_20251115_172800.jpg", "assets/IMG_20251115_172802.jpg",
+    "assets/IMG_20251115_172816.jpg", "assets/IMG_20251207_201541.jpg",
+    "assets/IMG_20251207_201549.jpg", "assets/IMG_20251225_172321.jpg",
+    "assets/IMG_20251225_172325.jpg", "assets/IMG_20251225_172329.jpg",
+    "assets/IMG_20251225_173249.jpg", "assets/IMG_20251225_173335.jpg",
+    "assets/Snapchat-1682205913.jpg", "assets/Snapchat-352071190.jpg",
+    "assets/Snapchat-603721540.jpg"
+];
 
-    function initCarousel() {
-        const spinner = document.getElementById('carousel-3d-container');
-        if (!spinner) return;
-        spinner.innerHTML = '';
+let carouselInterval = null;
+let carouselShuffledImages = [];
+let nextImageIndex = 0;
+let currentBackPanel = 4;
 
-        // Shuffle images
-        images = [...allImages].sort(() => Math.random() - 0.5);
+document.addEventListener('DOMContentLoaded', () => {
+    // We bind the logic here, but functions are exposed globally for inline HTML click handlers
+});
 
-        // 8 sides geometry
+window.openCarouselModal = function(e) {
+    if (e) e.preventDefault();
+    
+    const modal = document.getElementById('carousel-modal');
+    const audio = document.getElementById('laufey-carousel-audio');
+    const spinner = document.getElementById('carousel-3d-container');
+    
+    if (!modal) return;
+
+    // Force display layout
+    modal.classList.remove('hidden');
+    modal.setAttribute('style', 'display: flex !important;');
+
+    if (spinner) {
+        spinner.innerHTML = ''; // Reset
+        
+        // Shuffle images array
+        carouselShuffledImages = [...allCarouselImages].sort(() => Math.random() - 0.5);
+
+        // Render Exactly 8 Panels
         const numPanels = 8;
         const theta = 360 / numPanels; // 45deg
-        const radius = 300; // px (calculated as 250 / 2 / tan(PI/8) = ~301)
+        const radius = 300; 
         
-        // Setup the 8 initial panels
         for (let i = 0; i < numPanels; i++) {
             const card = document.createElement('div');
             card.className = 'carousel__cell';
@@ -409,7 +425,7 @@ function submitComment(postId) {
             card.style.transform = `rotateY(${i * theta}deg) translateZ(${radius}px)`;
 
             const img = document.createElement('img');
-            img.src = images[i % images.length];
+            img.src = carouselShuffledImages[i % carouselShuffledImages.length];
             img.alt = 'Memory';
             img.loading = 'lazy';
 
@@ -417,69 +433,53 @@ function submitComment(postId) {
             spinner.appendChild(card);
         }
 
-        // Setup the background worker to swap out the back-facing image
+        // Initialize state for background worker
         if (carouselInterval) clearInterval(carouselInterval);
         
-        let nextImageIndex = numPanels % images.length;
+        nextImageIndex = numPanels % carouselShuffledImages.length;
+        currentBackPanel = 4; // Panel initially at 180deg
         
-        // Initial back panel is the one at 180deg (index 4)
-        // With animation: spin (-360deg over 24s), it rotates -45deg every 3 seconds.
-        // So after 3s, panel 5 is at the back. After 6s, panel 6, etc.
-        let currentBackPanel = 4;
-
+        // Set up the interval logic
         carouselInterval = setInterval(() => {
+            const panels = document.querySelectorAll('.carousel__cell');
+            // Strict safety check
+            if (!panels || panels.length === 0) return;
+
             const panel = document.getElementById(`carousel-panel-${currentBackPanel}`);
             if (panel) {
                 const img = panel.querySelector('img');
-                if (img) {
-                    img.src = images[nextImageIndex];
+                if (img && carouselShuffledImages.length > 0) {
+                    img.src = carouselShuffledImages[nextImageIndex];
                 }
             }
             
-            // Advance pointers
+            // Advance pointers safely
             currentBackPanel = (currentBackPanel + 1) % numPanels;
-            nextImageIndex = (nextImageIndex + 1) % images.length;
-        }, 3000); // 3 seconds per 45 degree turn (24s / 8 = 3s)
+            nextImageIndex = (nextImageIndex + 1) % carouselShuffledImages.length;
+        }, 3000); 
     }
 
-    function openCarousel() {
-        const modal = document.getElementById('carousel-modal');
-        const audio = document.getElementById('laufey-carousel-audio');
-        if (!modal) return;
-        initCarousel();
-        modal.classList.remove('hidden');
-        modal.style.display = 'flex';
-        if (audio) {
-            audio.play().catch(err => console.warn('Autoplay blocked:', err));
-        }
+    if (audio) {
+        audio.play().catch(err => console.warn('Autoplay blocked safely:', err));
     }
+};
 
-    window.closeCarousel = function() {
-        const modal = document.getElementById('carousel-modal');
-        const audio = document.getElementById('laufey-carousel-audio');
-        if (modal) {
-            modal.classList.add('hidden');
-            modal.style.display = 'none';
-        }
-        if (audio) {
-            audio.pause();
-            audio.currentTime = 0;
-        }
-        if (carouselInterval) {
-            clearInterval(carouselInterval);
-            carouselInterval = null;
-        }
-    };
+window.closeCarouselModal = function() {
+    const modal = document.getElementById('carousel-modal');
+    const audio = document.getElementById('laufey-carousel-audio');
+    
+    if (modal) {
+        modal.classList.add('hidden');
+        modal.style.display = 'none';
+    }
+    if (audio) {
+        audio.pause();
+        audio.currentTime = 0;
+    }
+    if (carouselInterval) {
+        clearInterval(carouselInterval);
+        carouselInterval = null;
+    }
+};
 
-    // Attach to button — works on ANY page that has #carousel-nav-btn
-    document.addEventListener('DOMContentLoaded', () => {
-        const btn = document.getElementById('carousel-nav-btn');
-        if (btn) {
-            btn.addEventListener('click', (e) => {
-                e.preventDefault();
-                openCarousel();
-            });
-        }
-    });
-})();
 
