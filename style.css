@@ -1407,7 +1407,7 @@ body.reels-body .main-content {
   inset: 0;
   z-index: 9999;
   background: rgba(0, 0, 0, 0.93);
-  perspective: 1000px;
+  perspective: 1200px !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1437,7 +1437,7 @@ body.reels-body .main-content {
 /* SCENE */
 .scene {
   position: relative;
-  width: 250px;
+  width: 200px !important;
   height: 350px;
 }
 
@@ -1456,8 +1456,9 @@ body.reels-body .main-content {
   position: absolute;
   top: 0;
   left: 0;
-  width: 250px;
+  width: 200px !important;
   height: 350px;
+  margin: 0 10px;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 8px 32px rgba(0,0,0,0.7);

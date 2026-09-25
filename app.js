@@ -415,10 +415,10 @@ window.openCarouselModal = function(e) {
         // Shuffle images array
         carouselShuffledImages = [...allCarouselImages].sort(() => Math.random() - 0.5);
 
-        // Render Exactly 8 Panels
-        const numPanels = 8;
-        const theta = 360 / numPanels; // 45deg
-        const radius = 300; 
+        // Render Exactly 12 Panels (12-sided prism)
+        const numPanels = 12;
+        const theta = 30; // 360 / 12 = 30deg
+        const radius = 380; 
         
         for (let i = 0; i < numPanels; i++) {
             const card = document.createElement('div');
@@ -439,7 +439,7 @@ window.openCarouselModal = function(e) {
         if (carouselInterval) clearInterval(carouselInterval);
         
         nextImageIndex = numPanels % carouselShuffledImages.length;
-        currentBackPanel = 4; // Panel initially at 180deg
+        currentBackPanel = 6; // Panel initially at 180deg (6 * 30 = 180)
         
         // Set up the interval logic
         carouselInterval = setInterval(() => {
@@ -458,7 +458,7 @@ window.openCarouselModal = function(e) {
             // Advance pointers safely
             currentBackPanel = (currentBackPanel + 1) % numPanels;
             nextImageIndex = (nextImageIndex + 1) % carouselShuffledImages.length;
-        }, 3000); 
+        }, 2000); // 2 seconds per 30 degree turn (24s / 12 = 2s)
     }
 
     if (audio) {
