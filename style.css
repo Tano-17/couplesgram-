@@ -1440,6 +1440,7 @@ body.reels-body .main-content {
 }
 
 .carousel__cell {
+  transform: rotateY(var(--rotate-y)) translateZ(var(--translate-z));
   position: absolute;
   width: 250px;
   height: 350px;
@@ -1458,14 +1459,14 @@ body.reels-body .main-content {
 
 /* 8 images = 360 / 8 = 45deg increments. 
    TranslateZ approx = (250 / 2) / tan(22.5deg) = 125 / 0.414 = ~301px. Let's use 320px for some gap. */
-.carousel__cell:nth-child(1) { transform: rotateY(  0deg) translateZ(320px); }
-.carousel__cell:nth-child(2) { transform: rotateY( 45deg) translateZ(320px); }
-.carousel__cell:nth-child(3) { transform: rotateY( 90deg) translateZ(320px); }
-.carousel__cell:nth-child(4) { transform: rotateY(135deg) translateZ(320px); }
-.carousel__cell:nth-child(5) { transform: rotateY(180deg) translateZ(320px); }
-.carousel__cell:nth-child(6) { transform: rotateY(225deg) translateZ(320px); }
-.carousel__cell:nth-child(7) { transform: rotateY(270deg) translateZ(320px); }
-.carousel__cell:nth-child(8) { transform: rotateY(315deg) translateZ(320px); }
+
+
+
+
+
+
+
+
 
 @keyframes spin {
   0%   { transform: rotateY(0deg); }
@@ -1478,18 +1479,19 @@ body.reels-body .main-content {
     height: 250px;
   }
   .carousel__cell {
+  transform: rotateY(var(--rotate-y)) translateZ(var(--translate-z));
     width: 180px;
     height: 250px;
   }
   /* TranslateZ = 90 / 0.414 = ~217px. Use 240px. */
-  .carousel__cell:nth-child(1) { transform: rotateY(  0deg) translateZ(240px); }
-  .carousel__cell:nth-child(2) { transform: rotateY( 45deg) translateZ(240px); }
-  .carousel__cell:nth-child(3) { transform: rotateY( 90deg) translateZ(240px); }
-  .carousel__cell:nth-child(4) { transform: rotateY(135deg) translateZ(240px); }
-  .carousel__cell:nth-child(5) { transform: rotateY(180deg) translateZ(240px); }
-  .carousel__cell:nth-child(6) { transform: rotateY(225deg) translateZ(240px); }
-  .carousel__cell:nth-child(7) { transform: rotateY(270deg) translateZ(240px); }
-  .carousel__cell:nth-child(8) { transform: rotateY(315deg) translateZ(240px); }
+  
+  
+  
+  
+  
+  
+  
+  
 }
 
 
