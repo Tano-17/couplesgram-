@@ -357,6 +357,8 @@ function submitComment(postId) {
   // Disable submit button
   const postBtn = document.getElementById(`post-btn-${postId}`);
   postBtn.classList.remove('active');
+}
+
 // =====================================================
 // 3D CYLINDRICAL CAROUSEL — 8-Sided Dynamic Prism
 // =====================================================
