@@ -357,11 +357,8 @@ function submitComment(postId) {
   // Disable submit button
   const postBtn = document.getElementById(`post-btn-${postId}`);
   postBtn.classList.remove('active');
-}
-
-
 // =====================================================
-// 3D CYLINDRICAL CAROUSEL — Merry-go-round ring
+// 3D CYLINDRICAL CAROUSEL — 8-Sided Dynamic Prism
 // =====================================================
 (function() {
     const allImages = [
@@ -388,35 +385,61 @@ function submitComment(postId) {
         "assets/Snapchat-603721540.jpg"
     ];
 
+    let carouselInterval = null;
+    let images = [];
+
     function initCarousel() {
         const spinner = document.getElementById('carousel-3d-container');
         if (!spinner) return;
         spinner.innerHTML = '';
 
-        // Shuffle a fresh copy on every open
-        const images = [...allImages].sort(() => Math.random() - 0.5);
-        const totalImages = images.length;
+        // Shuffle images
+        images = [...allImages].sort(() => Math.random() - 0.5);
 
-        // translateZ controls how wide the ring is.
-        // With 41 images, a larger value spreads them further apart.
-        // Formula per spec: rotateY(index * (360 / totalImages)deg) translateZ(600px)
-        const translateZ = 600; // px — ring radius
-
-        images.forEach((imgPath, index) => {
+        // 8 sides geometry
+        const numPanels = 8;
+        const theta = 360 / numPanels; // 45deg
+        const radius = 300; // px (calculated as 250 / 2 / tan(PI/8) = ~301)
+        
+        // Setup the 8 initial panels
+        for (let i = 0; i < numPanels; i++) {
             const card = document.createElement('div');
             card.className = 'carousel__cell';
-
-            // THE EXACT FORMULA FROM SPEC
-            card.style.transform = `rotateY(${index * (360 / totalImages)}deg) translateZ(${translateZ}px)`;
+            card.id = `carousel-panel-${i}`;
+            card.style.transform = `rotateY(${i * theta}deg) translateZ(${radius}px)`;
 
             const img = document.createElement('img');
-            img.src = imgPath;
+            img.src = images[i % images.length];
             img.alt = 'Memory';
             img.loading = 'lazy';
 
             card.appendChild(img);
             spinner.appendChild(card);
-        });
+        }
+
+        // Setup the background worker to swap out the back-facing image
+        if (carouselInterval) clearInterval(carouselInterval);
+        
+        let nextImageIndex = numPanels % images.length;
+        
+        // Initial back panel is the one at 180deg (index 4)
+        // With animation: spin (-360deg over 24s), it rotates -45deg every 3 seconds.
+        // So after 3s, panel 5 is at the back. After 6s, panel 6, etc.
+        let currentBackPanel = 4;
+
+        carouselInterval = setInterval(() => {
+            const panel = document.getElementById(`carousel-panel-${currentBackPanel}`);
+            if (panel) {
+                const img = panel.querySelector('img');
+                if (img) {
+                    img.src = images[nextImageIndex];
+                }
+            }
+            
+            // Advance pointers
+            currentBackPanel = (currentBackPanel + 1) % numPanels;
+            nextImageIndex = (nextImageIndex + 1) % images.length;
+        }, 3000); // 3 seconds per 45 degree turn (24s / 8 = 3s)
     }
 
     function openCarousel() {
@@ -442,6 +465,10 @@ function submitComment(postId) {
             audio.pause();
             audio.currentTime = 0;
         }
+        if (carouselInterval) {
+            clearInterval(carouselInterval);
+            carouselInterval = null;
+        }
     };
 
     // Attach to button — works on ANY page that has #carousel-nav-btn
@@ -455,3 +482,4 @@ function submitComment(postId) {
         }
     });
 })();
+

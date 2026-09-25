@@ -1407,7 +1407,6 @@ body.reels-body .main-content {
   inset: 0;
   z-index: 9999;
   background: rgba(0, 0, 0, 0.93);
-  /* perspective:1000px on the container creates 3D depth per spec */
   perspective: 1000px;
   display: flex;
   align-items: center;
@@ -1435,36 +1434,36 @@ body.reels-body .main-content {
 }
 .carousel-close:hover { color: #fff; }
 
-/* SCENE — the direct child of modal; holds the spinner */
+/* SCENE */
 .scene {
-  /* No width/height needed here; the spinner defines its own size */
   position: relative;
+  width: 250px;
+  height: 350px;
 }
 
-/* THE SPINNER — 3D ring wrapper, exactly per spec */
+/* THE SPINNER */
 #carousel-3d-container {
   position: relative;
-  width: 300px;
-  height: 400px;
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
   transform-style: preserve-3d;
-  animation: spinY 20s infinite linear;
+  animation: spin 24s infinite linear;
 }
 
-/* EACH IMAGE CARD — position:absolute, fills entire spinner box */
+/* EACH IMAGE CARD */
 .carousel__cell {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 250px;
+  height: 350px;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 8px 32px rgba(0,0,0,0.7);
   border: 1.5px solid rgba(255,255,255,0.12);
 }
 
-/* Image fills the card */
 .carousel__cell img {
   width: 100%;
   height: 100%;
@@ -1472,17 +1471,20 @@ body.reels-body .main-content {
   display: block;
 }
 
-/* THE KEYFRAME — spin on vertical (Y) axis per spec */
-@keyframes spinY {
+/* THE KEYFRAME — spin per spec */
+@keyframes spin {
   from { transform: rotateY(0deg); }
-  to   { transform: rotateY(360deg); }
+  to   { transform: rotateY(-360deg); }
 }
 
-/* MOBILE — shrink the spinner */
 @media (max-width: 600px) {
-  #carousel-3d-container {
+  .scene {
     width: 180px;
-    height: 240px;
+    height: 250px;
+  }
+  .carousel__cell {
+    width: 180px;
+    height: 250px;
   }
 }
 
