@@ -369,34 +369,56 @@ document.addEventListener('DOMContentLoaded', () => {
     const audio = document.getElementById('laufey-carousel-audio');
     const carousel3d = document.getElementById('carousel-3d-container');
 
-    const allImages = ["assets\\IMG-20251118-WA0078.jpg", "assets\\IMG-20251118-WA0081.jpg", "assets\\IMG-20251208-WA0016.jpg", "assets\\IMG-20251230-WA0019.jpg", "assets\\IMG-20260220-WA0016.jpg", "assets\\IMG-20260303-WA0001.jpg", "assets\\IMG-20260303-WA0005.jpg", "assets\\IMG-20260303-WA0007.jpg", "assets\\IMG-20260305-WA0011.jpg", "assets\\IMG-20260305-WA0012.jpg", "assets\\IMG-20260305-WA0013.jpg", "assets\\IMG-20260423-WA0091.jpg", "assets\\IMG-20260423-WA0092.jpg", "assets\\IMG-20260505-WA0118.jpg", "assets\\IMG-20260505-WA0150.jpg", "assets\\IMG-20260505-WA0243.jpg", "assets\\IMG-20260505-WA0250.jpg", "assets\\IMG-20260505-WA0254.jpg", "assets\\IMG-20260505-WA0258.jpg", "assets\\IMG-20260505-WA0260.jpg", "assets\\IMG-20260602-WA0005.jpg", "assets\\IMG-20260731-WA0151.jpg", "assets\\IMG-20260731-WA0152.jpg", "assets\\IMG-20260731-WA0156.jpg", "assets\\IMG_20250414_185437.jpg", "assets\\IMG_20250414_185439.jpg", "assets\\IMG_20251115_172733.jpg", "assets\\IMG_20251115_172756.jpg", "assets\\IMG_20251115_172800.jpg", "assets\\IMG_20251115_172802.jpg", "assets\\IMG_20251115_172816.jpg", "assets\\IMG_20251207_201541.jpg", "assets\\IMG_20251207_201549.jpg", "assets\\IMG_20251225_172321.jpg", "assets\\IMG_20251225_172325.jpg", "assets\\IMG_20251225_172329.jpg", "assets\\IMG_20251225_173249.jpg", "assets\\IMG_20251225_173335.jpg", "assets\\Snapchat-1682205913.jpg", "assets\\Snapchat-352071190.jpg", "assets\\Snapchat-603721540.jpg"];
+    // All images — paths use forward slashes for web compatibility
+    const allImages = [
+        "assets/IMG-20251118-WA0078.jpg", "assets/IMG-20251118-WA0081.jpg",
+        "assets/IMG-20251208-WA0016.jpg", "assets/IMG-20251230-WA0019.jpg",
+        "assets/IMG-20260220-WA0016.jpg", "assets/IMG-20260303-WA0001.jpg",
+        "assets/IMG-20260303-WA0005.jpg", "assets/IMG-20260303-WA0007.jpg",
+        "assets/IMG-20260305-WA0011.jpg", "assets/IMG-20260305-WA0012.jpg",
+        "assets/IMG-20260305-WA0013.jpg", "assets/IMG-20260423-WA0091.jpg",
+        "assets/IMG-20260423-WA0092.jpg", "assets/IMG-20260505-WA0118.jpg",
+        "assets/IMG-20260505-WA0150.jpg", "assets/IMG-20260505-WA0243.jpg",
+        "assets/IMG-20260505-WA0250.jpg", "assets/IMG-20260505-WA0254.jpg",
+        "assets/IMG-20260505-WA0258.jpg", "assets/IMG-20260505-WA0260.jpg",
+        "assets/IMG-20260602-WA0005.jpg", "assets/IMG-20260731-WA0151.jpg",
+        "assets/IMG-20260731-WA0152.jpg", "assets/IMG-20260731-WA0156.jpg",
+        "assets/IMG_20250414_185437.jpg", "assets/IMG_20250414_185439.jpg",
+        "assets/IMG_20251115_172733.jpg", "assets/IMG_20251115_172756.jpg",
+        "assets/IMG_20251115_172800.jpg", "assets/IMG_20251115_172802.jpg",
+        "assets/IMG_20251115_172816.jpg", "assets/IMG_20251207_201541.jpg",
+        "assets/IMG_20251207_201549.jpg", "assets/IMG_20251225_172321.jpg",
+        "assets/IMG_20251225_172325.jpg", "assets/IMG_20251225_172329.jpg",
+        "assets/IMG_20251225_173249.jpg", "assets/IMG_20251225_173335.jpg",
+        "assets/Snapchat-1682205913.jpg", "assets/Snapchat-352071190.jpg",
+        "assets/Snapchat-603721540.jpg"
+    ];
 
     function initCarousel() {
         if (!carousel3d) return;
         carousel3d.innerHTML = '';
-        
-        // Shuffle images
-        const shuffled = allImages.sort(() => Math.random() - 0.5);
-        
-        // We'll pick 12 images to form a 12-sided dodecagon to keep it reasonable
-        const N = Math.min(12, shuffled.length);
-        const images = shuffled.slice(0, N);
-        
-        const theta = 360 / N;
-        const radius = Math.round((250 / 2) / Math.tan(Math.PI / N));
-        
-        images.forEach((img, idx) => {
+
+        // Shuffle a copy so original order is preserved for potential re-init
+        const shuffled = [...allImages].sort(() => Math.random() - 0.5);
+
+        // Use ALL images — polygon math scales automatically
+        const N = shuffled.length;
+        const theta = 360 / N; // degrees between each image
+        // Radius formula: r = (cellWidth/2) / tan(PI/N)
+        const cellWidth = 220;
+        const radius = Math.round((cellWidth / 2) / Math.tan(Math.PI / N));
+
+        shuffled.forEach((imgPath, idx) => {
             const cell = document.createElement('div');
             cell.className = 'carousel__cell';
-            
-            // For mobile responsiveness, we'll use CSS custom properties to handle the radius
-            cell.style.setProperty('--rotate-y', `${idx * theta}deg`);
-            cell.style.setProperty('--translate-z', `${radius}px`);
-            
+            cell.style.transform = `rotateY(${idx * theta}deg) translateZ(${radius}px)`;
+
             const imgEl = document.createElement('img');
-            imgEl.src = 'assets/' + img;
+            // imgPath already contains 'assets/' prefix — use directly
+            imgEl.src = imgPath;
             imgEl.loading = 'lazy';
-            
+            imgEl.alt = 'Memory';
+
             cell.appendChild(imgEl);
             carousel3d.appendChild(cell);
         });

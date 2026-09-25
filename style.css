@@ -1426,9 +1426,9 @@ body.reels-body .main-content {
 }
 
 .scene {
-  width: 250px;
-  height: 350px;
-  perspective: 1200px;
+  width: 220px;
+  height: 300px;
+  perspective: 1400px;
 }
 
 .carousel-3d {
@@ -1436,19 +1436,20 @@ body.reels-body .main-content {
   height: 100%;
   position: relative;
   transform-style: preserve-3d;
-  animation: spin 20s linear infinite;
+  animation: spin 40s linear infinite;
 }
 
 .carousel__cell {
-  transform: rotateY(var(--rotate-y)) translateZ(var(--translate-z));
+  /* transform is set inline by JS */
   position: absolute;
-  width: 250px;
-  height: 350px;
+  width: 220px;
+  height: 300px;
   left: 0;
   top: 0;
-  border-radius: 12px;
+  border-radius: 14px;
   overflow: hidden;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+  border: 2px solid rgba(255,255,255,0.1);
 }
 
 .carousel__cell img {
@@ -1457,17 +1458,6 @@ body.reels-body .main-content {
   object-fit: cover;
 }
 
-/* 8 images = 360 / 8 = 45deg increments. 
-   TranslateZ approx = (250 / 2) / tan(22.5deg) = 125 / 0.414 = ~301px. Let's use 320px for some gap. */
-
-
-
-
-
-
-
-
-
 @keyframes spin {
   0%   { transform: rotateY(0deg); }
   100% { transform: rotateY(-360deg); }
@@ -1475,23 +1465,13 @@ body.reels-body .main-content {
 
 @media (max-width: 768px) {
   .scene {
-    width: 180px;
-    height: 250px;
+    width: 160px;
+    height: 220px;
   }
   .carousel__cell {
-  transform: rotateY(var(--rotate-y)) translateZ(var(--translate-z));
-    width: 180px;
-    height: 250px;
+    width: 160px;
+    height: 220px;
   }
-  /* TranslateZ = 90 / 0.414 = ~217px. Use 240px. */
-  
-  
-  
-  
-  
-  
-  
-  
 }
 
 
