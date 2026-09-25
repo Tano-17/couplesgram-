@@ -418,7 +418,7 @@ window.openCarouselModal = function(e) {
         // Render Exactly 12 Panels (12-sided prism)
         const numPanels = 12;
         const theta = 30; // 360 / 12 = 30deg
-        const radius = 380; 
+        const radius = 525; 
         
         for (let i = 0; i < numPanels; i++) {
             const card = document.createElement('div');

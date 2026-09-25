@@ -1407,7 +1407,7 @@ body.reels-body .main-content {
   inset: 0;
   z-index: 9999;
   background: rgba(0, 0, 0, 0.93);
-  perspective: 1200px !important;
+  perspective: 1500px !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1437,8 +1437,8 @@ body.reels-body .main-content {
 /* SCENE */
 .scene {
   position: relative;
-  width: 200px !important;
-  height: 350px;
+  width: 280px !important;
+  height: 420px;
 }
 
 /* THE SPINNER */
@@ -1456,8 +1456,8 @@ body.reels-body .main-content {
   position: absolute;
   top: 0;
   left: 0;
-  width: 200px !important;
-  height: 350px;
+  width: 280px !important;
+  height: 420px !important;
   margin: 0 10px;
   border-radius: 10px;
   overflow: hidden;
